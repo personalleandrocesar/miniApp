@@ -108,10 +108,15 @@ function theme() {
                 Olá, {{ dataConf.data.value?.nome }}
             </div>
         </div>
-        <div class="whats">
+        <div class="color">
 
             <a @click="theme()" :model="$colorMode.value" >
     <Icon :name="colorMode.value === 'dark' ? 'line-md:moon-filled-to-sunny-filled-loop-transition' : 'line-md:sunny-filled-loop-to-moon-alt-filled-loop-transition'"/>             </a>
+           
+    </div>   
+        <div class="whats">
+
+            
             <a
             href="https://api.whatsapp.com/send?phone=5521936184024%20&text=Ol%C3%A1%20Leandro%20Cesar,%20fiquei%20interessado(a)%20nos%20seus%20Servi%C3%A7os,%20me%20chamo%20">
             <Icon name="ic:outline-whatsapp" />
@@ -285,7 +290,7 @@ function theme() {
     flex-wrap: wrap;
     height: 60px;
     width: 60px;
-    box-shadow: 1px 7px 20px #095D62;
+    box-shadow: 1px 7px 20px #00DC82;
     margin: 1.5rem;
     border-radius: 7px;
     z-index: 10;
@@ -295,7 +300,7 @@ function theme() {
     height: 60px;
     width: 60px;
     border-radius: 7px;
-    border: #095D62 2px solid;
+    border: #00DC82 2px solid;
     z-index: 100;
     opacity: 1;
 
@@ -332,11 +337,11 @@ function theme() {
 }
 
 .logo-nav-bar img {
-    box-shadow: 0px 7px 20px #095D62;
+    box-shadow: 0px 7px 20px #00DC82;
     height: 300px;
     width: 300px;
     border-radius: 7px;
-    border: #095D62 2px solid;
+    border: #00DC82 2px solid;
     z-index: 100;
     opacity: 1;
 
@@ -403,7 +408,7 @@ function theme() {
     flex-wrap: wrap;
     height: 100px;
     width: 100px;
-    box-shadow: 1px 7px 20px #095D62;
+    box-shadow: 1px 7px 20px #00DC82;
     margin: 1.5rem;
     border-radius: 7px;
 }
@@ -412,7 +417,7 @@ function theme() {
     height: 100px;
     width: 100px;
     border-radius: 7px;
-    border: #095D62 2px solid;
+    border: #00DC82 2px solid;
     opacity: 1;
 
 }
@@ -427,7 +432,7 @@ function theme() {
 }
 
 .link:hover {
-    color: #095D62;
+    color: #00DC82;
 }
 
 .section-title {
@@ -490,7 +495,7 @@ function theme() {
     padding: 5px;
     border-radius: 8px;
     margin: 1px auto;
-    border: solid .2px #095D6210;
+    border: solid .2px #00DC8210;
 }
 
 .menu-square div .icon {
@@ -532,8 +537,8 @@ function theme() {
     width: 100%;
     padding: 5px;
     margin: 1px auto;
-    border: solid 1px #095D6210;
-    border-bottom: solid .2px #095D6230;
+    border: solid 1px #00DC8210;
+    border-bottom: solid .2px #00DC8230;
     border-top: solid .2px transparent;
 }
 
@@ -559,7 +564,7 @@ function theme() {
 
 .menu-button:hover {
     cursor: pointer;
-    border-bottom: solid .2px #095D6250;
+    border-bottom: solid .2px #00DC8250;
 }
 
 
@@ -574,8 +579,8 @@ function theme() {
     width: 250px;
     margin-left: -125px;
     transition: all .4s linear;
-    border: solid 1px #095D6210;
-    box-shadow: 0 0px 5px #095D6210;
+    border: solid 1px #00DC8210;
+    box-shadow: 0 0px 5px #00DC8210;
     border-radius: 8px;
     cursor: pointer;
     text-align: center;
@@ -597,8 +602,8 @@ function theme() {
 }
 
 .logout:hover {
-    background-color: #095D6210;
-    color: #095D6280;
+    background-color: #00DC8210;
+    color: #00DC8280;
     cursor: pointer;
 }
 
@@ -630,7 +635,7 @@ function theme() {
         height: 100px;
         width: 100px;
         border-radius: 7px;
-        border: #095D62 2px solid;
+        border: #00DC82 2px solid;
 
     }
 
@@ -670,8 +675,8 @@ function theme() {
         margin: 1.5rem auto;
         cursor: pointer;
         transition: all .4s linear;
-        border: solid 1px #095D6210;
-        box-shadow: 0 0px 5px #095D6210;
+        border: solid 1px #00DC8210;
+        box-shadow: 0 0px 5px #00DC8210;
         cursor: pointer;
         text-align: center;
         line-height: 18px;
@@ -690,12 +695,12 @@ function theme() {
     .button-plus a:hover {
         margin: 0rem auto;
         transition: all .4s linear;
-        border: solid 1px #095D6210;
-        box-shadow: 0 0px 5px #095D6210;
+        border: solid 1px #00DC8210;
+        box-shadow: 0 0px 5px #00DC8210;
         cursor: pointer;
         width: 100px;
         text-align: center;
-        color: #095D6280;
+        color: #00DC8280;
         line-height: 18px;
         border-radius: 8px;
         transition: all 0.2s ease-in-out 0s;
@@ -706,39 +711,35 @@ function theme() {
 
 }
 
-.whats .icon {
-  color: #00DC8290;
-  zoom: 1;
-}
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: nowrap;
-  transition: all .4s linear;
-  position: sticky;
-  top: 20px;
-  margin: 16px auto;
-  box-shadow: 0 0px 5px #00f2ff10;
-  border: solid 1px #00dc8240;
-  width: 75%;
-  height: 50px;
-  border-radius: 10px;
-  z-index: 101;
-  backdrop-filter: blur(100px)
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: all .4s linear;
+    position: sticky;
+    top: 20px;
+    margin: 16px auto;
+    box-shadow: 0 0px 5px #00f2ff10;
+    border: solid 1px #00dc8240;
+    width: 75%;
+    height: 50px;
+    border-radius: 10px;
+    z-index: 101;
+    backdrop-filter: blur(100px)
 }
 .nav a {
-  margin: 0 5px;
-  padding: 6px 6px 9px 6px;
-  text-decoration: none;
-  cursor: pointer;
+    margin: 0 5px;
+    padding: 6px 6px 9px 6px;
+    text-decoration: none;
+    cursor: pointer;
 }
 .nav div:nth-child(1) {
-  margin: 0 15px;
-  text-decoration: none;
-  cursor: pointer;
+    margin: 0 15px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .nav a.router-link-exact-active {
@@ -746,28 +747,28 @@ function theme() {
   padding: 6px 6px 9px 6px;
   color: #00DC82;
   background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
-
+  
   border-radius: 9px;
   text-decoration: none;
   cursor: pointer;
 }
 
 .nav a.router-link-exact-active:hover {
-  margin: 0 5px;
-  padding: 6px 6px 9px 6px;
-  color: #00DC82;
-  background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
-  color: #00DC82;
-  border-radius: 9px;
-  text-decoration: none;
-  cursor: pointer;
+    margin: 0 5px;
+    padding: 6px 6px 9px 6px;
+    color: #00DC82;
+    background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
+    color: #00DC82;
+    border-radius: 9px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .nav a.router-link-exact-active:hover::after {
-  position: absolute;
-  top: 60px;
-  left: 20px;
-  padding: 3px 8px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    padding: 3px 8px;
   background-color: var(--color-background);
   color: #00DC82;
   border-radius: 9px;
@@ -776,21 +777,21 @@ function theme() {
 }
 
 .nav a:hover {
-  background-color: transparent;
-  color: #00DC82;
+    background-color: transparent;
+    color: #00DC82;
 }
 
-.whats {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+.color {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   position: fixed;
-  height: 70px;
+  height: 35px;
   width: 35px;
   transition: all 0.2s ease-in-out 0s;
-  bottom: 3.5rem;
+  bottom: 6rem;
   left: 1.5rem;
   border-radius: 9px;
   cursor: pointer;
@@ -798,6 +799,29 @@ function theme() {
   border: solid 1px #00DC8210;
   box-shadow: 0 0px 5px #00DC8240;
   backdrop-filter: blur(100px)
+}
+.whats {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    height: 35px;
+    width: 35px;
+    transition: all 0.2s ease-in-out 0s;
+    bottom: 3.5rem;
+    left: 1.5rem;
+    border-radius: 9px;
+    cursor: pointer;
+    z-index: 100;
+    border: solid 1px #00DC8210;
+    box-shadow: 0 0px 5px #00DC8240;
+    backdrop-filter: blur(100px)
+}
+.whats .icon, .color .icon {
+  color: #00DC8290;
+  zoom: 1;
 }
 
 </style>
