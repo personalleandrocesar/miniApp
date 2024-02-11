@@ -717,7 +717,7 @@ function theme() {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     transition: all .4s linear;
     position: sticky;
     top: 20px;
@@ -732,12 +732,7 @@ function theme() {
 }
 .nav a {
     margin: 0 5px;
-    padding: 6px 6px 9px 6px;
-    text-decoration: none;
-    cursor: pointer;
-}
-.nav div:nth-child(1) {
-    margin: 0 15px;
+    padding: 6px 8px 9px 8px;
     text-decoration: none;
     cursor: pointer;
 }
