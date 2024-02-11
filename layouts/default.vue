@@ -76,16 +76,16 @@ function theme() {
                 </NuxtLink>
                 <NuxtLink v-if="dataConf.data.value?.treinoA" :to="`/user/${route.params.id}/treino/a`"
                     @click.native="scrollToTop()">
-                    <Icon name='mdi:alpha-a' />
+                    <Icon name='mdi:alpha-a-box' />
                 </NuxtLink>
                 <NuxtLink :to="`/user/${route.params.id}/avaliacao`" @click.native="scrollToTop()">
-                        <Icon name='jam:medical' />
+                        <Icon name='solar:clipboard-heart-bold' />
                     </NuxtLink>
             </div>
             <div>
                 
               <NuxtLink @click="menu()" class="button-client">
-                    <Icon name="solar:tuning-2-line-duotone" />
+                    <Icon name="solar:hamburger-menu-bold" />
                 </NuxtLink>
     
           </div>
@@ -136,16 +136,16 @@ function theme() {
                     </NuxtLink>
                     <NuxtLink v-if="dataConf.data.value?.treinoA" :to="`/user/${route.params.id}/treino/a`"
                         @click.native="scrollToTop()">
-                        <Icon name='mdi:alpha-a' />
+                        <Icon name='mdi:alpha-a-box' />
                     </NuxtLink>
                     <NuxtLink :to="`/user/${route.params.id}/avaliacao`" @click.native="scrollToTop()">
-                            <Icon name='jam:medical' />
+                            <Icon name='solar:clipboard-heart-bold' />
                         </NuxtLink>
                 </div>
                 <div>
                 
                   <NuxtLink @click="menu()" class="button-client">
-                        <Icon name="solar:tuning-2-bold" />
+                        <Icon name="solar:close-square-bold" />
                     </NuxtLink>
     
               </div>
@@ -203,7 +203,7 @@ function theme() {
                     <div>
                         <div>
                             <p>
-                                <Icon name="jam:medical" />
+                                <Icon name="solar:clipboard-heart-bold" />
                                 Avaliação
                             </p>
                         </div>
