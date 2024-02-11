@@ -724,7 +724,7 @@ function theme() {
     margin: 16px auto;
     box-shadow: 0 0px 5px #00f2ff10;
     border: solid 1px #00dc8240;
-    width: 75%;
+    width: 90%;
     height: 50px;
     border-radius: 10px;
     z-index: 101;
@@ -735,6 +735,7 @@ function theme() {
     margin: 0 5px;
     padding: 12.2px 8px 12px 12px;
     padding: 12.2px 8px 9px 8px;
+    padding: 14.5px;
     text-decoration: none;
     cursor: pointer;
 }
