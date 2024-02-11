@@ -273,6 +273,10 @@ function theme() {
 
 }
 
+.icon {
+    zoom: 1;
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -347,7 +351,7 @@ function theme() {
 }
 
 .button-client .icon {
-    margin-top: -5px;
+    zoom: .9;
     margin-right: 5px;
 }
 
@@ -718,7 +722,7 @@ function theme() {
   top: 20px;
   margin: 16px auto;
   box-shadow: 0 0px 5px #00f2ff10;
-  border: solid .1px #00dc8210;
+  border: solid 1px #00dc8240;
   width: 75%;
   height: 50px;
   border-radius: 10px;
