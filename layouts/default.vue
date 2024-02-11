@@ -279,7 +279,7 @@ function theme() {
 }
 
 .icon {
-    zoom: 1;
+    zoom: 1.1;
 }
 
 .logo {
