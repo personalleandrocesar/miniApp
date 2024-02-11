@@ -357,7 +357,7 @@ function theme() {
 
 .button-client .icon {
     zoom: .9;
-    margin-right: 5px;
+    margin-right: -3px;
 }
 
 
@@ -728,29 +728,31 @@ function theme() {
     height: 50px;
     border-radius: 10px;
     z-index: 101;
+    padding: 12.2px 8px 12px 12px;
     backdrop-filter: blur(100px)
 }
 .nav a {
     margin: 0 5px;
-    padding: 6px 8px 9px 8px;
+    padding: 12.2px 8px 12px 12px;
+    padding: 12.2px 8px 9px 8px;
     text-decoration: none;
     cursor: pointer;
 }
 
 .nav a.router-link-exact-active {
-  margin: 0 5px;
-  padding: 6px 6px 9px 6px;
-  color: #00DC82;
-  background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
-  
-  border-radius: 9px;
+    background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
+    margin: 0 5px;
+    color: #00DC82;
+    padding: 14.5px;
+    
+    border-radius: 9px;
   text-decoration: none;
   cursor: pointer;
 }
 
 .nav a.router-link-exact-active:hover {
     margin: 0 5px;
-    padding: 6px 6px 9px 6px;
+    padding: 14.5px;
     color: #00DC82;
     background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
     color: #00DC82;
@@ -763,7 +765,6 @@ function theme() {
     position: absolute;
     top: 60px;
     left: 20px;
-    padding: 3px 8px;
   background-color: var(--color-background);
   color: #00DC82;
   border-radius: 9px;
