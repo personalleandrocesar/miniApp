@@ -266,7 +266,7 @@ function theme() {
                 <Icon name="solar:logout-3-bold" />
             </NuxtLink>
         </div>
-    </div>
+    </div>    
 </template>
 <style scoped>
 .head-logo {
@@ -730,7 +730,7 @@ function theme() {
     border-radius: 10px;
     z-index: 101;
     padding: 13.5px 8px 10px 10px;
-    backdrop-filter: blur(100px)
+    backdrop-filter: blur(100px);
 }
 .nav a {
     margin: 0 5px;
@@ -745,7 +745,7 @@ function theme() {
     background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
     margin: 0 5px;
     color: #00DC82;
-    padding: 14.5px;
+    padding: 9.5px;
     
     border-radius: 9px;
   text-decoration: none;
@@ -754,7 +754,7 @@ function theme() {
 
 .nav a.router-link-exact-active:hover {
     margin: 0 5px;
-    padding: 14.5px;
+    padding: 9.5px;
     color: #00DC82;
     background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
     color: #00DC82;
