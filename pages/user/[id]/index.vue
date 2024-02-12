@@ -22,10 +22,10 @@ function buttonPartner () {
 <template>
     <NuxtLayout>
     <div class="link">
-        <NuxtLink @click="buttonFeed" :class="{ aActived : linkFeed}">
+        <NuxtLink @click="buttonFeed"> 
             Feed
         </NuxtLink>
-        <NuxtLink @click="buttonPartner" :class="{ aActived: linkPartner }">
+        <NuxtLink @click="buttonPartner">
             Parcerias
         </NuxtLink>
     </div>

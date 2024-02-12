@@ -58,7 +58,7 @@ function theme() {
       <div class="name">
         app.leandrocesar.com
       </div>
-      <h3>Área do cliente</h3>
+      <h3>Área do Cliente</h3>
     </div>
     <div class="inputs">
       <div>
