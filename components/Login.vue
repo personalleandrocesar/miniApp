@@ -358,6 +358,8 @@ a:hover {
   bottom: 10px;
   width: 80%;
   left: 50%;
+  background-color: #00DC82 ;
+  color: #fff;
   margin-left: -40%;
   font-weight: 900;
   border: solid 1px #00DC8210;
@@ -368,6 +370,7 @@ a:hover {
   font-weight: 700;
   font-weight: 900;
   font-size: 13px;
+  color: #fff;
 }
 
 .button-pop {
@@ -379,10 +382,10 @@ a:hover {
   cursor: pointer;
   width: 50%;
   text-align: center;
-  border: solid 1px #fff;
+  border: solid 1px #dadada;
 }
 
 .button-pop:hover {
-  border: solid 1px #00DC8210;
+  border: solid 1px #fff;
 }
 </style>

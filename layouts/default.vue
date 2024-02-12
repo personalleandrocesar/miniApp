@@ -99,6 +99,7 @@ function theme() {
             </div>
         </div>
         <div v-if="photoOpen" class="nav-bar">
+             
             <div class='logo-nav-bar'>
                 <img @click="openPhoto" :src="dataConf.data.value?.foto">
             </div>
@@ -279,7 +280,7 @@ function theme() {
 }
 
 .icon {
-    zoom: 1.1;
+    zoom: 1;
 }
 
 .logo {
@@ -724,18 +725,18 @@ function theme() {
     margin: 16px auto;
     box-shadow: 0 0px 5px #00f2ff10;
     border: solid 1px #00dc8240;
-    width: 90%;
+    width: 80%;
     height: 50px;
     border-radius: 10px;
     z-index: 101;
-    padding: 12.2px 8px 12px 12px;
+    padding: 13.5px 8px 10px 10px;
     backdrop-filter: blur(100px)
 }
 .nav a {
     margin: 0 5px;
     padding: 12.2px 8px 12px 12px;
     padding: 12.2px 8px 9px 8px;
-    padding: 14.5px;
+    padding: 9.5px;
     text-decoration: none;
     cursor: pointer;
 }
