@@ -269,7 +269,7 @@ function theme() {
 <style scoped>
 .head-logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     flex-direction: row-reverse;
     align-items: flex-start;
     z-index: 1;
@@ -611,106 +611,6 @@ function theme() {
     margin: 1px 0px 0px 6px;
     transform: translateX(0px);
 }
-
-
-
-
-@media only screen and (max-width: 370px) {
-    .head-logo {
-        display: flex;
-        justify-content: center;
-        flex-direction: row-reverse;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .logo {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo img {
-        height: 100px;
-        width: 100px;
-        border-radius: 7px;
-        border: #00DC82 2px solid;
-
-    }
-
-    .button-client {
-        margin: 2rem 1.5rem 1rem 1.5rem;
-    }
-
-    .head-name {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .name {
-        font-size: 1.6rem;
-        line-height: 1.5rem;
-        margin: .2rem 1.5rem;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-        text-align: center;
-    }
-
-    .category {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-
-    .category-plus {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .button-plus a {
-        margin: 1.5rem auto;
-        cursor: pointer;
-        transition: all .4s linear;
-        border: solid 1px #00DC8210;
-        box-shadow: 0 0px 5px #00DC8210;
-        cursor: pointer;
-        text-align: center;
-        line-height: 18px;
-        border-radius: 8px;
-        font-weight: 600;
-        transition: all 0.2s ease-in-out 0s;
-        font-size: 14px;
-        padding: 8px 20px;
-        text-align: center;
-    }
-
-    .button-plus a .icon {
-        margin: 0 -8px 0 -5px;
-    }
-
-    .button-plus a:hover {
-        margin: 0rem auto;
-        transition: all .4s linear;
-        border: solid 1px #00DC8210;
-        box-shadow: 0 0px 5px #00DC8210;
-        cursor: pointer;
-        width: 100px;
-        text-align: center;
-        color: #00DC8280;
-        line-height: 18px;
-        border-radius: 8px;
-        transition: all 0.2s ease-in-out 0s;
-        height: 34px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-
-}
-
 
 .nav {
     display: flex;

@@ -34,7 +34,7 @@ const navD = ref(state.value == 4)
 </script>
 
 <template>
-      <NuxtLayout :name="layout">
+      <NuxtLayout name='duo'>
     <div class="main-div-one">
 
 
@@ -205,8 +205,8 @@ b {
   justify-content: center;
   align-items: center;
   border-radius: 8px;  
-  background-color: #095D6210;
-  border: .1px solid #095D6210; 
+  background-color: #00dc8210;
+  border: .1px solid #00dc8210; 
   margin-top: 1rem;
 }
 
@@ -225,12 +225,12 @@ b {
   align-items: left;
 }
 .main-div-two .icon {
-  color: #05959c;
+  color: #00dc82;
 }
 
 .square {  
   color:var(--color-text);
-  background-color: #095D6210;
+  background-color: #00dc8210;
   backdrop-filter: blur(5px);
   overflow-x: auto;
   display: flex;
@@ -239,10 +239,10 @@ b {
   align-items: center;
   margin: 3px 1.5rem;
     border-radius: 8px;
-    border: .1px solid #05959c20;
+    border: .1px solid #00dc8220;
     line-height: 1.4;
     transition: all .4s;
-    border: 2px solid #05959c10;
+    border: 2px solid #00dc8210;
 }
 
 .square div h4 .icon {
@@ -254,10 +254,10 @@ b {
 }
 
 .square:hover {
-    background-color: #095D6230;
+    background-color: #00dc8230;
 
-    border-top: 2px solid #05959c40;
-    border-bottom: 2px solid #05959c40;
+    border-top: 2px solid #00dc8240;
+    border-bottom: 2px solid #00dc8240;
     
 }
 .square div:nth-child(1) {
@@ -271,7 +271,7 @@ b {
 }
 .story {  
   color:var(--color-text);
-  background-color: #095D6210;
+  background-color: #00dc8210;
   backdrop-filter: blur(5px);
   overflow-x: auto;
   display: flex;
@@ -282,14 +282,14 @@ b {
   margin: 8px auto;
   padding-top: 3px;
     border-radius: 8px;
-    border: .1px solid #095D6210;
+    border: .1px solid #00dc8210;
     line-height: 1.4;
     transition: all .4s;
     font-weight: 700;
 }
 
 .story .icon {
-  color: #05959c;
+  color: #00dc82;
   margin-top: -2px;
 }
 .main-div-one {
@@ -304,7 +304,7 @@ b {
 }
 .main-div-one .icon{
   zoom: 1.4;
-  color: #05959c;
+  color: #00dc82;
   margin-top: -2.5px;
 }
 .main-div-two H3 {
@@ -317,14 +317,14 @@ display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #05959c;
+  color: #00dc82;
 }
 .main-div-two h5 {
   font-size: .9rem;
   color: var(--color-text);
 }
 .main-div-two a div {
-  border-right: 2px solid #05959c20;
+  border-right: 2px solid #00dc8220;
   margin-left: 15px;
   height: 100px;
   display: flex;
