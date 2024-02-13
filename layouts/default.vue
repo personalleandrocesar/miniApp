@@ -53,7 +53,6 @@ function menu() {
 }
 const colorMode = useColorMode()
 
-colorMode.preference = "system";
 function theme() {
     colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
 }
