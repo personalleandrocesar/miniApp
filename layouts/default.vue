@@ -287,8 +287,8 @@ function theme() {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     box-shadow: 1px 7px 20px #00DC82;
     margin: 1.5rem;
     border-radius: 7px;
@@ -296,8 +296,8 @@ function theme() {
 }
 
 .logo img {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     border-radius: 7px;
     border: #00DC82 2px solid;
     z-index: 100;
