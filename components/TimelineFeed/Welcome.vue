@@ -93,7 +93,7 @@ span {
   flex-wrap: wrap;
   height: 100px;
   width: 100px;
-  box-shadow: 1px 7px 20px #00DC82;
+  box-shadow: 1px 7px 20px #00DC8230;
   margin: 3rem 1.5rem;
   border-radius: 7px;
 }

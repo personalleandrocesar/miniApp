@@ -71,7 +71,7 @@
   align-items: center;
   flex-wrap: wrap;
   height: 100px;
-  box-shadow: 1px 7px 20px #00DC82;
+  box-shadow: 1px 7px 20px #00DC8230;
   margin: 3rem 0rem;
   border-radius: 7px;
 }

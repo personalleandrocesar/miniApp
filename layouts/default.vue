@@ -737,7 +737,7 @@ function theme() {
     margin: 0 5px;
     padding: 12.2px 8px 12px 12px;
     padding: 12.2px 8px 9px 8px;
-    padding: 14.5px;
+    padding:  13px 14.5px 14.5px 14.5px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -746,7 +746,7 @@ function theme() {
     background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
     margin: 0 5px;
     color: #00DC82;
-    padding: 14.5px;
+    padding: 13px 14.5px 14.5px 14.5px;
     
     border-radius: 9px;
   text-decoration: none;
@@ -755,7 +755,7 @@ function theme() {
 
 .nav a.router-link-exact-active:hover {
     margin: 0 5px;
-    padding: 14.5px;
+    padding:  13px 14.5px 14.5px 14.5px;
     color: #00DC82;
     background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
     color: #00DC82;
