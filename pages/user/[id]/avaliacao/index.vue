@@ -95,7 +95,7 @@ function menu() {
         
         <div class="main-div-two">
           <h3>
-            <Icon name='jam:medical' /> AVALIAÇÕES
+            <Icon name='solar:clipboard-heart-bold' /> AVALIAÇÕES
           </h3>
           <nuxt-link class="main-square" :to="`/user/${route.params.id}/avaliacao/atual`">
             
@@ -147,7 +147,7 @@ function menu() {
                 <div v-else>
                     <div class="main-div-tree">
                       <h3>
-                            <Icon name='jam:medical' /> AVALIAÇÕES
+                            <Icon name='solar:clipboard-heart-bold' /> AVALIAÇÕES
                           </h3>
                           
                           <a href="https://cal.com/leandrocesar/personal" target="_blank" class="main-square">
@@ -685,6 +685,7 @@ function menu() {
 
 .main-div-tree .icon {
   color: #05959c;
+  margin-top: -4px;
 }
 
 .main-div-tree h4 {
