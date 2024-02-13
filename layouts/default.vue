@@ -282,24 +282,24 @@ function theme() {
 }
 
 .logo {
-    display: flex;
+   display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    height: 45px;
-    width: 45px;
-    box-shadow: 1px 7px 20px #00DC82;
+    height: 55px;
+    width: 55px;
+    background:  linear-gradient(to bottom right, #00dc82 0%,#00dc8270 50%,#00f2ff90 100%);
     margin: 1.5rem;
-    border-radius: 7px;
+    border-radius: 7px ; 
     z-index: 10;
 }
 
 .logo img {
-    height: 45px;
-    width: 45px;
+    height: 49px;
+    width: 49px;
+    margin: -1px 0 0 -1px;
     border-radius: 7px;
-    border: #00DC82 2px solid;
     z-index: 100;
     opacity: 1;
 
@@ -325,25 +325,24 @@ function theme() {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    z-index: 100;
     transform: translateX(0%);
     position: fixed;
-    height: calc(100% - 0px);
     bottom: 0px;
+    height: calc(100% - 0px);
     width: 100%;
+    background:  linear-gradient(to bottom right, #00dc82 0%,#00dc8280 50%,#00f2ff90 100%);
     backdrop-filter: blur(5px);
-
+    z-index: 1004;
+    
 }
-
 .logo-nav-bar img {
-    box-shadow: 0px 7px 20px #00DC82;
     height: 300px;
     width: 300px;
     border-radius: 7px;
-    border: #00DC82 2px solid;
-    z-index: 100;
+    border: #00DC82 1px solid;
     opacity: 1;
-
+    z-index: 100;
+    
 }
 
 .button-client {
