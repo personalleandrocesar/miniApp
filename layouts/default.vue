@@ -99,7 +99,6 @@ function theme() {
             </div>
         </div>
         <div v-if="photoOpen" class="nav-bar">
-             
             <div class='logo-nav-bar'>
                 <img @click="openPhoto" :src="dataConf.data.value?.foto">
             </div>
@@ -266,7 +265,7 @@ function theme() {
                 <Icon name="solar:logout-3-bold" />
             </NuxtLink>
         </div>
-    </div>    
+    </div>
 </template>
 <style scoped>
 .head-logo {
@@ -280,7 +279,7 @@ function theme() {
 }
 
 .icon {
-    zoom: 1;
+    zoom: 1.1;
 }
 
 .logo {
@@ -448,9 +447,10 @@ function theme() {
     font-weight: 800;
     font-size: .9em;
 }
+
 .section-subtitle-two {
     text-align: left;
-    margin: -23px 1.5rem 15px;
+    margin: -16px 1.5rem 15px;
     font-weight: 800;
     font-size: .9em;
 }
@@ -484,7 +484,7 @@ function theme() {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+    margin-bottom: 20px;
 }
 
 .menu-square {
@@ -496,7 +496,7 @@ function theme() {
     padding: 5px;
     border-radius: 8px;
     margin: 1px auto;
-    border: solid .2px #00DC8210;
+    border: solid .1px #00DC8250;
 }
 
 .menu-square div .icon {
@@ -539,7 +539,7 @@ function theme() {
     padding: 5px;
     margin: 1px auto;
     border: solid 1px #00DC8210;
-    border-bottom: solid .2px #00DC8230;
+    border-bottom: solid .1px #00DC8240;
     border-top: solid .2px transparent;
 }
 
@@ -565,7 +565,8 @@ function theme() {
 
 .menu-button:hover {
     cursor: pointer;
-    border-bottom: solid .2px #00DC8250;
+    border-bottom: solid .2px #00DC82;
+    background-color: #00DC8210;
 }
 
 
@@ -580,7 +581,7 @@ function theme() {
     width: 250px;
     margin-left: -125px;
     transition: all .4s linear;
-    border: solid 1px #00DC8210;
+    border: solid .1px #00DC8270;
     box-shadow: 0 0px 5px #00DC8210;
     border-radius: 8px;
     cursor: pointer;
@@ -725,18 +726,18 @@ function theme() {
     margin: 16px auto;
     box-shadow: 0 0px 5px #00f2ff10;
     border: solid 1px #00dc8240;
-    width: 80%;
+    width: 90%;
     height: 50px;
     border-radius: 10px;
     z-index: 101;
-    padding: 13.5px 8px 10px 10px;
-    backdrop-filter: blur(100px);
+    padding: 12.2px 8px 12px 12px;
+    backdrop-filter: blur(100px)
 }
 .nav a {
     margin: 0 5px;
     padding: 12.2px 8px 12px 12px;
     padding: 12.2px 8px 9px 8px;
-    padding: 9.5px;
+    padding: 14.5px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -745,7 +746,7 @@ function theme() {
     background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
     margin: 0 5px;
     color: #00DC82;
-    padding: 9.5px;
+    padding: 14.5px;
     
     border-radius: 9px;
   text-decoration: none;
@@ -754,7 +755,7 @@ function theme() {
 
 .nav a.router-link-exact-active:hover {
     margin: 0 5px;
-    padding: 9.5px;
+    padding: 14.5px;
     color: #00DC82;
     background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
     color: #00DC82;

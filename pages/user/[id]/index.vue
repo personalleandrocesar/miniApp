@@ -22,10 +22,10 @@ function buttonPartner () {
 <template>
     <NuxtLayout>
     <div class="link">
-        <NuxtLink @click="buttonFeed"> 
+        <NuxtLink @click="buttonFeed" :class="{ aActivee: linkFeed }"> 
             Feed
         </NuxtLink>
-        <NuxtLink @click="buttonPartner">
+        <NuxtLink @click="buttonPartner" :class="{ aActivee: linkPartner }">
             Parcerias
         </NuxtLink>
     </div>
@@ -62,12 +62,13 @@ a:hover {
     color: #00DC82;
     cursor: pointer;
 }
+
 a.router-link-exact-active {
     border-bottom: solid 2px #00DC82;
     color: #00DC82;
 }
 
-.aActived {
+.aActivee {
     border-bottom: solid 2px #00DC82;
     color: #00DC82;
     
