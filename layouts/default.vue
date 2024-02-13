@@ -536,8 +536,8 @@ function theme() {
     justify-content: space-between;
     font-weight: 800;
     width: 100%;
-    padding: 5px;
-    margin: 1px auto;
+    padding:  6px 2px 2px 2px;
+    margin: 5px auto;
     border: solid 1px #00DC8210;
     border-bottom: solid .1px #00DC8240;
     border-top: solid .2px transparent;
@@ -552,7 +552,7 @@ function theme() {
 }
 
 .menu-button .icon {
-    margin: 2px 0px 0px 26px;
+    margin: -2px 0px 0px 26px;
     transition: transform .3s linear;
     transform: translateX(-15px);
 }
