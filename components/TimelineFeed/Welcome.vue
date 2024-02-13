@@ -68,9 +68,11 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
 span {
-font-weight: bold;
+  font-weight: bold;
 }
+
 .body{
   display: flex;
   justify-content: center;
