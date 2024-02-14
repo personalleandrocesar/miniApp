@@ -143,7 +143,7 @@ function openDivTree() {
 </script>
 
 <template>
-    <NuxtLayout :name="layout">
+    <NuxtLayout>
         <div class="conf">
 
             <div class="main-div-one">
