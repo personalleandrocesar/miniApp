@@ -290,7 +290,7 @@ body {
   align-items: center;
 }
 .arrowUp .icon {
-    color: #05959c80;
+    color: #00dc8280;
 }
 
 .info h5{
@@ -310,7 +310,7 @@ body {
 .conf {
     color: #fff;
     height: 80px;
-    background-color: #05959c;
+    background-color: #00dc82;
     backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
@@ -334,7 +334,7 @@ body {
 }
 .main-div-one .icon{
    zoom: 1.4;
-  color: #05959c;
+  color: #00dc82;
 }
 
 .main-div-two {
@@ -365,7 +365,7 @@ justify-content: flex-start
 }
 
 .main-div-two .icon {
-    color: #05959c;
+    color: #00dc82;
 }
 
 
@@ -382,7 +382,7 @@ justify-content: flex-start
     margin: 1.5rem;
     border-radius: 8px;
     overflow-x: hidden;
-    background-color: #05959c30;
+    background-color: #00dc8230;
     line-height: 1.2;
 }
 .main-div-tree {
@@ -390,7 +390,7 @@ justify-content: flex-start
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #05959c;
+    color: #00dc82;
     margin: 0 3px 0 1px;
     align-items: center;
 }
@@ -400,7 +400,7 @@ justify-content: flex-start
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #05959c;
+    color: #00dc82;
     margin: 0 3px 0 1px;
     width: 30%;
 }
@@ -411,12 +411,12 @@ justify-content: flex-start
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #05959c;
+    color: #00dc82;
     width: 60%;
 }
 
 .main-div-tree .icon {
-color: #05959c;
+color: #00dc82;
 }
 
 .main-div-two div {
@@ -426,7 +426,7 @@ color: #05959c;
 
 .square {
     color: var(--color-text);
-    background-color: #05959c10;
+    background-color: #00dc8210;
     backdrop-filter: blur(5px);
     overflow-x: auto;
     display: flex;
@@ -437,14 +437,14 @@ color: #05959c;
     height: 180px;
     margin: 5px auto;
     border-radius: 8px;
-    border: 2px solid #05959c10;
+    border: 2px solid #00dc8210;
     overflow-x: hidden;
 }
 .squared {
-    background-color: #05959c30;
-    border: 2px solid #05959c20;
-    border-top: 2px solid #05959c40;
-    border-bottom: 2px solid #05959c40;
+    background-color: #00dc8230;
+    border: 2px solid #00dc8220;
+    border-top: 2px solid #00dc8240;
+    border-bottom: 2px solid #00dc8240;
 }
 
 
@@ -468,7 +468,7 @@ color: #05959c;
 }
 
 .main-div-two a div {
-    border-bottom: 2px solid #05959c20;
+    border-bottom: 2px solid #00dc8220;
     width: 90%;
     height: 100px;
     display: flex;
@@ -508,7 +508,7 @@ color: #05959c;
 }
 .main-div-one .icon{
    zoom: 1.4;
-  color: #05959c;
+  color: #00dc82;
   margin-top: -2.5px;
 }
 
@@ -524,8 +524,8 @@ color: #05959c;
   width: 32.5%;
   margin: 1rem auto 0 auto;
   border-radius: 8px;  
-      background-color: #05959c10;
-    border: .1px solid #05959c10;
+      background-color: #00dc8210;
+    border: .1px solid #00dc8210;
 }
 
 

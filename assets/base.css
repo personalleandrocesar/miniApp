@@ -63,6 +63,11 @@ body p {
   color: var(--vt-c-text-light-2);
 }
 
+body h4 {
+  font-size: 1rem;
+  color: var(--vt-c-text-light-3);
+}
+
 body h5 {
   font-size: 1rem;
   color: var(--vt-c-text-light-2);

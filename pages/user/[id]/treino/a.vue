@@ -426,17 +426,17 @@ h2 {
 }
 .main-div-tree ul li {
   border: solid .1px #00dc8280;
-  padding: 0px 8px;
+  padding: 3px 8px;
   border-radius: 6px;
   color: var(--color-text);
   margin: 3px 0 ;
   margin: 5px 0rem;
   color: var(--color-text);
-  background-color: #00dc8210;
+  background-color: #00dc8220;
   border: solid .2px #00dc8210;
 }
 .main-div-tree ul li:nth-child(2n -1) {
-  background-color: #00dc8220;
+  background-color: #00dc8250;
   color: var(--color-text);
 }
 .main-div-tree .icon{

@@ -167,7 +167,7 @@ const navD = ref(state.value === 4)
           </div>
           </div>
 
-        <div class="head-logo" id="sobre">
+        <div v-if="route.path === `/user/${logon}` || route.path === `/user/${logon}/parcerias`" class="head-logo" id="sobre">
             <NuxtLink @click="menu()" class="button-client">
             </NuxtLink>
             <div class='logo'>
