@@ -57,6 +57,8 @@ function theme() {
     colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
 }
 
+const state = useCookie('state')
+state.value = state.value
 
 const navA = ref(state.value === 1)
 const navB = ref(state.value === 2)
@@ -70,21 +72,75 @@ const navD = ref(state.value === 4)
 
         <div id="nav-container" class='nav'>
 
-            <div>
-              <NuxtLink :to="`/user/${route.params.id}`"  @click.native="scrollToTop()">
-                    <Icon name='solar:home-smile-bold' />
+            <div v-if="navA">
+        <div class="nav-bottom">
+            <NuxtLink :to="`/user/${route.params.id}`">
+                <Icon name='solar:home-smile-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/treino`">
+                <Icon name='solar:dumbbell-large-bold' />
+            </NuxtLink>
+            <NuxtLink v-if="dataConf.data.value?.treinoA" :to="`/user/${route.params.id}/treino/a`"
+              >
+                <Icon name='mdi:alpha-a-box' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
+                    <Icon name='solar:clipboard-heart-bold' />
                 </NuxtLink>
-                <NuxtLink :to="`/user/${route.params.id}/treino`" @click.native="scrollToTop()">
-                    <Icon name='solar:dumbbell-large-bold' />
+        </div>
+    </div>
+
+    <div v-else-if="navB">
+        <div class="nav-bottom">
+            <NuxtLink :to="`/user/${route.params.id}`">
+                <Icon name='solar:home-smile-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/treino`">
+                <Icon name='solar:dumbbell-large-bold' />
+            </NuxtLink>
+            <NuxtLink v-if="dataConf.data.value?.treinoB" :to="`/user/${route.params.id}/treino/b`"
+              >
+                <Icon name='mdi:alpha-b-box' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
+                    <Icon name='solar:clipboard-heart-bold' />
                 </NuxtLink>
-                <NuxtLink v-if="dataConf.data.value?.treinoA" :to="`/user/${route.params.id}/treino/a`"
-                    @click.native="scrollToTop()">
-                    <Icon name='mdi:alpha-a-box' />
+        </div>
+    </div>
+    <div v-else-if="navC">
+        <div class="nav-bottom">
+            <NuxtLink :to="`/user/${route.params.id}`">
+                <Icon name='solar:home-smile-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/treino`">
+                <Icon name='solar:dumbbell-large-bold' />
+            </NuxtLink>
+            <NuxtLink v-if="dataConf.data.value?.treinoC" :to="`/user/${route.params.id}/treino/c`"
+              >
+                <Icon name='mdi:alpha-c-box' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
+                    <Icon name='solar:clipboard-heart-bold' />
                 </NuxtLink>
-                <NuxtLink :to="`/user/${route.params.id}/avaliacao`" @click.native="scrollToTop()">
-                        <Icon name='solar:clipboard-heart-bold' />
-                    </NuxtLink>
-            </div>
+        </div>
+    </div>
+    <div v-else-if="navD">
+        <div class="nav-bottom">
+            <NuxtLink :to="`/user/${route.params.id}`">
+                <Icon name='solar:home-smile-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/treino`">
+                <Icon name='solar:dumbbell-large-bold' />
+            </NuxtLink>
+            <NuxtLink v-if="dataConf.data.value?.treinoD" :to="`/user/${route.params.id}/treino/d`"
+              >
+                <Icon name='mdi:alpha-d-box' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
+                    <Icon name='solar:clipboard-heart-bold' />
+                </NuxtLink>
+        </div>
+    </div>
             <div>
                 
               <NuxtLink @click="menu()" class="button-client">
@@ -118,21 +174,76 @@ const navD = ref(state.value === 4)
     <div v-else>
         <div id="nav-container" class='nav'>
 
-                <div>
-                  <NuxtLink :to="`/user/${route.params.id}`"  @click.native="scrollToTop()">
-                        <Icon name='solar:home-smile-bold' />
-                    </NuxtLink>
-                    <NuxtLink :to="`/user/${route.params.id}/treino`" @click.native="scrollToTop()">
-                        <Icon name='solar:dumbbell-large-bold' />
-                    </NuxtLink>
-                    <NuxtLink v-if="dataConf.data.value?.treinoA" :to="`/user/${route.params.id}/treino/a`"
-                        @click.native="scrollToTop()">
-                        <Icon name='mdi:alpha-a-box' />
-                    </NuxtLink>
-                    <NuxtLink :to="`/user/${route.params.id}/avaliacao`" @click.native="scrollToTop()">
-                            <Icon name='solar:clipboard-heart-bold' />
-                        </NuxtLink>
-                </div>
+                <div v-if="navA">
+        <div class="nav-bottom">
+            <NuxtLink :to="`/user/${route.params.id}`">
+                <Icon name='solar:home-smile-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/treino`">
+                <Icon name='solar:dumbbell-large-bold' />
+            </NuxtLink>
+            <NuxtLink v-if="dataConf.data.value?.treinoA" :to="`/user/${route.params.id}/treino/a`"
+              >
+                <Icon name='mdi:alpha-a-box' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
+                    <Icon name='solar:clipboard-heart-bold' />
+                </NuxtLink>
+        </div>
+    </div>
+
+    <div v-else-if="navB">
+        <div class="nav-bottom">
+            <NuxtLink :to="`/user/${route.params.id}`">
+                <Icon name='solar:home-smile-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/treino`">
+                <Icon name='solar:dumbbell-large-bold' />
+            </NuxtLink>
+            <NuxtLink v-if="dataConf.data.value?.treinoB" :to="`/user/${route.params.id}/treino/b`"
+              >
+                <Icon name='mdi:alpha-b-box' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
+                    <Icon name='solar:clipboard-heart-bold' />
+                </NuxtLink>
+        </div>
+    </div>
+    <div v-else-if="navC">
+        <div class="nav-bottom">
+            <NuxtLink :to="`/user/${route.params.id}`">
+                <Icon name='solar:home-smile-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/treino`">
+                <Icon name='solar:dumbbell-large-bold' />
+            </NuxtLink>
+            <NuxtLink v-if="dataConf.data.value?.treinoC" :to="`/user/${route.params.id}/treino/c`"
+              >
+                <Icon name='mdi:alpha-c-box' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
+                    <Icon name='solar:clipboard-heart-bold' />
+                </NuxtLink>
+        </div>
+    </div>
+    <div v-else-if="navD">
+        <div class="nav-bottom">
+            <NuxtLink :to="`/user/${route.params.id}`">
+                <Icon name='solar:home-smile-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/treino`">
+                <Icon name='solar:dumbbell-large-bold' />
+            </NuxtLink>
+            <NuxtLink v-if="dataConf.data.value?.treinoD" :to="`/user/${route.params.id}/treino/d`"
+              >
+                <Icon name='mdi:alpha-d-box' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
+                    <Icon name='solar:clipboard-heart-bold' />
+                </NuxtLink>
+        </div>
+    </div>
+            
                 <div>
                 
                   <NuxtLink @click="menu()" class="button-client">

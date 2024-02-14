@@ -320,7 +320,7 @@ ul {
 .alternate span .icon {
   color: #00dc82;
   zoom: 1.1;
-  margin: 0rem 3px;
+  margin: -4px 3px 0 0;
 }
 .alternate span:hover .icon {
   color: #00dc82;
