@@ -89,7 +89,7 @@ function menu() {
 </script>
 <template>
 
-    <NuxtLayout :name="layout">
+    <NuxtLayout>
 
       <div v-if="data.data.value?.data">
         

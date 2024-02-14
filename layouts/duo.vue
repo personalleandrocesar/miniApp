@@ -84,8 +84,8 @@ const navD = ref(state.value === 4)
               >
                 <Icon name='mdi:alpha-a-box' />
             </NuxtLink>
-            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
-                    <Icon name='solar:clipboard-heart-bold' />
+            <NuxtLink :to="`/user/${route.params.id}/cardio`">
+                    <Icon name='material-symbols:cardiology' />
                 </NuxtLink>
         </div>
     </div>
@@ -102,8 +102,8 @@ const navD = ref(state.value === 4)
               >
                 <Icon name='mdi:alpha-b-box' />
             </NuxtLink>
-            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
-                    <Icon name='solar:clipboard-heart-bold' />
+            <NuxtLink :to="`/user/${route.params.id}/cardio`">
+                    <Icon name='material-symbols:cardiology' />
                 </NuxtLink>
         </div>
     </div>
@@ -119,8 +119,8 @@ const navD = ref(state.value === 4)
               >
                 <Icon name='mdi:alpha-c-box' />
             </NuxtLink>
-            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
-                    <Icon name='solar:clipboard-heart-bold' />
+            <NuxtLink :to="`/user/${route.params.id}/cardio`">
+                    <Icon name='material-symbols:cardiology' />
                 </NuxtLink>
         </div>
     </div>
@@ -136,9 +136,25 @@ const navD = ref(state.value === 4)
               >
                 <Icon name='mdi:alpha-d-box' />
             </NuxtLink>
-            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
-                    <Icon name='solar:clipboard-heart-bold' />
+            <NuxtLink :to="`/user/${route.params.id}/cardio`">
+                    <Icon name='material-symbols:cardiology' />
                 </NuxtLink>
+        </div>
+    </div>
+    <div v-else>
+        <div class="nav-bottom">
+            <NuxtLink :to="`/user/${route.params.id}`"  @click.native="scrollToTop()">
+                <Icon name='solar:home-smile-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/treino`" @click.native="scrollToTop()">
+                <Icon name='solar:dumbbell-large-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/cardio`" @click.native="scrollToTop()">
+                <Icon name='material-symbols:cardiology' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/avaliacao`" @click.native="scrollToTop()">
+                <Icon name='solar:clipboard-heart-bold' />
+            </NuxtLink>
         </div>
     </div>
             <div>
@@ -186,8 +202,8 @@ const navD = ref(state.value === 4)
               >
                 <Icon name='mdi:alpha-a-box' />
             </NuxtLink>
-            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
-                    <Icon name='solar:clipboard-heart-bold' />
+            <NuxtLink :to="`/user/${route.params.id}/cardio`">
+                    <Icon name='material-symbols:cardiology' />
                 </NuxtLink>
         </div>
     </div>
@@ -204,8 +220,8 @@ const navD = ref(state.value === 4)
               >
                 <Icon name='mdi:alpha-b-box' />
             </NuxtLink>
-            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
-                    <Icon name='solar:clipboard-heart-bold' />
+            <NuxtLink :to="`/user/${route.params.id}/cardio`">
+                    <Icon name='material-symbols:cardiology' />
                 </NuxtLink>
         </div>
     </div>
@@ -221,8 +237,8 @@ const navD = ref(state.value === 4)
               >
                 <Icon name='mdi:alpha-c-box' />
             </NuxtLink>
-            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
-                    <Icon name='solar:clipboard-heart-bold' />
+            <NuxtLink :to="`/user/${route.params.id}/cardio`">
+                    <Icon name='material-symbols:cardiology' />
                 </NuxtLink>
         </div>
     </div>
@@ -238,9 +254,25 @@ const navD = ref(state.value === 4)
               >
                 <Icon name='mdi:alpha-d-box' />
             </NuxtLink>
-            <NuxtLink :to="`/user/${route.params.id}/avaliacao`">
-                    <Icon name='solar:clipboard-heart-bold' />
+            <NuxtLink :to="`/user/${route.params.id}/cardio`">
+                    <Icon name='material-symbols:cardiology' />
                 </NuxtLink>
+        </div>
+    </div>
+<div v-else>
+        <div class="nav-bottom">
+            <NuxtLink :to="`/user/${route.params.id}`"  @click.native="scrollToTop()">
+                <Icon name='solar:home-smile-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/treino`" @click.native="scrollToTop()">
+                <Icon name='solar:dumbbell-large-bold' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/cardio`" @click.native="scrollToTop()">
+                <Icon name='material-symbols:cardiology' />
+            </NuxtLink>
+            <NuxtLink :to="`/user/${route.params.id}/avaliacao`" @click.native="scrollToTop()">
+                <Icon name='solar:clipboard-heart-bold' />
+            </NuxtLink>
         </div>
     </div>
             
