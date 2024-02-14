@@ -748,7 +748,7 @@ const navD = ref(state.value === 4)
     backdrop-filter: blur(100px)
 }
 .nav a {
-    margin: 0 5px;
+    margin: 0 2px;
     padding: 12.2px 8px 12px 12px;
     padding: 12.2px 8px 9px 8px;
     padding:  13px 14.5px 14.5px 14.5px;
@@ -758,7 +758,7 @@ const navD = ref(state.value === 4)
 
 .nav a.router-link-exact-active {
     background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
-    margin: 0 5px;
+    margin: 0 2px;
     color: #00DC82;
     padding: 13px 14.5px 14.5px 14.5px;
     
@@ -768,7 +768,7 @@ const navD = ref(state.value === 4)
 }
 
 .nav a.router-link-exact-active:hover {
-    margin: 0 5px;
+    margin: 0 2px;
     padding:  13px 14.5px 14.5px 14.5px;
     color: #00DC82;
     background: linear-gradient(to bottom right, #00DC8210 0%,#00DC8210 50%,#00DC8210 100%);
