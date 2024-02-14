@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 // import './cal'
 const route = useRoute()
-
+const layout = "duo"
 const data = await useFetch(`/api/${route.params.id}/avaliacao/atual`)
 const dataConf = await useFetch(`/api/${route.params.id}`)
 const notify = await useFetch(`/api/notifications`)
@@ -89,7 +89,7 @@ function menu() {
 </script>
 <template>
 
-    <NuxtLayout>
+    <NuxtLayout :name="layout">
 
       <div v-if="data.data.value?.data">
         
@@ -618,7 +618,7 @@ function menu() {
 
 .main-div-two H3 {
   margin-left: 20px;
-
+  margin-top:10px;
 }
 
 .main-div-two h4 {

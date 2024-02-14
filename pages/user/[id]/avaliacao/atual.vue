@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 
 const route = useRoute()
-
+const layout = "duo"
 const data = await useFetch(`/api/${route.params.id}/avaliacao/atual`)
 
 const divInfoIMC = ref(false)
@@ -143,7 +143,7 @@ function openDivTree() {
 </script>
 
 <template>
-    <NuxtLayout>
+    <NuxtLayout :name="layout">
         <div class="conf">
 
             <div class="main-div-one">
@@ -1085,7 +1085,7 @@ td {
 
 .main-div-one H3 {
     margin-left: 20px;
-
+    margin-top: 10px;
 }
 
 .main-div-one h4 {
