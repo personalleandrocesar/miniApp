@@ -30,6 +30,7 @@ function buttonPartner () {
         </NuxtLink>
     </div>
     <div class="feed" v-if="feedShow">
+        <TimelineFeedTree/>
         <TimelineFeedTwo/>
         <TimelineFeedWelcome/>
     </div>
