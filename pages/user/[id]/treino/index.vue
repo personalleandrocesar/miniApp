@@ -34,7 +34,7 @@ const navD = ref(state.value == 4)
 </script>
 
 <template>
-      <NuxtLayout name='duo'>
+      <NuxtLayout :name='layout'>
     <div class="main-div-one">
 
 

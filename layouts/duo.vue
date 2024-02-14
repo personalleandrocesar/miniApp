@@ -58,6 +58,10 @@ function theme() {
 }
 
 
+const navA = ref(state.value === 1)
+const navB = ref(state.value === 2)
+const navC = ref(state.value === 3)
+const navD = ref(state.value === 4)
 
 
 </script>
