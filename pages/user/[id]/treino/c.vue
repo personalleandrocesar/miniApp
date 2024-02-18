@@ -409,6 +409,7 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 .main-div-tree ul li {
   overflow-x: auto;

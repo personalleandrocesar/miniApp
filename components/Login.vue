@@ -97,16 +97,20 @@ function theme() {
       <div class="button-pop" @click="popOk()">PROSSEGUIR!</div>
     </div>
   </footer>
-  <div class="whats">
+  <div class="color">
 
-              <a @click="theme()" :model="$colorMode.value" >
-                  <Icon :name="colorMode.value === 'dark' ? 'solar:sun-2-outline' : 'solar:moon-outline'"/> 
-              </a>
-              <a
-              href="https://api.whatsapp.com/send?phone=5521936184024%20&text=Ol%C3%A1%20Leandro%20Cesar,%20fiquei%20interessado(a)%20nos%20seus%20Servi%C3%A7os,%20me%20chamo%20">
-              <Icon name="ic:outline-whatsapp" />
-          </a>
-          </div>
+            <a @click="theme()" :model="$colorMode.value" >
+    <Icon :name="colorMode.value === 'dark' ? 'line-md:moon-filled-to-sunny-filled-loop-transition' : 'line-md:sunny-filled-loop-to-moon-alt-filled-loop-transition'"/>             </a>
+           
+    </div>   
+        <div class="whats">
+
+            
+            <a
+            href="https://api.whatsapp.com/send?phone=5521936184024%20&text=Ol%C3%A1%20Leandro%20Cesar,%20fiquei%20interessado(a)%20nos%20seus%20Servi%C3%A7os,%20me%20chamo%20">
+            <Icon name="ic:outline-whatsapp" />
+        </a>
+    </div> 
 </template>
 <script>
 export default {
@@ -205,17 +209,17 @@ export default {
 }
 
 
-.whats {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+.color {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   position: fixed;
-  height: 70px;
+  height: 35px;
   width: 35px;
   transition: all 0.2s ease-in-out 0s;
-  bottom: 3.5rem;
+  bottom: 6rem;
   left: 1.5rem;
   border-radius: 9px;
   cursor: pointer;
@@ -224,7 +228,26 @@ export default {
   box-shadow: 0 0px 5px #00DC8240;
   backdrop-filter: blur(100px)
 }
-.whats .icon {
+.whats {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    height: 35px;
+    width: 35px;
+    transition: all 0.2s ease-in-out 0s;
+    bottom: 3.5rem;
+    left: 1.5rem;
+    border-radius: 9px;
+    cursor: pointer;
+    z-index: 100;
+    border: solid 1px #00DC8210;
+    box-shadow: 0 0px 5px #00DC8240;
+    backdrop-filter: blur(100px)
+}
+.whats .icon, .color .icon {
   color: #00DC8290;
   zoom: 1;
 }

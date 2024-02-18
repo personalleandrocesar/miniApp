@@ -11,12 +11,12 @@ function theme() {
 
   <div class="body-date">
     <span>
-     14/02
+     18/02
     </span>
   </div>
   <div class="body">
       <div class='main-logo ' >
-<a @click="theme()" :model="$colorMode.value" >
+<a @click="theme()"  >
 
 
         <Icon :name="colorMode.value === 'dark' ? 'line-md:moon-filled-to-sunny-filled-loop-transition' : 'line-md:sunny-filled-loop-to-moon-alt-filled-loop-transition'"/> 

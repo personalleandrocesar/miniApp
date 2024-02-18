@@ -1045,6 +1045,7 @@ td {
 .main-div-tree h2 {
     margin-bottom: -3px;
     color: #00dc82;
+    font-size: 1rem;
 }
 
 .main-div-tree h3 {
