@@ -11,6 +11,7 @@ export default defineEventHandler((event) => {
     { id: 8, num: 'Exercício 8', nome: 'Tríceps mergulho no graviton', sets: 3, reps: '12', rest: '50"', grupo: '', obs: '', img: 'https://m.leandrocesar.com/exe/tricepsMergulho.gif' },
     { id: 9, num: 'Exercício 9', nome: 'Tríceps corda na polia alta', sets: 3, reps: '8 / 10 / 12', rest: '50"', grupo: '', obs: 'Pirâmide descrescente.', img: 'https://m.leandrocesar.com/exe/tricepsCorda.gif' },
     { id: 10, num: 'Exercício 10', nome: 'Tríceps testa HBC', sets: 3, reps: '10', rest: '50"', grupo: '', obs: '', img: 'https://m.leandrocesar.com/exe/tricepsTesta.gif' },
+    { id: 11, num: 'Exercício 11', nome: 'Abdominal oblíquo', sets: 3, reps: '18', rest: '50"', grupo: '', obs: '', img: 'https://m.leandrocesar.com/exe/abdominalObliquo.gif' }
 
 
 
