@@ -10,6 +10,7 @@ export default defineEventHandler((event) => {
     { id: 7, num: 'Exercício 7', nome: 'Leg press 45°', sets: 3, reps: '12', rest: '50"', grupo: '', obs: 'Colocar os bancos e pés bem mais alto; cuidado com a lombar.', img: 'https://m.leandrocesar.com/exe/leg45.gif' },
     { id: 8, num: 'Exercício 8', nome: 'Agachamento Livre (HBL)', sets: 3, reps: '10', rest: '50"', grupo: '', obs: '', img: 'https://m.leandrocesar.com/exe/backSquat.gif' },
     { id: 9, num: 'Exercício 9', nome: 'Panturrilha aparelho em pé', sets: 3, reps: '20 + 20 curtas', rest: '50"', grupo: '', obs: 'Fazer 20 repetições + 20 curtas.', img: 'https://m.leandrocesar.com/exe/panturrilhaAparelho.gif' },
+    { id: 10, num: 'Exercício 9', nome: 'Extensão lombar no aparelho', sets: 3, reps: '15 a 20', rest: '50"', grupo: '', obs: '', img: 'https://m.leandrocesar.com/exe/extensaoLombar.png' },
 
 
     // { num: 'Exercício 1', nome: 'Agachamento sumô', sets: 4, reps: '15', rest: '40"', grupo: '', obs: '', img: 'https://m.leandrocesar.com/img/preImagem.png' },
