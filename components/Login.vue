@@ -30,9 +30,6 @@ const popView = () => {
   } return true
 }
 
-
-
-
 const photoOpen = ref(false);
 function openPhoto() {
   photoOpen.value = !photoOpen.value;
@@ -40,10 +37,17 @@ function openPhoto() {
 
 const colorMode = useColorMode()
 
-colorMode.preference = "system";
 function theme() {
   colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
+} 
+
+const colorCookie = useCookie('colorCookie')
+if (colorMode.value === "dark") {
+  colorCookie.value = "darkCookie"  
+} else {
+ colorCookie.value = "lightCookie"
 }
+colorCookie.value === "darkCookie" ? colorMode.value = "dark" : colorMode.value ="light"
 
 
 </script>
