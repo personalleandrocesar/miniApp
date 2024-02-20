@@ -54,8 +54,16 @@ function menu() {
 const colorMode = useColorMode()
 
 function theme() {
-    colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
+  colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
+} 
+
+const colorCookie = useCookie('colorCookie')
+if (colorMode.value === "dark") {
+  colorCookie.value = "darkCookie"  
+} else {
+ colorCookie.value = "lightCookie"
 }
+colorCookie.value === "darkCookie" ? colorMode.value = "dark" : colorMode.value ="light"
 
 const state = useCookie('state')
 state.value = state.value
