@@ -224,7 +224,7 @@ export default {
   width: 35px;
   transition: all 0.2s ease-in-out 0s;
   bottom: 6rem;
-  left: 1.5rem;
+  right:1.5rem;
   border-radius: 9px;
   cursor: pointer;
   z-index: 100;
@@ -243,7 +243,7 @@ export default {
     width: 35px;
     transition: all 0.2s ease-in-out 0s;
     bottom: 3.5rem;
-    left: 1.5rem;
+    right:1.5rem;
     border-radius: 9px;
     cursor: pointer;
     z-index: 100;
