@@ -5,13 +5,22 @@ const senha = ref('')
 
 const client = await useFetch('/api/users')
 
+const dontUser = ref(false)
+
 
 const enterClicked = () => {
-  if (user.value === client.data.value[user.value].usuario && senha.value === client.data.value[user.value].sennha) {
-    return navigateTo(`/user/${client.data.value[user.value].usuario}`)
-  } return navigateTo("/")
+  const userData = client.data.value[user.value];
 
-}
+  if (userData && user.value === userData.usuario && senha.value === userData.sennha) {
+    return navigateTo(`/user/${userData.usuario}`);
+  } else {
+    dontUser.value = true;
+    setTimeout(() => {
+      dontUser.value = false;
+    }, 5000); // Define um timeout para limpar a mensagem após 2 segundos
+    return;
+  }
+};
 
 const trigger = () => {
   enterClicked()
@@ -50,6 +59,7 @@ if (colorMode.value === "dark") {
 colorCookie.value === "darkCookie" ? colorMode.value = "dark" : colorMode.value ="light"
 
 
+
 </script>
 <template>
   <header>
@@ -69,6 +79,9 @@ colorCookie.value === "darkCookie" ? colorMode.value = "dark" : colorMode.value 
         <h4>Usuário</h4>
         <input type="email" @keyup.enter="trigger" name="" id="usuario" placeholder="Digite seu usuário" autofocus
           v-model="user" required>
+      </div>
+      <div v-if='dontUser'>
+        Usuário não encontrado!
       </div>
       <div>
         <h4>Senha</h4>
