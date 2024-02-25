@@ -8,7 +8,7 @@
   --vt-c-black-soft: #0f172a;
   --vt-c-black-mute: #282828;
 
-  --vt-c-indigo: #0f172a;
+  --vt-c-indigo: #0f172a83;
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
@@ -16,8 +16,8 @@
   --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
 
   --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: #0f172adc;
-  --vt-c-text-light-3: #0f172a90;
+  --vt-c-text-light-2: #0f172a83;
+  --vt-c-text-light-3: #0f172a83;
   --vt-c-text-dark-0: var(--vt-c-white);
   --vt-c-text-dark-1: var(--vt-c-white-mute);
   --vt-c-text-dark-2: rgb(90, 90, 90);
@@ -47,7 +47,9 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+
 }
+
 
 body {
   color: var(--vt-c-text-light-1);
@@ -80,7 +82,7 @@ body h4 {
 }
 
 .dark-mode body h4 {
-  font-size: 1rem;
+  font-size: .9rem;
   color: var(--vt-c-white-soft);
 }
 
@@ -92,8 +94,9 @@ body h5 {
 }
 
 .dark-mode body h5 {
-  font-size: 1rem;
+  font-size: .7rem;
   color: var(--vt-c-white-soft);
+  text-transform: uppercase;
 }
 .icon {
   zoom: .9;
@@ -106,7 +109,7 @@ body h2 {
 }
 
 .dark-mode body h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--vt-c-text-dark-0);
   text-transform: uppercase;
 }
@@ -127,6 +130,10 @@ body span {
   font-size: .8rem;
   text-transform: uppercase;
 }
+.dark-mode span {
+  font-size: .8rem;
+  text-transform: uppercase;
+}
 
 body a {
   text-decoration: none;
@@ -134,12 +141,26 @@ body a {
   transition: all .4s linear;
 }
 
+.dark-mode body a {
+  text-decoration: none;
+  color: var(--vt-c-text-dark-1);
+  transition: all .4s linear;
+}
+
 body code {
   border-left: 3px solid;
   padding-left: 10px;
+  margin: 0 0 10px 0px;
+    padding-left: 10px;
   color: var(--vt-c-text-light-3);
 }
 
+.dark-mode code {
+  border-left: 3px solid;
+  margin: 0 0 10px 0px;
+  padding-left: 10px;
+  color: var(--vt-c-text-dark-3);
+}
 body input {
   background: var(--vt-c-white-soft);
   color: var(--vt-c-text-light-3);
@@ -162,12 +183,6 @@ body input::placeholder {
   color: var(--vt-c-text-dark-1);
 }
 
-.dark-mode code {
-  border-left: 3px solid;
-  margin: 0 0 10px 0px;
-  padding-left: 10px;
-  color: var(--vt-c-text-dark-3);
-}
 
 
 
@@ -180,11 +195,7 @@ body input::placeholder {
 
 
 
-.dark-mode body a {
-  text-decoration: none;
-  color: var(--vt-c-text-dark-1);
-  transition: all .4s linear;
-}
+
 
 .sepia-mode body {
   background-color: #f1e7d0;
