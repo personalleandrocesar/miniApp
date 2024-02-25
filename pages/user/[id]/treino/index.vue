@@ -229,7 +229,6 @@ b {
 }
 
 .square {  
-  color:var(--color-text);
   background-color: #34d39910;
   backdrop-filter: blur(5px);
   overflow-x: auto;
@@ -270,7 +269,6 @@ b {
   border: none;
 }
 .story {  
-  color:var(--color-text);
   background-color: #34d39910;
   backdrop-filter: blur(5px);
   overflow-x: auto;
@@ -300,7 +298,6 @@ b {
   width: 100%;
 }
 .main-div-one h3 {
-  color: var(--color-text);
 }
 .main-div-one .icon{
   zoom: 1.4;
@@ -309,7 +306,6 @@ b {
 }
 .main-div-two H3 {
   margin-left: 20px;
-  color: var(--color-text);
   
 }
 .main-div-two h4 {
@@ -321,7 +317,6 @@ display: flex;
 }
 .main-div-two h5 {
   font-size: .9rem;
-  color: var(--color-text);
 }
 .main-div-two a div {
   border-right: 2px solid #34d39920;

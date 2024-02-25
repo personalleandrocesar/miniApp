@@ -246,7 +246,6 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  color: #34d399;
   padding: 0;
   margin: 10px 0 ;
   font-weight: bold;
@@ -256,10 +255,8 @@ ul {
   border: solid .1px #34d39980;
   padding: 0px 8px;
   border-radius: 6px;
-  color: var(--color-text);
   margin: 3px 0 ;
   margin: 5px 0rem;
-  color: var(--color-text);
   background-color: #34d39910;
   border: solid .2px #34d39910;
 }
@@ -281,7 +278,6 @@ ul {
 
 .main-div-two ul li:nth-child(2n -1) {
   background-color: #34d39920;
-  color: var(--color-text);
 }
 
 .alternate {
@@ -291,15 +287,13 @@ ul {
   margin: 1rem 15px 0 15px;
   border: solid .1px #34d39980;
   border-radius: 8px;
-  color: var(--color-text);
 }
 
 .alternate span{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: .2rem 3px;
-  padding: .5rem 0 .3rem 0;
+  padding: .8rem 0 .5rem 0;
   width: 100%;  font-size: .8rem;
   border-radius: 8px;
   /* border: solid .2px #34d39930; */
@@ -310,8 +304,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: .2rem 3px;
-  padding: .5rem 0 .3rem 0;
+  padding: .8rem 0 .5rem 0;
   width: 100%;  font-size: .8rem;
   border-radius: 8px;
   background-color: #34d39950;
@@ -330,7 +323,6 @@ ul {
 .alternateGrid {
   background-color: #34d39930;
   font-weight: bold;
-  border: solid .1px #34d39980;
   color: #34d399;  
 }
 .alternateList {
@@ -429,16 +421,13 @@ h2 {
   border: solid .1px #34d39980;
   padding: 3px 8px;
   border-radius: 6px;
-  color: var(--color-text);
   margin: 3px 0 ;
   margin: 5px 0rem;
-  color: var(--color-text);
   background-color: #34d39920;
   border: solid .2px #34d39910;
 }
 .main-div-tree ul li:nth-child(2n -1) {
   background-color: #34d39950;
-  color: var(--color-text);
 }
 .main-div-tree .icon{
   zoom: 2;
@@ -507,7 +496,7 @@ h2 {
   align-items: center;
 }
 .button span:nth-child(1){
-  background-color: #34d399;
+  background-color: #34d3996c;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -519,7 +508,7 @@ h2 {
   border: .5px solid #34d39980; 
 }
 .button span:nth-child(2){
-  background-color: #34d399;
+  background-color: #34d3996c;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -540,13 +529,11 @@ border: 2px solid #2cd3db;
   align-items: center;
   font-weight: bold;
   margin: 0 25px 10px 25px;
-  color: var(--color-text);
   
 }
 
 .icon {
   zoom: 1.4;
-  color: #fadb41;
   margin-top: -2.5px;
 }
 

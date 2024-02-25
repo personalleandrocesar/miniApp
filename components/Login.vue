@@ -80,7 +80,7 @@ colorCookie.value === "darkCookie" ? colorMode.value = "dark" : colorMode.value 
         <input type="email" @keyup.enter="trigger" name="" id="usuario" placeholder="Digite seu usuário" autofocus
           v-model="user" required>
       </div>
-      <div v-if='dontUser'>
+      <div v-if='dontUser' class="dont-user">
         Usuário não encontrado!
       </div>
       <div>
@@ -158,7 +158,7 @@ export default {
   flex-wrap: wrap;
   height: 100px;
   width: 100px;
-  box-shadow: 0px 7px 20px #34d399;
+  box-shadow: 0px 7px 20px #00dc82;
   margin: 6.5rem 0 1.5rem 0;
   border-radius: 8px;
   z-index: 10;
@@ -222,7 +222,7 @@ export default {
   line-height: 1.5rem;
   margin: .2rem 1.5rem;
   font-weight: 700;
-  color: #34d399;
+  color: #00dc82;
 }
 
 
@@ -345,6 +345,10 @@ a:hover {
   color: #34d399;
 }
 
+.dont-user{
+  color: red;
+}
+
 .login {
   transition: all .4s linear;
   border: solid 1px #34d39910;
@@ -372,8 +376,7 @@ a:hover {
 
 .login:hover {
   cursor: pointer;
-  background-color: #34d39910;
-  color: #34d39980;
+  color: #00dc82;
 
   padding-inline: 16px;
   padding-top: 7px;

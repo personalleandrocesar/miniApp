@@ -296,7 +296,6 @@ body {
 .info h5{
     text-align: center;
     margin-top: -5px;
-    color: var(--color-text);
     font-weight: 700;
 }
 
@@ -370,8 +369,6 @@ justify-content: flex-start
 
 
 .squareRes {
-  
-    color: var(--color-text);
     backdrop-filter: blur(5px);
     overflow-x: auto;
     display: flex;
@@ -425,7 +422,6 @@ color: #34d399;
 
 
 .square {
-    color: var(--color-text);
     background-color: #34d39910;
     backdrop-filter: blur(5px);
     overflow-x: auto;
@@ -456,7 +452,6 @@ color: #34d399;
 
 .main-div-two H3 {
     margin-left: 20px;
-    color: var(--color-text);
 }
 
 .main-div-two h4 {
@@ -464,7 +459,6 @@ color: #34d399;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--color-text);
 }
 
 .main-div-two a div {
@@ -503,9 +497,6 @@ color: #34d399;
   width: 100%;
 }
 
-.main-div-one h3{
-    color: var(--color-text);
-}
 .main-div-one .icon{
    zoom: 1.4;
   color: #34d399;
@@ -513,7 +504,6 @@ color: #34d399;
 }
 
 .conf {  
-  color:var(--color-text);
   height: 80px;
     backdrop-filter: blur(15px);
   overflow-x: auto;
