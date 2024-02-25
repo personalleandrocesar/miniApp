@@ -58,7 +58,19 @@ if (colorMode.value === "dark") {
 }
 colorCookie.value === "darkCookie" ? colorMode.value = "dark" : colorMode.value ="light"
 
+const passView = ref(true)
+const pass = ref('password')
+function swPass() {
+  passView.value = !passView.value;
 
+  pass.value = 'password'
+};
+
+function swText() {
+  passView.value = !passView.value;
+
+  pass.value = 'text'
+};
 
 </script>
 <template>
@@ -80,13 +92,16 @@ colorCookie.value === "darkCookie" ? colorMode.value = "dark" : colorMode.value 
         <input type="email" @keyup.enter="trigger" name="" id="usuario" placeholder="Digite seu usuário" autofocus
           v-model="user" required>
       </div>
-      <div v-if='dontUser'>
+      <div v-if='dontUser' class="dont-user">
         Usuário não encontrado!
       </div>
-      <div>
-        <h4>Senha</h4>
-        <input type="password" @keyup.enter="trigger" name="" id="senha" placeholder="Digite sua senha" v-model="senha">
-      </div>
+      <div class="senha">
+          <h4>Senha</h4>
+          <input v-bind:type="pass" @keyup.enter="trigger" name="" id="senha" placeholder="Digite sua senha" v-model="senha">
+          <Icon @click="swText" v-if="passView" name="ph:lock-key-open-bold" id="password-icon"/>
+          <Icon @click="swPass" v-else name="ph:lock-key-fill" id="password-icon"/>
+        
+        </div>
       <div>
         <NuxtLink class='login' @click="enterClicked">
           LOGIN
@@ -149,7 +164,16 @@ export default {
   z-index: 1;
   flex-wrap: wrap;
 }
+.senha {
+  position: relative;
+}
 
+#password-icon {
+  position: absolute;
+  top: 60px;
+  right: 12px;
+  z-index: 10000;
+}
 .logo {
   display: flex;
   justify-content: center;
@@ -285,6 +309,10 @@ export default {
   align-items: flex-start;
 }
 
+.dont-user {
+  color: red;
+  font-weight: 900;
+}
 
 input {
   margin: .5rem auto;
