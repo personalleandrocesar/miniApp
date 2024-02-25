@@ -68,7 +68,6 @@ div {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: var(--color-text);
 
 }
 .content {
@@ -76,7 +75,6 @@ div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--color-text);
 
 }
 
@@ -84,7 +82,6 @@ img {
   background-color: #edf2f7;
   height: 80px;
   width: 80px;
-  color: #718096;
   box-shadow: 1px 7px 20px #718096;
   margin: 1.5rem;
   border-radius: 7px;
@@ -107,14 +104,12 @@ img:hover {
     background-color: #edf2f7;
     height: 80px;
     width: 80px;
-    color: #718096;
     box-shadow: 1px 7px 20px #ff1900;
     border-radius: 7px;
     filter: grayscale(0%);
     z-index: 10;
 }
 .logoDeep:hover {
-    color: #718096;
     box-shadow: 1px 7px 20px #ff1900;
     filter: grayscale(0%);
   }
@@ -128,14 +123,12 @@ img:hover {
     background-color: #edf2f7;
     height: 80px;
     width: 80px;
-    color: #718096;
     box-shadow: 1px 7px 20px #99bca6;
     border-radius: 7px;
     z-index: 10;
     filter: grayscale(0%);
   }
   .logoIsa:hover {
-    color: #718096;
     box-shadow: 1px 7px 20px #99bca6;
     filter: grayscale(0%);
     
