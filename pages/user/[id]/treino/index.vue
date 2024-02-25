@@ -297,8 +297,6 @@ b {
   justify-content: space-around;
   width: 100%;
 }
-.main-div-one h3 {
-}
 .main-div-one .icon{
   zoom: 1.4;
   color: #34d399;
