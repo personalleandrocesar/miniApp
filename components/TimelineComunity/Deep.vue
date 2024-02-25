@@ -83,8 +83,8 @@
 .button-client {
     margin-top: 2.5rem;
     transition: all .4s linear;
-    border: solid 1px #00DC8210;
-    box-shadow: 0 0px 5px #00DC8210;
+    border: solid 1px #34d39910;
+    box-shadow: 0 0px 5px #34d39910;
     border-radius: 8px;
     cursor: pointer;
     width: 160px;
@@ -100,8 +100,8 @@
     padding-bottom: 8px;
 }
 .button-client:hover {
-    background-color: #00DC8210;
-    color: #00DC8280;
+    background-color: #34d39910;
+    color: #34d39980;
 }
 .button-client .icon{
     margin-top: -5px;
@@ -109,7 +109,7 @@
     transition: all 0.2s ease-in-out 0s;
 }
 .button-client:hover .icon{
-    color: #00DC8280;
+    color: #34d39980;
 }
 
 .center {

@@ -158,7 +158,7 @@ export default {
   flex-wrap: wrap;
   height: 100px;
   width: 100px;
-  box-shadow: 0px 7px 20px #00dc82;
+  box-shadow: 0px 7px 20px #34d399;
   margin: 6.5rem 0 1.5rem 0;
   border-radius: 8px;
   z-index: 10;
@@ -168,7 +168,7 @@ export default {
   height: 100px;
   width: 100px;
   border-radius: 8px;
-  border: #00dc82 2px solid;
+  border: #34d399 2px solid;
   z-index: 100;
   opacity: 1;
 
@@ -178,8 +178,8 @@ export default {
 .button-client {
   margin: 2rem 1.5rem;
   transition: all .4s linear;
-  border: solid 1px #00DC8210;
-  box-shadow: 0 0px 5px #00DC8210;
+  border: solid 1px #34d39910;
+  box-shadow: 0 0px 5px #34d39910;
   border-radius: 8px;
   cursor: pointer;
   width: 160px;
@@ -196,8 +196,8 @@ export default {
 }
 
 .button-client:hover {
-  background-color: #00DC8210;
-  color: #00DC8280;
+  background-color: #34d39910;
+  color: #34d39980;
 }
 
 .button-client .icon {
@@ -207,7 +207,7 @@ export default {
 }
 
 .button-client:hover .icon {
-  color: #00DC8280;
+  color: #34d39980;
 }
 
 .head-name {
@@ -222,7 +222,7 @@ export default {
   line-height: 1.5rem;
   margin: .2rem 1.5rem;
   font-weight: 700;
-  color: #00DC82;
+  color: #34d399;
 }
 
 
@@ -241,8 +241,8 @@ export default {
   border-radius: 9px;
   cursor: pointer;
   z-index: 100;
-  border: solid 1px #00DC8210;
-  box-shadow: 0 0px 5px #00DC8240;
+  border: solid 1px #34d39910;
+  box-shadow: 0 0px 5px #34d39940;
   backdrop-filter: blur(100px)
 }
 .whats {
@@ -260,12 +260,12 @@ export default {
     border-radius: 9px;
     cursor: pointer;
     z-index: 100;
-    border: solid 1px #00DC8210;
-    box-shadow: 0 0px 5px #00DC8240;
+    border: solid 1px #34d39910;
+    box-shadow: 0 0px 5px #34d39940;
     backdrop-filter: blur(100px)
 }
 .whats .icon, .color .icon {
-  color: #00DC8290;
+  color: #34d39990;
   zoom: 1;
 }
 
@@ -289,8 +289,8 @@ export default {
 input {
   margin: .5rem auto;
   transition: all .4s linear;
-  border: solid 1px #00DC8210;
-  box-shadow: 0 0px 5px #00DC8210;
+  border: solid 1px #34d39910;
+  box-shadow: 0 0px 5px #34d39910;
   border-radius: 8px;
   text-align: left;
   line-height: 18px;
@@ -310,19 +310,19 @@ input {
 }
 
 input:focus {
-  border-color: #00DC8280;
+  border-color: #34d39980;
 }
 
 input:focus-visible {
-  border: solid 1px #00DC82;
+  border: solid 1px #34d399;
 }
 
 input:active {
-  border-color: #00DC8280;
+  border-color: #34d39980;
 }
 
 input:hover {
-  background-color: #00DC8210;
+  background-color: #34d39910;
 }
 
 h4 {
@@ -342,13 +342,13 @@ a {
 }
 
 a:hover {
-  color: #00DC82;
+  color: #34d399;
 }
 
 .login {
   transition: all .4s linear;
-  border: solid 1px #00DC8210;
-  box-shadow: 0 0px 5px #00DC8210;
+  border: solid 1px #34d39910;
+  box-shadow: 0 0px 5px #34d39910;
   border-radius: 8px;
   cursor: pointer;
   width: 160px;
@@ -372,8 +372,8 @@ a:hover {
 
 .login:hover {
   cursor: pointer;
-  background-color: #00DC8210;
-  color: #00DC8280;
+  background-color: #34d39910;
+  color: #34d39980;
 
   padding-inline: 16px;
   padding-top: 7px;
@@ -398,11 +398,11 @@ a:hover {
   bottom: 10px;
   width: 80%;
   left: 50%;
-  background-color: #00DC82 ;
+  background-color: #34d399 ;
   color: #fff;
   margin-left: -40%;
   font-weight: 900;
-  border: solid 1px #00DC8210;
+  border: solid 1px #34d39910;
   z-index: 10000;
 }
 
@@ -416,8 +416,8 @@ a:hover {
 .button-pop {
   margin: 7px auto 0 auto;
   transition: all .4s linear;
-  border: solid 1px #00DC82;
-  box-shadow: 0 0px 5px #00DC8210;
+  border: solid 1px #34d399;
+  box-shadow: 0 0px 5px #34d39910;
   border-radius: 8px;
   cursor: pointer;
   width: 50%;

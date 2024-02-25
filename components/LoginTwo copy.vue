@@ -127,7 +127,7 @@ export default {
   height: 100px;
   width: 100px;
   color: #718096;
-  box-shadow: 0px 7px 20px #00dc82;
+  box-shadow: 0px 7px 20px #34d399;
   margin: 6.5rem 0 1.5rem 0;
   border-radius: 8px;
   z-index: 10;
@@ -137,7 +137,7 @@ export default {
   height: 100px;
   width: 100px;
   border-radius: 8px;
-  border: #00dc82 2px solid;
+  border: #34d399 2px solid;
   z-index: 100;
   opacity: 1;
 

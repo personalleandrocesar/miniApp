@@ -125,7 +125,7 @@ function menu() {
                                   <h3>
                                 </h3>
                                 
-                                <h4 style="font-weight: 900;color: #00dc82; zoom: 1.6; margin-bottom: -5px;">
+                                <h4 style="font-weight: 900;color: #34d399; zoom: 1.6; margin-bottom: -5px;">
                                   %G
                                 </h4>
                                 <!--
@@ -195,7 +195,7 @@ function menu() {
   height: 60px;
   width: 60px;
   color: #718096;
-  box-shadow: 1px 7px 20px #00dc82;
+  box-shadow: 1px 7px 20px #34d399;
   margin: 1.5rem;
   border-radius: 7px;
   z-index: 10;
@@ -205,7 +205,7 @@ function menu() {
   height: 60px;
   width: 60px;
   border-radius: 7px;
-  border: #00dc82 2px solid;
+  border: #34d399 2px solid;
   z-index: 100;
   opacity: 1;
 
@@ -243,11 +243,11 @@ function menu() {
 }
 
 .logo-nav-bar img {
-  box-shadow: 1px 7px 20px #00dc82;
+  box-shadow: 1px 7px 20px #34d399;
   height: 300px;
   width: 300px;
   border-radius: 7px;
-  border: #00dc82 2px solid;
+  border: #34d399 2px solid;
   z-index: 100;
   opacity: 1;
 
@@ -265,7 +265,7 @@ function menu() {
 }
 
 .button-client:hover {
-  color: #00dc8280;
+  color: #34d39980;
 }
 
 .button-client .icon {
@@ -276,7 +276,7 @@ function menu() {
 }
 
 .button-client:hover .icon {
-  color: #00dc8280;
+  color: #34d39980;
 }
 
 .head-name {
@@ -294,7 +294,7 @@ function menu() {
   margin: .2rem 1.5rem;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: #00dc82;
+  color: #34d399;
 
 }
 
@@ -321,7 +321,7 @@ function menu() {
   height: 40px;
   width: 40px;
   color: #718096;
-  box-shadow: 1px 1px 15px #00dc8250;
+  box-shadow: 1px 1px 15px #34d39950;
   transition: all 0.2s ease-in-out 0s;
   margin: 0rem 1.5rem;
   border-radius: 50%;
@@ -329,9 +329,9 @@ function menu() {
 }
 
 .whats:hover {
-  background-color: #00dc8210;
-  color: #00dc8280;
-  box-shadow: 1px 1px 15px #00dc8280;
+  background-color: #34d39910;
+  color: #34d39980;
+  box-shadow: 1px 1px 15px #34d39980;
 }
 
 .body-timeline {
@@ -354,7 +354,7 @@ function menu() {
   height: 100px;
   width: 100px;
   color: #718096;
-  box-shadow: 1px 7px 20px #00dc82;
+  box-shadow: 1px 7px 20px #34d399;
   margin: 1.5rem;
   border-radius: 7px;
 }
@@ -363,7 +363,7 @@ function menu() {
   height: 100px;
   width: 100px;
   border-radius: 7px;
-  border: #00dc82 2px solid;
+  border: #34d399 2px solid;
   opacity: 1;
 
 }
@@ -379,7 +379,7 @@ function menu() {
 }
 
 .link:hover {
-  color: #00dc82;
+  color: #34d399;
 }
 
 .section-title {
@@ -390,7 +390,7 @@ function menu() {
 }
 
 .section-subtitle {
-  color: #00dc82;
+  color: #34d399;
   text-align: left;
   margin: -10px 1.5rem 15px;
   font-weight: 800;
@@ -438,9 +438,9 @@ function menu() {
   padding: 5px;
   border-radius: 8px;
   margin: 1px auto;
-  color: #00dc82;
-  background-color: #00dc8210;
-  border: solid .2px #00dc8210;
+  color: #34d399;
+  background-color: #34d39910;
+  border: solid .2px #34d39910;
 }
 
 .menu-square div .icon {
@@ -483,10 +483,10 @@ function menu() {
   width: 100%;
   padding: 5px;
   margin: 1px auto;
-  border: solid 1px #00dc8210;
+  border: solid 1px #34d39910;
   color: var(--color-text);
   background-color: #fff;
-  border-bottom: solid .2px #00dc8230;
+  border-bottom: solid .2px #34d39930;
   border-top: solid .2px transparent;
 }
 
@@ -511,10 +511,10 @@ function menu() {
 }
 
 .menu-button:hover {
-  background-color: #00dc8210;
-  color: #00dc8280;
+  background-color: #34d39910;
+  color: #34d39980;
   cursor: pointer;
-  border-bottom: solid .2px #00dc8250;
+  border-bottom: solid .2px #34d39950;
 }
 
 
@@ -529,9 +529,9 @@ function menu() {
   width: 250px;
   margin-left: -125px;
   transition: all .4s linear;
-  border: solid 1px #00dc8210;
+  border: solid 1px #34d39910;
   color: var(--color-text);
-  box-shadow: 0 0px 5px #00dc8210;
+  box-shadow: 0 0px 5px #34d39910;
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
@@ -553,8 +553,8 @@ function menu() {
 }
 
 .logout:hover {
-  background-color: #00dc8210;
-  color: #00dc8280;
+  background-color: #34d39910;
+  color: #34d39980;
   cursor: pointer;
 }
 
@@ -575,13 +575,13 @@ function menu() {
 }
 
 .main-div-two .icon {
-  color: #00dc82;
+  color: #34d399;
   zoom: 1.3;
 }
 
 .main-square {
   color: var(--color-text);
-  background-color: #00dc8210;
+  background-color: #34d39910;
   backdrop-filter: blur(5px);
   overflow-x: auto;
   display: flex;
@@ -590,19 +590,19 @@ function menu() {
   align-items: center;
   margin: 1.5rem;
   border-radius: 8px;
-  border: .1px solid #00dc8210;
+  border: .1px solid #34d39910;
   line-height: 1.4;
   transition: all .4s;
-  border: 2px solid #00dc8210;
+  border: 2px solid #34d39910;
 }
 
 .main-square:hover {
-  background-color: #00dc8230;
-  border-right: 1px solid #00dc8230;
+  background-color: #34d39930;
+  border-right: 1px solid #34d39930;
   
-    border: 2px solid #00dc8220;
-    border-top: 2px solid #00dc8240;
-    border-bottom: 2px solid #00dc8240;
+    border: 2px solid #34d39920;
+    border-top: 2px solid #34d39940;
+    border-bottom: 2px solid #34d39940;
 }
 
 .main-square div:nth-child(1) {
@@ -629,7 +629,7 @@ function menu() {
 }
 
 .main-div-two a div {
-  border-right: 2px solid #00dc8210;
+  border-right: 2px solid #34d39910;
   margin-left: 15px;
   height: 100px;
   display: flex;
@@ -662,7 +662,7 @@ function menu() {
 
 .main-div-one .icon {
   zoom: 1.3;
-  color: #00dc82;
+  color: #34d399;
   margin-top: -2.5px;
 }
 
@@ -682,7 +682,7 @@ function menu() {
 }
 
 .main-div-tree .icon {
-  color: #00dc82;
+  color: #34d399;
   margin-top: -4px;
 }
 
@@ -736,7 +736,7 @@ function menu() {
     height: 100px;
     width: 100px;
     border-radius: 7px;
-    border: #00dc82 2px solid;
+    border: #34d399 2px solid;
 
   }
 
@@ -780,8 +780,8 @@ function menu() {
     margin: 1.5rem auto;
     cursor: pointer;
     transition: all .4s linear;
-    border: solid 1px #00dc8210;
-    box-shadow: 0 0px 5px #00dc8210;
+    border: solid 1px #34d39910;
+    box-shadow: 0 0px 5px #34d39910;
     background-color: #fff;
     cursor: pointer;
     text-align: center;
@@ -802,13 +802,13 @@ function menu() {
   .button-plus a:hover {
     margin: 0rem auto;
     transition: all .4s linear;
-    border: solid 1px #00dc8210;
-    box-shadow: 0 0px 5px #00dc8210;
+    border: solid 1px #34d39910;
+    box-shadow: 0 0px 5px #34d39910;
     background-color: #edf2f7;
     cursor: pointer;
     width: 100px;
     text-align: center;
-    color: #00dc8280;
+    color: #34d39980;
     line-height: 18px;
     border-radius: 8px;
     transition: all 0.2s ease-in-out 0s;

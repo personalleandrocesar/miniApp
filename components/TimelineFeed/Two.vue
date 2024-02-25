@@ -60,7 +60,7 @@
   flex-wrap: wrap;
   text-align: left;
   margin: 0rem 1.5rem -.5rem 1.5rem;
-  border: #00DC8220 2px solid;
+  border: #34d39920 2px solid;
   border-radius: 8px;
 }
 
@@ -71,7 +71,7 @@
   align-items: center;
   flex-wrap: wrap;
   height: 100px;
-  box-shadow: 1px 7px 20px #00DC8230;
+  box-shadow: 1px 7px 20px #34d39930;
   margin: 3rem 0rem;
   border-radius: 7px;
 }
@@ -79,7 +79,7 @@
 .main-logo img {
   height: 100px;
   border-radius: 7px;
-  border: #00DC82 2px solid;
+  border: #34d399 2px solid;
   opacity: 1;
   
 }
@@ -100,8 +100,8 @@
 
 a {
     transition: all .4s linear;
-    border: solid 1px #00DC8210;
-    box-shadow: 0 0px 5px #00DC8210;
+    border: solid 1px #34d39910;
+    box-shadow: 0 0px 5px #34d39910;
     border-radius: 8px;
     cursor: pointer;
     width: 120px;
@@ -127,14 +127,14 @@ a {
   }
   
   a:hover {
-    background-color: #00DC8210;
+    background-color: #34d39910;
 }
   a:hover .icon {
   transform:translateX(4px)
 }
 
 .nav:hover a {
-    color: #00DC8280;
+    color: #34d39980;
 
 }
 </style>

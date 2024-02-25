@@ -81,7 +81,7 @@ span {
   flex-wrap: wrap;
   text-align: left;
   margin: 0rem 1.5rem 7rem 1.5rem;
-  border: #00DC8220 2px solid;
+  border: #34d39920 2px solid;
   border-radius: 8px;
 }
 
@@ -93,7 +93,7 @@ span {
   flex-wrap: wrap;
   height: 100px;
   width: 100px;
-  box-shadow: 1px 7px 20px #00DC8230;
+  box-shadow: 1px 7px 20px #34d39930;
   margin: 3rem 1.5rem;
   border-radius: 7px;
 }
@@ -103,7 +103,7 @@ span {
   height: 100px;
   width: 100px;
   border-radius: 7px;
-  border: #00DC82 2px solid;
+  border: #34d399 2px solid;
   opacity: 1;
 
 }
@@ -116,7 +116,7 @@ span {
   text-decoration: underline;
 }
 .link:hover {
-  color: #00DC82;
+  color: #34d399;
 }
 
 </style>

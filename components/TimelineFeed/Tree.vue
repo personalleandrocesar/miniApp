@@ -78,7 +78,7 @@ function theme() {
   flex-wrap: wrap;
   text-align: left;
   margin: 0rem 1.5rem -.5rem 1.5rem;
-  border: #00DC8220 2px solid;
+  border: #34d39920 2px solid;
   border-radius: 8px;
 }
 
@@ -101,7 +101,7 @@ function theme() {
 .main-logo img {
   height: 100px;
   border-radius: 7px;
-  border: #00DC82 2px solid;
+  border: #34d399 2px solid;
   opacity: 1;
   
 }

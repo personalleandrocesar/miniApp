@@ -59,19 +59,19 @@ a {
 }
 
 a:hover {
-    border-bottom: solid 2px #00DC82;
-    color: #00DC82;
+    border-bottom: solid 2px #34d399;
+    color: #34d399;
     cursor: pointer;
 }
 
 a.router-link-exact-active {
-    border-bottom: solid 2px #00DC82;
-    color: #00DC82;
+    border-bottom: solid 2px #34d399;
+    color: #34d399;
 }
 
 .aActivee {
-    border-bottom: solid 2px #00DC82;
-    color: #00DC82;
+    border-bottom: solid 2px #34d399;
+    color: #34d399;
     
 }
 
