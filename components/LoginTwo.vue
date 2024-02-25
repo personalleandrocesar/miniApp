@@ -1,45 +1,80 @@
 <script setup>
 import { ref } from 'vue';
-const user = ref('')
-const senha = ref('')
+import { useRouter } from 'vue-router';
 
-const client = await useFetch('/api/usernames')
+const user = ref('');
+const senha = ref('');
 
+const client = ref([
+  {
+    "_id": "65da22604c58ec0c23e2c512",
+    "name": "Thayane",
+    "nameFull": "Thayane Carvalho",
+    "user": "thayanecarvalho",
+    "email": "thayane.carvalhoo@gmail.com",
+    "password": "thayane@Th",
+    "photo": "https://m.leandrocesar.com/img/thayanecarvalho.jpeg",
+    "service": "Consultoria on-line",
+    "periodStart": "08/01/24",
+    "periodEnd": "08/02/24",
+    "status": "Ativo",
+    "target": "Hipertrofia",
+    "time": "60 min.",
+    "day": "5 dias"
+  },
+]);
+
+const router = useRouter();
+
+const dontUser = ref(false);
 
 const enterClicked = () => {
-  if (user.value === client.data.value[user.value].usuario && senha.value === client.data.value[user.value].sennha) {
-    return navigateTo(`/user/${client.data.value[user.value].usuario}`)
-  } return navigateTo("/")
+  const userData = client.value.find(item => item.user === user.value && item.password === senha.value);
 
-}
+  if (userData) {
+    return router.push(`/user/${userData.user}`);
+  } else {
+    dontUser.value = true;
+    setTimeout(() => {
+      dontUser.value = false;
+    }, 5000); // Define um timeout para limpar a mensagem após 5 segundos
+    return;
+  }
+};
 
 const trigger = () => {
-  enterClicked()
-}
+  enterClicked();
+};
 
-const pop = useCookie('pop', { maxAge: 7889400 })
-pop.value = pop.value
+const pop = useCookie('pop', { maxAge: 7889400 });
+pop.value = pop.value;
 
 const popOk = () => {
-  return pop.value = "ok"
-}
+  return pop.value = "ok";
+};
 
 const popView = () => {
   if (pop.value === 'ok') {
-    return false
-  } return true
-}
-
-
-
+    return false;
+  } return true;
+};
 
 const photoOpen = ref(false);
 function openPhoto() {
   photoOpen.value = !photoOpen.value;
 }
 
+const colorMode = useColorMode();
+
+function theme() {
+  colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
+}
+
+const colorCookie = useCookie('colorCookie');
+colorCookie.value = colorMode.value === "dark" ? "darkCookie" : "lightCookie";
 
 </script>
+
 <template>
   <header>
     <div class="head-logo" id="sobre">
@@ -51,23 +86,25 @@ function openPhoto() {
       <div class="name">
         app.leandrocesar.com
       </div>
-      <h3>Área do cliente</h3>
+      <h3>Área do Cliente</h3>
     </div>
     <div class="inputs">
       <div>
         <h4>Usuário</h4>
-        <input type="email" @keyup.enter="trigger" name="" id="usuario" placeholder="Digite seu usuário" autofocus
+        <input type="text" @keyup.enter="trigger" name="" id="usuario" placeholder="Digite seu usuário" autofocus
           v-model="user" required>
+      </div>
+      <div v-if='dontUser' class="dont-user">
+        Usuário não encontrado!
       </div>
       <div>
         <h4>Senha</h4>
-        <input type="password" @keyup.enter="trigger" name="" id="senha" placeholder="Digite sua senha" v-model="senha" required>
+        <input type="password" @keyup.enter="trigger" name="" id="senha" placeholder="Digite sua senha" v-model="senha">
       </div>
       <div>
-        <NuxtLink class='login' @click="enterClicked">
+        <button class='login' @click="enterClicked">
           LOGIN
-          <Icon name="solar:login-3-bold" />
-        </NuxtLink>
+        </button>
       </div>
       <div class="lost">
         <a href="https://api.whatsapp.com/send?phone=5521936184024%20&text=Ol%C3%A1%20professor!%20Esqueci%20o%20meu%20email%20e%20minha%20senha!"
@@ -76,25 +113,29 @@ function openPhoto() {
         </a>
       </div>
     </div>
-
-
   </header>
   <footer>
-
     <div v-if="popView()" class="pop-up">
       <p>
-        Neste app, usamos cookies e outras tecnológicas semelhantes para melhorar sua
-        experiência de navegação e facilitar certos tipos de vantagens de navegação. Ao clicar no botão abaixo, você está
-        ciente e concordando com estas funcionalidades.
+        Neste app, usamos cookies e outras tecnologias semelhantes para melhorar sua
+        experiência de navegação e facilitar certos tipos de vantagens de navegação.
+        Ao clicar no botão abaixo, você está ciente e concordando com estas funcionalidades.
       </p>
       <div class="button-pop" @click="popOk()">PROSSEGUIR!</div>
     </div>
-    <a class="whats"
+  </footer>
+  <div class="color">
+    <a @click="theme()" :model="$colorMode.value">
+      <Icon
+        :name="colorMode.value === 'dark' ? 'line-md:moon-filled-to-sunny-filled-loop-transition' : 'line-md:sunny-filled-loop-to-moon-alt-filled-loop-transition'" />
+    </a>
+  </div>
+  <div class="whats">
+    <a
       href="https://api.whatsapp.com/send?phone=5521936184024%20&text=Ol%C3%A1%20Leandro%20Cesar,%20fiquei%20interessado(a)%20nos%20seus%20Servi%C3%A7os,%20me%20chamo%20">
       <Icon name="ic:outline-whatsapp" />
-    </a>
-  </footer>
-</template>
+  </a>
+</div></template>
 <script>
 export default {
   methods: {
@@ -122,11 +163,9 @@ export default {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #edf2f7;
   height: 100px;
   width: 100px;
-  color: #718096;
-  box-shadow: 0px 7px 20px #34d399;
+  box-shadow: 0px 7px 20px #00dc82;
   margin: 6.5rem 0 1.5rem 0;
   border-radius: 8px;
   z-index: 10;
@@ -146,13 +185,12 @@ export default {
 .button-client {
   margin: 2rem 1.5rem;
   transition: all .4s linear;
-  border: solid 1px #095D6210;
-  box-shadow: 0 0px 5px #095D6210;
+  border: solid 1px #34d39910;
+  box-shadow: 0 0px 5px #34d39910;
   border-radius: 8px;
   cursor: pointer;
   width: 160px;
   text-align: center;
-  color: #718096;
   line-height: 18px;
   border-radius: 8px;
   font-weight: 600;
@@ -165,19 +203,18 @@ export default {
 }
 
 .button-client:hover {
-  background-color: #095D6210;
-  color: #095D6280;
+  background-color: #34d39910;
+  color: #34d39980;
 }
 
 .button-client .icon {
   margin-top: -5px;
   margin-right: 5px;
-  color: #718096;
   transition: all 0.2s ease-in-out 0s;
 }
 
 .button-client:hover .icon {
-  color: #095D6280;
+  color: #34d39980;
 }
 
 .head-name {
@@ -188,45 +225,59 @@ export default {
   flex-wrap: wrap;
 }
 
-.head-name h3 {
-  color: #718096;
-}
-
-
 .name {
   font-size: 1.6rem;
   line-height: 1.5rem;
   margin: .2rem 1.5rem;
   font-weight: 700;
-  color: #095D62;
+  color: #00dc82;
 }
 
 
-.whats {
+.color {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   position: fixed;
-  background-color: #edf2f7;
-  height: 40px;
-  width: 40px;
-  color: #718096;
-  box-shadow: 1px 1px 15px #095D6250;
+  height: 35px;
+  width: 35px;
+  transition: all 0.2s ease-in-out 0s;
+  bottom: 6rem;
+  right: 1.5rem;
+  border-radius: 9px;
+  cursor: pointer;
+  z-index: 100;
+  border: solid 1px #34d39910;
+  box-shadow: 0 0px 5px #34d39940;
+  backdrop-filter: blur(100px)
+}
+
+.whats {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  height: 35px;
+  width: 35px;
   transition: all 0.2s ease-in-out 0s;
   bottom: 3.5rem;
   right: 1.5rem;
-  border-radius: 50%;
+  border-radius: 9px;
   cursor: pointer;
   z-index: 100;
+  border: solid 1px #34d39910;
+  box-shadow: 0 0px 5px #34d39940;
+  backdrop-filter: blur(100px)
 }
 
-.whats:hover {
-  background-color: #095D6210;
-  color: #095D6280;
-  box-shadow: 1px 1px 15px #095D6280;
-  z-index: 100;
+.whats .icon,
+.color .icon {
+  color: #34d39990;
+  zoom: 1;
 }
 
 .inputs {
@@ -249,11 +300,10 @@ export default {
 input {
   margin: .5rem auto;
   transition: all .4s linear;
-  border: solid 1px #095D6210;
-  box-shadow: 0 0px 5px #095D6210;
+  border: solid 1px #34d39910;
+  box-shadow: 0 0px 5px #34d39910;
   border-radius: 8px;
   text-align: left;
-  color: #718096;
   line-height: 18px;
   border-radius: 8px;
   font-weight: 600;
@@ -266,69 +316,59 @@ input {
 
 }
 
-input::placeholder {
-  color: #71809690;
-}
-
 .inputs div h4 {
   text-align: left;
 }
 
 input:focus {
-  background-color: #095D6210;
-  border-color: #095D6280;
-  color: #718096;
+  border-color: #34d39980;
 }
 
 input:focus-visible {
-  background-color: #095D6210;
-  border: solid 1px #095D62;
-  color: #718096;
+  border: solid 1px #34d399;
 }
 
 input:active {
-  background-color: #095D6210;
-  border-color: #095D6280;
-  color: #718096;
+  border-color: #34d39980;
 }
 
 input:hover {
-  background-color: #095D6210;
+  background-color: #34d39910;
 }
 
 h4 {
-  color: #718096;
   transition: all .3s linear;
   margin: 0 0 0 10px;
   text-align: left;
 }
 
 h4:nth-child(1) {
-  color: #718096;
   transition: all .3s linear;
   margin: 20px 0 0 10px;
 }
 
 a {
   text-decoration: none;
-  color: #718096;
   transition: all .4s linear;
-  margin-top: -5px;
 }
 
 a:hover {
-  color: #095D62;
+  color: #34d399;
+}
+
+.dont-user {
+  color: red;
+  font-weight: 900;
 }
 
 .login {
   transition: all .4s linear;
-  border: solid 1px #095D6210;
-  box-shadow: 0 0px 5px #095D6210;
+  border: solid 1px #34d39910;
+  box-shadow: 0 0px 5px #34d39910;
   border-radius: 8px;
   cursor: pointer;
   width: 160px;
   text-align: center;
-  color: #718096;
   line-height: 18px;
   border-radius: 8px;
   font-weight: 600;
@@ -348,8 +388,7 @@ a:hover {
 
 .login:hover {
   cursor: pointer;
-  background-color: #095D6210;
-  color: #095D6280;
+  color: #00dc82;
 
   padding-inline: 16px;
   padding-top: 7px;
@@ -368,17 +407,17 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: 10px 20px 20px 20px;
-  background-color: #095D62;
-  color: #fff;
   padding: 15px;
   border-radius: 8px;
   position: fixed;
   bottom: 10px;
   width: 80%;
   left: 50%;
+  background-color: #34d399;
+  color: #fff;
   margin-left: -40%;
   font-weight: 900;
-  border: solid 1px #095D6210;
+  border: solid 1px #34d39910;
   z-index: 10000;
 }
 
@@ -386,25 +425,21 @@ a:hover {
   font-weight: 700;
   font-weight: 900;
   font-size: 13px;
+  color: #fff;
 }
 
 .button-pop {
   margin: 7px auto 0 auto;
   transition: all .4s linear;
-  border: solid 1px #095D62;
-  box-shadow: 0 0px 5px #095D6210;
+  border: solid 1px #34d399;
+  box-shadow: 0 0px 5px #34d39910;
   border-radius: 8px;
   cursor: pointer;
   width: 50%;
   text-align: center;
-  background-color: #095D62;
-  color: #fff;
-  border: solid 1px #fff;
+  border: solid 1px #dadada;
 }
 
 .button-pop:hover {
-  background-color: #fff;
-  border: solid 1px #095D6210;
-  color: #095D62;
-}
-</style>  
+  border: solid 1px #fff;
+}</style>

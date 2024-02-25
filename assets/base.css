@@ -58,45 +58,71 @@ body {
   font-size: 15px;
 }
 
+.dark-mode body {
+  background-color: var(--vt-c-black-soft);
+  color: var(--vt-c-text-dark-1);
+}
+
 body p {
   font-size: 1rem;
   color: var(--vt-c-text-light-2);
 }
 
-body h4 {
+.dark-mode body p {
   font-size: 1rem;
-  color: var(--vt-c-text-light-3);
+  color: var(--vt-c-text-dark-1);
 }
+
+body h4 {
+  font-size: .9rem;
+  color: var(--vt-c-text-light-1);
+  text-transform: uppercase;
+}
+
+.dark-mode body h4 {
+  font-size: 1rem;
+  color: var(--vt-c-white-soft);
+}
+
 
 body h5 {
-  font-size: 1rem;
-  color: var(--vt-c-text-light-2);
+  font-size: .7rem;
+  color: var(--vt-c-text-light-1);
+  text-transform: uppercase;
 }
 
+.dark-mode body h5 {
+  font-size: 1rem;
+  color: var(--vt-c-white-soft);
+}
 .icon {
   zoom: .9;
 }
 
 body h2 {
   font-size: 1.3rem;
-  color: var(--vt-c-white-soft);
+  color: var(--vt-c-text-light-1);
   text-transform: uppercase;
 }
+
+.dark-mode body h2 {
+  font-size: 1rem;
+  color: var(--vt-c-text-dark-0);
+  text-transform: uppercase;
+}
+
 body h3 {
   font-size: 1rem;
   color: var(--vt-c-text-light-1);
   text-transform: uppercase;
 }
-body h4 {
-  font-size: .9rem;
-  color: var(--vt-c-text-light-1);
+
+.dark-mode body h3 {
+  font-size: 1rem;
+  color: var(--vt-c-text-dark-0);
   text-transform: uppercase;
 }
-body h5 {
-  font-size: .7rem;
-  color: var(--vt-c-text-light-1);
-  text-transform: uppercase;
-}
+
 body span {
   font-size: .8rem;
   text-transform: uppercase;
@@ -124,10 +150,7 @@ body input::placeholder {
   color: var(--vt-c-text-light-3);
 }
 
-.dark-mode body {
-  background-color: var(--vt-c-black-soft);
-  color: var(--vt-c-text-dark-1);
-}
+
 
 .dark-mode body input {
   background: var(--vt-c-black-soft);
@@ -146,30 +169,16 @@ body input::placeholder {
   color: var(--vt-c-text-dark-3);
 }
 
-.dark-mode body p {
-  font-size: 1rem;
-  color: var(--vt-c-text-dark-1);
-}
 
-.dark-mode body h5 {
-  font-size: 1rem;
-  color: var(--vt-c-white-soft);
-}
-.dark-mode body h4 {
-  font-size: 1rem;
-  color: var(--vt-c-white-soft);
-}
+
+
 .dark-mode body ul li {
   font-size: 1rem;
   color: var(--vt-c-white-soft);
 }
 
 
-.dark-mode body h3 {
-  font-size: 1rem;
-  color: var(--vt-c-text-dark-0);
-  text-transform: uppercase;
-}
+
 
 .dark-mode body a {
   text-decoration: none;
