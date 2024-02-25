@@ -347,6 +347,7 @@ a:hover {
 
 .dont-user{
   color: red;
+  font-weight: 900;
 }
 
 .login {
