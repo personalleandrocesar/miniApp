@@ -73,8 +73,37 @@ function theme() {
 const colorCookie = useCookie('colorCookie');
 colorCookie.value = colorMode.value === "dark" ? "darkCookie" : "lightCookie";
 
-</script>
+const passView = ref(true)
+const pass = ref('password')
+function swPass ()  {
+  passView.value = !passView.value;
 
+  pass.value = 'password'
+};
+
+function swText () {
+  passView.value = !passView.value;
+
+  pass.value = 'text'
+};
+
+
+</script>
+<!-- <script>
+export default {
+  mounted() {
+const passwordInput = document.getElementById('senha');
+const passwordIcon = document.getElementById('password-icon');
+
+passwordIcon.addEventListener('click', function () {
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+  } else {
+    passwordInput.type = 'password';
+  }})
+  }
+}
+</script> -->
 <template>
   <header>
     <div class="head-logo" id="sobre">
@@ -97,9 +126,12 @@ colorCookie.value = colorMode.value === "dark" ? "darkCookie" : "lightCookie";
       <div v-if='dontUser' class="dont-user">
         Usuário não encontrado!
       </div>
-      <div>
+      <div class="senha">
         <h4>Senha</h4>
-        <input type="password" @keyup.enter="trigger" name="" id="senha" placeholder="Digite sua senha" v-model="senha">
+        <input v-bind:type="pass" @keyup.enter="trigger" name="" id="senha" placeholder="Digite sua senha" v-model="senha">
+        <Icon @click="swText" v-if="passView" name="ph:lock-key-open-bold" id="password-icon"/>
+        <Icon @click="swPass" v-else name="ph:lock-key-fill" id="password-icon"/>
+        
       </div>
       <div>
         <button class='login' @click="enterClicked">
@@ -136,16 +168,6 @@ colorCookie.value = colorMode.value === "dark" ? "darkCookie" : "lightCookie";
       <Icon name="ic:outline-whatsapp" />
   </a>
 </div></template>
-<script>
-export default {
-  methods: {
-    scrollToTop() {
-      window.scrollTo(0, 0);
-    }
-  },
-}
-
-</script>
 
 <style scoped>
 .head-logo {
@@ -155,6 +177,17 @@ export default {
   align-items: center;
   z-index: 1;
   flex-wrap: wrap;
+}
+
+.senha {
+  position: relative;
+}
+
+#password-icon {
+  position: absolute;
+  top: 60px;
+  right: 12px;
+  z-index: 10000;
 }
 
 .logo {
@@ -310,7 +343,8 @@ input {
   transition: all 0.2s ease-in-out 0s;
   height: 34px;
   font-size: 14px;
-  padding-inline: 16px;
+  padding-inline-start: 12px;
+  padding-inline-end: 36px;
   padding-top: 8px;
   padding-bottom: 8px;
 
@@ -345,6 +379,10 @@ h4 {
 h4:nth-child(1) {
   transition: all .3s linear;
   margin: 20px 0 0 10px;
+}
+
+.senha::placeholder {
+  padding-right: 20px;
 }
 
 a {

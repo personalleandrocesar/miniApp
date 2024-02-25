@@ -1,4 +1,10 @@
 /* color palette from <https://github.com/vuejs/theme> */
+
+/* 
+00dc82 // mais forte
+
+34d399 médio 
+*/
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #e2e8f0;
