@@ -58,20 +58,6 @@ if (colorMode.value === "dark") {
 }
 colorCookie.value === "darkCookie" ? colorMode.value = "dark" : colorMode.value ="light"
 
-const passView = ref(true)
-const pass = ref('password')
-function swPass() {
-  passView.value = !passView.value;
-
-  pass.value = 'password'
-};
-
-function swText() {
-  passView.value = !passView.value;
-
-  pass.value = 'text'
-};
-
 
 
 </script>
@@ -94,16 +80,13 @@ function swText() {
         <input type="email" @keyup.enter="trigger" name="" id="usuario" placeholder="Digite seu usuário" autofocus
           v-model="user" required>
       </div>
-      <div v-if='dontUser' class="dont-user">
+      <div v-if='dontUser'>
         Usuário não encontrado!
       </div>
-      <div class="senha">
-          <h4>Senha</h4>
-          <input v-bind:type="pass" @keyup.enter="trigger" name="" id="senha" placeholder="Digite sua senha" v-model="senha">
-          <Icon @click="swText" v-if="passView" name="ph:lock-key-open-bold" id="password-icon"/>
-          <Icon @click="swPass" v-else name="ph:lock-key-fill" id="password-icon"/>
-        
-        </div>
+      <div>
+        <h4>Senha</h4>
+        <input type="password" @keyup.enter="trigger" name="" id="senha" placeholder="Digite sua senha" v-model="senha">
+      </div>
       <div>
         <NuxtLink class='login' @click="enterClicked">
           LOGIN
@@ -167,18 +150,6 @@ export default {
   flex-wrap: wrap;
 }
 
-.senha {
-  position: relative;
-}
-
-#password-icon {
-  position: absolute;
-  top: 60px;
-  right: 12px;
-  z-index: 10000;
-}
-
-
 .logo {
   display: flex;
   justify-content: center;
@@ -197,7 +168,7 @@ export default {
   height: 100px;
   width: 100px;
   border-radius: 8px;
-  border: #34d399 2px solid;
+  border: #00dc82 2px solid;
   z-index: 100;
   opacity: 1;
 
@@ -207,8 +178,8 @@ export default {
 .button-client {
   margin: 2rem 1.5rem;
   transition: all .4s linear;
-  border: solid 1px #34d39910;
-  box-shadow: 0 0px 5px #34d39910;
+  border: solid 1px #00DC8210;
+  box-shadow: 0 0px 5px #00DC8210;
   border-radius: 8px;
   cursor: pointer;
   width: 160px;
@@ -225,8 +196,8 @@ export default {
 }
 
 .button-client:hover {
-  background-color: #34d39910;
-  color: #34d39980;
+  background-color: #00DC8210;
+  color: #00DC8280;
 }
 
 .button-client .icon {
@@ -236,7 +207,7 @@ export default {
 }
 
 .button-client:hover .icon {
-  color: #34d39980;
+  color: #00DC8280;
 }
 
 .head-name {
@@ -251,7 +222,7 @@ export default {
   line-height: 1.5rem;
   margin: .2rem 1.5rem;
   font-weight: 700;
-  color: #00dc82;
+  color: #00DC82;
 }
 
 
@@ -270,8 +241,8 @@ export default {
   border-radius: 9px;
   cursor: pointer;
   z-index: 100;
-  border: solid 1px #34d39910;
-  box-shadow: 0 0px 5px #34d39940;
+  border: solid 1px #00DC8210;
+  box-shadow: 0 0px 5px #00DC8240;
   backdrop-filter: blur(100px)
 }
 .whats {
@@ -289,12 +260,12 @@ export default {
     border-radius: 9px;
     cursor: pointer;
     z-index: 100;
-    border: solid 1px #34d39910;
-    box-shadow: 0 0px 5px #34d39940;
+    border: solid 1px #00DC8210;
+    box-shadow: 0 0px 5px #00DC8240;
     backdrop-filter: blur(100px)
 }
 .whats .icon, .color .icon {
-  color: #34d39990;
+  color: #00DC8290;
   zoom: 1;
 }
 
@@ -318,8 +289,8 @@ export default {
 input {
   margin: .5rem auto;
   transition: all .4s linear;
-  border: solid 1px #34d39910;
-  box-shadow: 0 0px 5px #34d39910;
+  border: solid 1px #00DC8210;
+  box-shadow: 0 0px 5px #00DC8210;
   border-radius: 8px;
   text-align: left;
   line-height: 18px;
@@ -339,19 +310,19 @@ input {
 }
 
 input:focus {
-  border-color: #34d39980;
+  border-color: #00DC8280;
 }
 
 input:focus-visible {
-  border: solid 1px #34d399;
+  border: solid 1px #00DC82;
 }
 
 input:active {
-  border-color: #34d39980;
+  border-color: #00DC8280;
 }
 
 input:hover {
-  background-color: #34d39910;
+  background-color: #00DC8210;
 }
 
 h4 {
@@ -371,18 +342,13 @@ a {
 }
 
 a:hover {
-  color: #34d399;
-}
-
-.dont-user{
-  color: red;
-  font-weight: 900;
+  color: #00DC82;
 }
 
 .login {
   transition: all .4s linear;
-  border: solid 1px #34d39910;
-  box-shadow: 0 0px 5px #34d39910;
+  border: solid 1px #00DC8210;
+  box-shadow: 0 0px 5px #00DC8210;
   border-radius: 8px;
   cursor: pointer;
   width: 160px;
@@ -406,7 +372,8 @@ a:hover {
 
 .login:hover {
   cursor: pointer;
-  color: #00dc82;
+  background-color: #00DC8210;
+  color: #00DC8280;
 
   padding-inline: 16px;
   padding-top: 7px;
@@ -431,11 +398,11 @@ a:hover {
   bottom: 10px;
   width: 80%;
   left: 50%;
-  background-color: #34d399 ;
+  background-color: #00DC82 ;
   color: #fff;
   margin-left: -40%;
   font-weight: 900;
-  border: solid 1px #34d39910;
+  border: solid 1px #00DC8210;
   z-index: 10000;
 }
 
@@ -449,8 +416,8 @@ a:hover {
 .button-pop {
   margin: 7px auto 0 auto;
   transition: all .4s linear;
-  border: solid 1px #34d399;
-  box-shadow: 0 0px 5px #34d39910;
+  border: solid 1px #00DC82;
+  box-shadow: 0 0px 5px #00DC8210;
   border-radius: 8px;
   cursor: pointer;
   width: 50%;
