@@ -1,14 +1,16 @@
 <script setup>
 import { ref } from 'vue';
+const route = useRoute()
 
 useHead({
     titleTemplate: 'Clientes | NEX_WOD',
 });
+const us = ref('')
+const Users = await useFetch(`http://191.101.70.209:4000/users/leandrocesar`);
+const item = Users.data.value[0].user;
+console.log(Users);
 
-const route = useRoute();
-const Users = await useFetch('http://191.101.70.209:4000/users');
-const item = Users.data.value;
-
+console.log(item);
 const submit = () => {
     return navigateTo('http://191.101.70.209:4000/user')
 };
@@ -21,19 +23,31 @@ function addClient() {
 </script>
 <template>
     <div class="bar-top">
+        <h1>Dados do Usuário</h1>
+        usuário:
+        <input type="text" name="us" id="us" v-bind="us">
+        <form action="http://191.101.70.209:4000/fs" method="post">
+            
+
+            <h2>Exercício 1</h2>
+            <label for="exercise1Num">Nome do arquivo:</label>
+            <input type="text" id="exercise1Num" name="file"><br><br>
         
+            <label for="exercise1Nome">Nome:</label>
+            <input type="text" id="exercise1Nome" name="exercise1Nome"><br><br>
+        
+            <label for="exercise1Sets">Sets:</label>
+            <input type="text" id="exercise1Sets" name="exercise1Sets"><br><br>
+        
+            <label for="exercise1Reps">Repetições:</label>
+            <input type="text" id="exercise1Reps" name="exercise1Reps"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+{{ item }}
     </div>
 </template>
 
 <style scoped>
-body {
-    background: var(--color-background);
-}
-
-
-.bar-top {
-    height: ;
-}
 
 .main-client {
     z-index: 1;
