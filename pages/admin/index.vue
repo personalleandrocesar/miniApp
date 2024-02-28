@@ -1,51 +1,57 @@
-<script setup>
-import { ref } from 'vue';
-const route = useRoute()
-
-useHead({
-    titleTemplate: 'Clientes | NEX_WOD',
-});
-const us = ref('')
-const Users = await useFetch(`http://191.101.70.209:4000/users/leandrocesar`);
-const item = Users.data.value[0].user;
-console.log(Users);
-
-console.log(item);
-const submit = () => {
-    return navigateTo('http://191.101.70.209:4000/user')
-};
-
-const add = ref(true)
-function addClient() {
-    add.value = !add.value
-}
-
-</script>
 <template>
-    <div class="bar-top">
-        <h1>Dados do Usuário</h1>
-        usuário:
-        <input type="text" name="us" id="us" v-bind="us">
-        <form action="http://191.101.70.209:4000/fs" method="post">
-            
-
-            <h2>Exercício 1</h2>
-            <label for="exercise1Num">Nome do arquivo:</label>
-            <input type="text" id="exercise1Num" name="file"><br><br>
-        
-            <label for="exercise1Nome">Nome:</label>
-            <input type="text" id="exercise1Nome" name="exercise1Nome"><br><br>
-        
-            <label for="exercise1Sets">Sets:</label>
-            <input type="text" id="exercise1Sets" name="exercise1Sets"><br><br>
-        
-            <label for="exercise1Reps">Repetições:</label>
-            <input type="text" id="exercise1Reps" name="exercise1Reps"><br><br>
-            <input type="submit" value="Enviar">
+    <div>
+        <h1>Formulário</h1>
+        <form @submit.prevent="submitForm">
+            <div v-for="(item, index) in items" :key="index">
+                <h2>Item {{ index + 1 }}</h2>
+                <label>Exercise</label>
+                <input type="text" v-model="item.exercise">
+                <br>
+                <label>Sets</label>
+                <input type="text" v-model="item.sets">
+                <br>
+                <label>Reps</label>
+                <input type="text" v-model="item.reps">
+            </div>
+            <button type="button" @click.keyEnter="addItem">Add Item</button>
+            <button type="submit">Submit</button>
         </form>
-{{ item }}
     </div>
 </template>
+
+<script setup>
+import { ref } from 'vue';
+const items = ref([
+    { exercise: '', sets: '', reps: '' }
+    
+]);
+
+function addItem() {
+    items.value.push({ exercise: '', sets: '', reps: '' });
+}
+
+async function submitForm() {
+  try {
+    const response = await fetch('http://191.101.70.209:4000/fs', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(items.value),
+});
+    localStorage.setItem('item', JSON.stringify(items.value))
+    
+    if (response.ok) {
+        console.log('Data sent successfully');
+    } else {
+        console.error('Failed to send data');
+    }
+  } catch (error) {
+    console.error('Error sending data:', error);
+}
+}
+</script>
+
 
 <style scoped>
 
