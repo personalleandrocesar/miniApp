@@ -13,7 +13,7 @@
                 <label>Reps</label>
                 <input type="text" v-model="item.reps">
             </div>
-            <button type="button" @click.keyEnter="addItem">Add Item</button>
+            <button type="button" @keyup.enter="addItem" @click="addItem">Add Item</button>
             <button type="submit">Submit</button>
         </form>
     </div>
@@ -50,6 +50,13 @@ async function submitForm() {
     console.error('Error sending data:', error);
 }
 }
+onMounted(() => {
+    const storedItems = JSON.parse(localStorage.getItem('item'));
+    if (storedItems) {
+        items.value = storedItems;
+    }
+});
+
 </script>
 
 
