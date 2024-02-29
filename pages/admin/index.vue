@@ -14,6 +14,7 @@
                 <input type="text" v-model="item.reps">
             </div>
             <button type="button" @keyup.enter="addItem" @click="addItem">Add Item</button>
+            <button type="button" @keyup.enter="deleteItem" @click="deleteItem">clear</button>
             <button type="submit">Submit</button>
         </form>
     </div>
@@ -30,16 +31,24 @@ function addItem() {
     items.value.push({ exercise: '', sets: '', reps: '' });
 }
 
+function deleteItem() {
+    items.value = ([
+        { exercise: '', sets: '', reps: '' }
+
+    ])}
+
+
+
 async function submitForm() {
   try {
-    const response = await fetch('http://191.101.70.209:4000/fs', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(items.value),
-});
-    localStorage.setItem('item', JSON.stringify(items.value))
+      const response = await fetch('http://191.101.70.209:4000/fs', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(items.value),
+        });
+        localStorage.setItem('item', JSON.stringify(items.value));
     
     if (response.ok) {
         console.log('Data sent successfully');
@@ -56,6 +65,10 @@ onMounted(() => {
         items.value = storedItems;
     }
 });
+
+onUpdated(() => {
+ localStorage.setItem('item', JSON.stringify(items.value));
+})
 
 </script>
 
