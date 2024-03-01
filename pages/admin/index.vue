@@ -2,44 +2,68 @@
     <div>
         <h1>Formulário</h1>
         <form @submit.prevent="submitForm">
-            <div v-for="(item, index) in items" :key="index">
+            <div class="div-form" v-for="(item, index) in items" :key="index">
                 <h2>Item {{ index + 1 }}</h2>
-                <label>id </label>
-                <input type="text" :value.v-model="item.id = index +1" readonly>
-                <br>
-                <label>Numero </label>
-                <input type="text" :value.v-model="item.num = 'Exercício ' + (index < 9 ? '' + (index + 1) : (index + 1))" readonly>
-                <br>
-                <label>Exercícios </label>
-                <input type="text" v-model="item.nome">
-                <br>
-                <label>Séries </label>
-                <input type="text" v-model="item.sets">
-                <br>
-                <label>Repetições </label>
-                <input type="text" v-model="item.reps">
-                <br>
-                <label>Grupo </label>
-                <input type="text" v-model="item.grupo" readonly>
-                <br>
-                <label for="story">observações </label>
-                <br>
-                <textarea id="story" name="story" rows="5" cols="33" v-model="item.obs">
-                It was a dark and stormy night...
-                </textarea>
-                <br>
-                <label>Imagem </label>
-                <input type="text" v-model="item.img" @keyup.enter="addItem">
-                <br>    
-                <button type="button" @click="deleteItem(index)">Delete</button>            </div>
-                <br>    
-                <br>    
+            <div>
 
-            <button type="button" @keyup.enter="addItem" @click="addItem">Add Item</button>
+                    <br>
+                    <div>
+
+                        <label>id </label>
+                        <input type="text" :value.v-model="item.id = index +1" readonly>
+                    </div>
+                    <div>
+
+                        <label>Numero </label>
+                        <input type="text" :value.v-model="item.num = 'Exercício ' + (index < 9 ? '' + (index + 1) : (index + 1))" readonly>
+                    </div>
+                <div>
+
+                    <label>Exercícios </label>
+                    <input type="text" v-model="item.nome">
+                </div>
+                <div>
+
+                    <label>Séries </label>
+                    <input type="text" v-model="item.sets">
+                </div>
+                <div>
+
+                    <label>Repetições </label>
+                    <input type="text" v-model="item.reps">
+                </div>
+                <div>
+
+                    <label>Grupo </label>
+                    <input type="text" v-model="item.grupo" readonly>
+                </div>
+                <div>
+                    <label for="story">observações </label>
+                    <textarea id="story" name="story" rows="2" cols="30" v-model="item.obs"></textarea>
+                </div>
+                <br>
+                <div>
+
+                    <label>Imagem </label>
+                    <input type="text" v-model="item.img" @keyup.enter="addItem">
+                </div>
+                <br>    
+                <button type="button" @click="deleteItem(index)">Delete</button>            
+            </div>
+        </div>
+        <br>    
+        <br>    
+        
+        <button type="button" @keyup.enter="addItem" @click="addItem">Add Item</button>
             <button type="button" @keyup.enter="clear" @click="clear">Resetar</button>
             <button type="submit">Submit</button>
         </form>
+        <br>
+        <br>
+        <br>
     </div>
+
+    
 </template>
 
 <script setup>
@@ -173,6 +197,27 @@ onUpdated(() => {
 .users-details-box:nth-child(2) {
     border: solid 3px #8D00AB90;
     background-color: #8D00AB20;
+}
+
+.div-form {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div-form div{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+textarea#story {
+    background-color: var(--vt-c-white-soft);
 }
 
 
