@@ -4,17 +4,39 @@
         <form @submit.prevent="submitForm">
             <div v-for="(item, index) in items" :key="index">
                 <h2>Item {{ index + 1 }}</h2>
-                <label>Exercise</label>
-                <input type="text" v-model="item.exercise">
+                <label>id </label>
+                <input type="text" :value.v-model="item.id = index +1" readonly>
                 <br>
-                <label>Sets</label>
+                <label>Numero </label>
+                <input type="text" :value.v-model="item.num = 'Exercício ' + (index < 9 ? '' + (index + 1) : (index + 1))" readonly>
+                <br>
+                <label>Exercícios </label>
+                <input type="text" v-model="item.nome">
+                <br>
+                <label>Séries </label>
                 <input type="text" v-model="item.sets">
                 <br>
-                <label>Reps</label>
+                <label>Repetições </label>
                 <input type="text" v-model="item.reps">
-            </div>
+                <br>
+                <label>Grupo </label>
+                <input type="text" v-model="item.grupo" readonly>
+                <br>
+                <label for="story">observações </label>
+                <br>
+                <textarea id="story" name="story" rows="5" cols="33" v-model="item.obs">
+                It was a dark and stormy night...
+                </textarea>
+                <br>
+                <label>Imagem </label>
+                <input type="text" v-model="item.img" @keyup.enter="addItem">
+                <br>    
+                <button type="button" @click="deleteItem(index)">Delete</button>            </div>
+                <br>    
+                <br>    
+
             <button type="button" @keyup.enter="addItem" @click="addItem">Add Item</button>
-            <button type="button" @keyup.enter="deleteItem" @click="deleteItem">clear</button>
+            <button type="button" @keyup.enter="clear" @click="clear">Resetar</button>
             <button type="submit">Submit</button>
         </form>
     </div>
@@ -23,17 +45,21 @@
 <script setup>
 import { ref } from 'vue';
 const items = ref([
-    { exercise: '', sets: '', reps: '' }
+    { id: '', num: '', nome: '', sets: '', reps: '', rest: '', grupo: '', obs: '', img: ``  }
     
 ]);
 
 function addItem() {
-    items.value.push({ exercise: '', sets: '', reps: '' });
+    items.value.push({ id: '', num: '', nome: '', sets: '', reps: '', rest: '50"', grupo: '', obs: '', img: ``   });
 }
 
-function deleteItem() {
+function deleteItem(index) {
+    items.value.splice(index, 1);
+}
+
+function clear() {
     items.value = ([
-        { exercise: '', sets: '', reps: '' }
+        { id: '', num: '', nome: '', sets: '', reps: '', rest: '', grupo: '', obs: '', img: ``   }
 
     ])}
 
@@ -65,6 +91,8 @@ onMounted(() => {
         items.value = storedItems;
     }
 });
+
+
 
 onUpdated(() => {
  localStorage.setItem('item', JSON.stringify(items.value));
