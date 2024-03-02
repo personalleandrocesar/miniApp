@@ -50,7 +50,7 @@
                 <div>
 
                     <label>Imagem </label>
-                    <input type="text" :value="item.img = `'https://m.leandrocesar.com/img/${item.photo}.gif`" readonly>
+                    <input type="text" :value="item.img = `https://m.leandrocesar.com/img/${item.photo}.gif`" readonly>
                 </div>
                 <br>    
                 <button type="button" @click="deleteItem(index)">Delete</button>            
@@ -68,7 +68,7 @@
 
         <table >
             <thead>
-                <th>Index</th>
+                <th></th>
                 <th>Exercício</th>
                 <th>Sets</th>
                 <th>Reps</th>
@@ -76,7 +76,7 @@
                 <th>Link</th>
             </thead>
             <tbody v-for="(item, index) in items" :key="index">
-                <th>{{ item.num }}</th>
+                <th>{{ item.id }}</th>
                 <td><input type="text" v-model="item.nome"></td>
                 <td><input type="text" v-model="item.sets"></td>
                 <td> <input type="text" v-model="item.reps"></td>
