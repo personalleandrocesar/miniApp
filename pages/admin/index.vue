@@ -20,12 +20,12 @@
                 <div>
 
                     <label>Exercício </label>
-                    <input type="text" v-model="item.nome">
+                    <input type="text" v-model="item.nome" autofocus>
                 </div>
                 <div>
 
                     <label>Séries </label>
-                    <input type="text" v-model="item.sets">
+                    <input type="number" v-model="item.sets">
                 </div>
                 <div>
 
@@ -34,8 +34,8 @@
                 </div>
                 <div>
 
-                    <label>Grupo </label>
-                    <input type="text" v-model="item.grupo" readonly>
+                    <label>Intervalo </label>
+                    <input type="text" v-model="item.rest" min="0" max="120" step="5">
                 </div>
                 <div>
                     <label for="story">observações </label>
@@ -45,63 +45,66 @@
                 <div>
 
                     <label>Photo </label>
-                    <input type="text" v-model="item.photo" @keyup.enter="addItem">
+                    <input type="" v-model="item.photo" @keyup.enter="addItem" @keyup.delete="deleteItem(index)" >
                 </div>
                 <div>
 
                     <label>Imagem </label>
-                    <input type="text" :value="item.img = `https://m.leandrocesar.com/img/${item.photo}.gif`" readonly>
+                    <input type="text" :value="item.img = `https://m.leandrocesar.com/exe/${item.photo}.gif`" readonly>
                 </div>
                 <br>    
-                <button type="button" @click="deleteItem(index)">Delete</button>            
+                <button type="button" @click="deleteItem(index)">X</button>            
             </div>
         </div>
         <br>    
         <br>    
         
         <button type="button" @keyup.enter="addItem" @click="addItem">Add Item</button>
-            <button type="button" @keyup.enter="clear" @click="clear">Resetar</button>
-            <button type="submit">Submit</button>
+            <button type="button" @keyup.delete="clear" @click="clear">Resetar</button>
+            <!-- <button type="submit">Submit</button> -->
         </form>
         <br>
         <br>
-
+        
         <table >
             <thead>
                 <th></th>
                 <th>Exercício</th>
                 <th>Sets</th>
                 <th>Reps</th>
+                <th>Intervalo</th>
                 <th>Observações</th>
                 <th>Link</th>
             </thead>
             <tbody v-for="(item, index) in items" :key="index">
                 <th>{{ item.id }}</th>
                 <td><input type="text" v-model="item.nome"></td>
-                <td><input type="text" v-model="item.sets"></td>
+                <td><input type="number" v-model="item.sets"></td>
                 <td> <input type="text" v-model="item.reps"></td>
+                <td> <input type="number" id="quantity" name="quantity" v-model="item.rest" min="0" max="120" step="5"></td>
                 <td><textarea id="story" name="story" rows="2" cols="30" v-model="item.obs"></textarea></td>
                 <td>{{ item.img }}</td>
-                <button type="button" @click="deleteItem(index)">Delete</button>    
+                <button type="button" @click="deleteItem(index)">X</button>    
             </tbody>
         </table>
         
         <br>
     </div>
 
+    <button type="button" @keyup.delete="clear" @click="clear">Resetar</button>
     
 </template>
 
 <script setup>
 import { ref } from 'vue';
 const items = ref([
-    { id: '', num: '', nome: '', sets: '', reps: '', rest: '', grupo: '', obs: '', photo:'', img: 'https://m.leandrocesar.com/img/${item.photo}.gif`'}
+    { id: '', num: '', nome: '', sets: '', reps: '', rest: '', grupo: '', obs: '', photo:'', img: 'https://m.leandrocesar.com/exe/${item.photo}.gif`'}
     
 ]);
 
 const sr = items.value[0].photo
 function addItem() {
-    items.value.push({ id: '', num: '', nome: '', sets: '', reps: '', rest: '50"', grupo: '', obs: '', photo:'', img: ''});
+    items.value.push({ id: '', num: '', nome: '', sets: '', reps: '', rest: '', grupo: '', obs: '', photo:'', img: ''});
 }
 
 
