@@ -14,12 +14,33 @@ export default defineNuxtRouteMiddleware((to, from) => {
     home.value = local
     // Se o próximo id de rota for diferente de logonCookie E ao mesmo tempo o id atual
     // if (from.params.id !== logon.value && to.params.id ) {
+    
     //     return navigateTo('/') 
     // }
     // Se o próximo id de rota for diferente de logonCookie E ao mesmo tempo o id atual
-    if ((from.params.id && to.params.id !== logon.value) || (logon.value && to.path === '/')) {
-        return navigateTo(`/user/${logon.value}`)
-    }
+
+
+
+
+
+    
+
+    // if ((from.params.id && to.params.id !== logon.value) || (logon.value && to.path === '/')) {
+    //     return navigateTo(`/user/${logon.value}`)
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
     // if (from.params.id === '/user/undefined' && !logon.value) {
     //     return navigateTo('/') 
     // }

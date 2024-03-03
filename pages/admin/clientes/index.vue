@@ -6,23 +6,24 @@ useHead({
 });
 
 const route = useRoute();
-const Users = await useFetch('http://191.101.70.209:4000/users');
+const Users = await useFetch('http://191.101.70.209:4000/collections');
+const UsersId = await useFetch('http://191.101.70.209:4000/collections/:');
 const item = Users.data.value;
 
 const submit = () => {
-return navigateTo('http://191.101.70.209:4000/user')
+    return navigateTo('http://191.101.70.209:4000/user')
 };
 
 const add = ref(true)
-function addClient () {
+function addClient() {
     add.value = !add.value
 }
 
 </script>
 <template>
-    <div  v-if="add" class="main-client">
-        
-        <div  class="users">
+    <div v-if="add" class="main-client">
+
+        <div class="users">
 
             <div class="users-full">
                 <div class="user-full-col">
@@ -37,7 +38,7 @@ function addClient () {
                         </div>
                     </div>
                 </div>
-                
+
                 <div>
                     <div class="add-client" @click="addClient">Adicionar Cliente</div>
                     <!-- algo pra colocar ao lado -->
@@ -65,67 +66,63 @@ function addClient () {
                 <thead>
                     <tr>
                         <th>Nº</th>
-                        <th>Usuario</th>
-                        <th>Nome</th>
-                        <th>Nome Completo</th>
-                        <th>E-mail</th>
-                        <th>Senha</th>
+                        <th>Cliente</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr  v-for="(item, index) in item" :key="index">
-                        <td>{{ index + 1 }}</td>
-                <td><input v-model="item.user"/></td>
-                <td><input v-model="item.name"/></td>
-                <td><input v-model="item.nameFull"/></td>
-                <td><input v-model="item.email"/></td>
-                <td><input v-model="item.password"/></td>
-                <!-- <td>
+                    <tr v-for="(item, index) in item" :key="index">
+
+                        <NuxtLink :to="`/admin/clientes/${item.name}`">
+                            <td>{{ index + 1 }}</td>
+                            <td><input v-model="item.name" /></td>
+
+                        </NuxtLink>
+                        <!-- <td>
                     <button @click="salvarEdicao(email._id)">Salvar</button>
                 </td> -->
                     </tr>
                 </tbody>
-              
+
             </table>
-    </div>
+        </div>
 
     </div>
-    <div  v-else class="main-client">
+    <div v-else class="main-client">
         <div class="barTop center">
             <div>
-                <NuxtLink class="close" >
-                    <Icon name="material-symbols:cancel-rounded" @click="addClient"/>
+                <NuxtLink class="close">
+                    <Icon name="material-symbols:cancel-rounded" @click="addClient" />
                 </NuxtLink>
             </div>
 
         </div>
         <div class="center-start">
             <div>
-    
+
                 <img v-if="photoClient" class="cliente" :src="file.value">
-                <Icon v-else class="cliente" name="material-symbols:account-circle-full"/>
-                <input class="file-cliente" type="file" display="none"/>
+                <Icon v-else class="cliente" name="material-symbols:account-circle-full" />
+                <input class="file-cliente" type="file" display="none" />
             </div>
 
         </div>
-        
+
         <div class="table-clients">
             <form action="http://191.101.70.209:4000/user" method="post">
                 <span>Nome: </span>
-                <input type="text" v-model="name" name="name" placeholder="Nome" />
-                <input type="text" v-model="nameFull" name="nameFull" placeholder="Nome do meio" />
-                <input type="text" v-model="name" name="user" placeholder="Sobrenome" />
-                        <input type="email" v-model="email" name="email" placeholder="E-mail" />
-                        <input type="text" v-model="password" name="password" placeholder="Senha" />
-                        <input type="text" v-model="service" name="service" placeholder="Serviço" />
-                        <input type="date" v-model="periodStart" name="periodStart" placeholder="Início do contrato" />
-                        <input type="date" v-model="periodEnd" name="periodEnd" placeholder="Fim do contrato" />
-                        <input type="text" v-model="status" name="status" placeholder="Estatus" />
-                        <input type="text" v-model="target" name="target" placeholder="Objetivos" @keyup.enter="submit" />
-          
-        <button type="submit">Salvar</button>
-            </form> 
-    </div>
+                <input type="text" :v-model="name" name="name" placeholder="Nome" />
+                <input type="text" :v-model="lastName" name="lastName" placeholder="Sobrenome" />
+                <input type="text" :value.v-model="name + nameFull" name="user" placeholder="Usuário" readonly />
+                <input type="email" v-model="email" name="email" placeholder="E-mail" />
+                <input type="text" v-model="password" name="password" placeholder="Senha" />
+                <input type="text" v-model="service" name="service" placeholder="Serviço" />
+                <input type="date" v-model="periodStart" name="periodStart" placeholder="Início do contrato" />
+                <input type="date" v-model="periodEnd" name="periodEnd" placeholder="Fim do contrato" />
+                <input type="text" v-model="status" name="status" placeholder="Estatus" />
+                <input type="text" v-model="target" name="target" placeholder="Objetivos" @keyup.enter="submit" />
+
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
 
     </div>
 </template>
@@ -169,6 +166,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .users-details {
     display: flex;
     justify-content: space-between;
@@ -201,12 +199,13 @@ body {
     border-radius: 50%;
     border: solid 3px #8D00AB;
 }
+
 .cliente {
     height: 100px;
     width: 100px;
     border-radius: 50%;
     border: solid 3px #8D00AB;
-    color: #8D00AB  ;
+    color: #8D00AB;
 }
 
 
@@ -220,7 +219,7 @@ body {
 
 .close {
     zoom: 1.6;
-    }
+}
 
 .add-client {
     border: solid 1px #8D00AB;
@@ -229,6 +228,7 @@ body {
     transition: all .5s linear;
     cursor: pointer;
 }
+
 .add-client:hover {
     border: solid 1px #fff;
     padding: 2px 7px;
@@ -357,7 +357,7 @@ table {
     margin: auto;
     border: none;
     text-align: center;
-    
+
 }
 
 th,
@@ -379,7 +379,7 @@ th {
     background-color: #8D00AB;
     color: #fff;
     font-weight: 800;
-    
+
 }
 
 .head-logo {
@@ -553,6 +553,7 @@ input {
     padding-bottom: 8px;
 
 }
+
 span {
     margin: .5rem auto;
     transition: all .4s linear;
@@ -702,5 +703,4 @@ h4:nth-child(1) {
     background-color: #fff;
     border: solid 1px #8D00AB10;
     color: #8D00AB;
-}
-</style>
+}</style>
