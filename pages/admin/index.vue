@@ -1,110 +1,79 @@
 <template>
     <div>
         <h1>Formulário</h1>
-        <form>
-            <div class="div-form" v-for="(item, index) in items" :key="index">
-                <h2>Item {{ index + 1 }}</h2>
-            <div>
-
-                    <br>
-                    <div>
-
-                        <label>id </label>
-                        <input type="text" :value.v-model="item.id = index +1" readonly>
-                    </div>
-                    <div>
-
-                        <label>Numero </label>
-                        <input type="text" :value.v-model="item.num = 'Exercício ' + (index < 9 ? '' + (index + 1) : (index + 1))" readonly>
-                    </div>
-                <div>
-
-                    <label>Exercício </label>
-                    <input type="text" v-model="item.nome" autofocus>
-                </div>
-                <div>
-
-                    <label>Séries </label>
-                    <input type="number" v-model="item.sets">
-                </div>
-                <div>
-
-                    <label>Repetições </label>
-                    <input type="text" v-model="item.reps">
-                </div>
-                <div>
-
-                    <label>Intervalo </label>
-                    <input type="text" v-model="item.rest" min="0" max="120" step="5">
-                </div>
-                <div>
-                    <label for="story">observações </label>
-                    <textarea id="story" name="story" rows="2" cols="30" v-model="item.obs"></textarea>
-                </div>
-                <br>
-                <div>
-
-                    <label>Photo </label>
-                    <input type="" v-model="item.photo" @keyup.enter="addItem" @keyup.delete="deleteItem(index)" >
-                </div>
-                <div>
-
-                    <label>Imagem </label>
-                    <input type="text" :value="item.img = `https://m.leandrocesar.com/exe/${item.photo}.gif`" readonly>
-                </div>
-                <br>    
-                <button type="button" @click="deleteItem(index)">X</button>            
-            </div>
-        </div>
-        <br>    
-        <br>    
-        
-        <button type="button" @keyup.enter="addItem" @click="addItem">Add Item</button>
-            <button type="button" @keyup.delete="clear" @click="clear">Resetar</button>
-            <!-- <button type="submit">Submit</button> -->
-        </form>
+        <!-- <input type="text"
+            :value.v-model="item.num = 'Exercício ' + (index < 9 ? '' + (index + 1) : (index + 1))"
+            readonly> -->
+      
         <br>
         <br>
-        
-        <table >
-            <thead>
+        <form @submit.prevent="submitForm">
+            <table>
+                <thead>
                 <th></th>
                 <th>Exercício</th>
                 <th>Sets</th>
                 <th>Reps</th>
                 <th>Intervalo</th>
                 <th>Observações</th>
-                <th>Link</th>
+                <th>Deletar?</th>
             </thead>
-            <tbody v-for="(item, index) in items" :key="index">
-                <th>{{ item.id }}</th>
-                <td><input type="text" v-model="item.nome"></td>
-                <td><input type="number" v-model="item.sets"></td>
-                <td> <input type="text" v-model="item.reps"></td>
-                <td> <input type="number" id="quantity" name="quantity" v-model="item.rest" min="0" max="120" step="5"></td>
+            <tbody>
+
+                <tr v-for="(item, index) in items" :key="index">
+                    
+                    <input type="hidden" :value.v-model="item.id = index + 1" readonly>{{ item.id }}
+                    <input type="hidden" :value.v-model="item.num = 'Exercício ' + (index < 9 ? '' + (index + 1) : (index + 1))">
+                    <td>
+                        <select v-model="item.nome">
+                            <option v-for="option in exe" :key="option.value" :value="option.exercicio">{{ option.exercicio }}</option>
+                        </select>
+                    </td>
+                    <td><input type="number" v-model="item.sets"></td>
+                    <td> <input type="text" v-model="item.reps"></td>
+                    <td> <input type="number" id="quantity" name="quantity" v-model="item.rest" min="0" max="120" step="5"></td>
                 <td><textarea id="story" name="story" rows="2" cols="30" v-model="item.obs"></textarea></td>
-                <td>{{ item.img }}</td>
-                <button type="button" @click="deleteItem(index)">X</button>    
+                <input type="hidden" :value="item.img = `https://m.leandrocesar.com/exe/${item.nome.toLowerCase().replace(/\s+/g, '')}.gif`"
+                    readonly>
+                    
+                    
+                    <button class="add-client" type="button" @click="deleteItem(index)">X</button>
+                </tr>
             </tbody>
-        </table>
-        
+            </table>
+            <div class="buttons">
+
+                <button class="add-client" type="button" @keyup.enter="addItem" @click="addItem">Add Item</button>
+                <br>
+                <br>
+                <button class="input" @click="submitForm()">Submit</button>
+                
+            </div>
+            
+        </form>
         <br>
     </div>
-
-    <button type="button" @keyup.delete="clear" @click="clear">Resetar</button>
     
+    <button class="input" type="button" @keyup.delete="clear" @click="clear">Resetar</button>
 </template>
 
 <script setup>
 import { ref } from 'vue';
+
+const exe = ref([
+    {exercicio: 'extensora', link: 'extensora'},
+    {exercicio: 'mesa flexora', link: 'extensora'},
+])
+
+
+
 const items = ref([
-    { id: '', num: '', nome: '', sets: '', reps: '', rest: '', grupo: '', obs: '', photo:'', img: 'https://m.leandrocesar.com/exe/${item.photo}.gif`'}
-    
+    { id: '', num: '', nome: '', sets: '', reps: '', rest: '', grupo: '', obs: '', img: 'https://m.leandrocesar.com/exe/${item.photo}.gif`' }
+
 ]);
 
-const sr = items.value[0].photo
 function addItem() {
-    items.value.push({ id: '', num: '', nome: '', sets: '', reps: '', rest: '', grupo: '', obs: '', photo:'', img: ''});
+    items.value.push({ id: '', num: '', nome: '', sets: '', reps: '', rest: '', grupo: '', obs: '', img: '' });
 }
 
 
@@ -114,31 +83,32 @@ function deleteItem(index) {
 
 function clear() {
     items.value = ([
-        { id: '', num: '', nome: '', sets: '', reps: '', rest: '', grupo: '', obs: '', photo:'', img: ``}
+        { id: '', num: '', nome: '', sets: '', reps: '', rest: '', grupo: '', obs: '', img: `` }
 
-    ])}
+    ])
+}
 
 
 
 async function submitForm() {
-  try {
-      const response = await fetch('http://191.101.70.209:4000/fs', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
+    try {
+        const response = await fetch('http://191.101.70.209:4000/fs', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(items.value),
         });
         localStorage.setItem('item', JSON.stringify(items.value));
-    
-    if (response.ok) {
-        console.log('Data sent successfully');
-    } else {
-        console.error('Failed to send data');
+
+        if (response.ok) {
+            console.log('Data sent successfully');
+        } else {
+            console.error('Failed to send data');
+        }
+    } catch (error) {
+        console.error('Error sending data:', error);
     }
-  } catch (error) {
-    console.error('Error sending data:', error);
-}
 }
 onMounted(() => {
     const storedItems = JSON.parse(localStorage.getItem('item'));
@@ -150,14 +120,13 @@ onMounted(() => {
 
 
 onUpdated(() => {
- localStorage.setItem('item', JSON.stringify(items.value));
+    localStorage.setItem('item', JSON.stringify(items.value));
 })
 
 </script>
 
 
 <style scoped>
-
 .main-client {
     z-index: 1;
     display: flex;
@@ -165,6 +134,11 @@ onUpdated(() => {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.buttons {
+    position: absolute;
+    right: 10px;
 }
 
 .users {
@@ -221,30 +195,15 @@ onUpdated(() => {
     border-radius: 100%;
     text-align: center;
 }
+
 .users-details-box:nth-child(1) {
     border: solid 3px #8D00AB90;
     background-color: #8D00AB90;
 }
+
 .users-details-box:nth-child(2) {
     border: solid 3px #8D00AB90;
     background-color: #8D00AB20;
-}
-
-.div-form {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.div-form div{
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 textarea#story {
@@ -285,22 +244,6 @@ textarea#story {
 .add {
     position: relative;
     top: -40px;
-}
-
-.add-client {
-    border: solid 1px #8D00AB;
-    padding: 2px 7px;
-    border-radius: 8px;
-    transition: all .5s linear;
-    cursor: pointer;
-}
-
-.add-client:hover {
-    border: solid 1px #fff;
-    padding: 2px 7px;
-    border-radius: 8px;
-    color: #8D00AB;
-    background-color: #fff;
 }
 
 .length-full {
@@ -593,6 +536,49 @@ main {
 }
 
 
+.add-client {
+    margin: .5rem auto;
+    transition: all .4s linear;
+    border: solid 1px #8D00AB10;
+    box-shadow: 0 0px 5px #8D00AB10;
+    border-radius: 8px;
+    text-align: left;
+    color: #718096;
+    line-height: 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all .2s linear;
+    height: 28px;
+    font-size: 14px;
+    padding-inline: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
+}
+.input {
+    margin: .5rem auto;
+    transition: all .4s linear;
+    border: solid 1px #8D00AB10;
+    box-shadow: 0 0px 5px #8D00AB10;
+    border-radius: 8px;
+    text-align: left;
+    color: #718096;
+    line-height: 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all .2s linear;
+    height: 28px;
+    font-size: 14px;
+    padding-inline: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
+}
+
+.input:hover {
+    background-color: #8D00AB10;
+}
+
 input {
     margin: .5rem auto;
     transition: all .4s linear;
@@ -604,17 +590,17 @@ input {
     line-height: 18px;
     border-radius: 8px;
     font-weight: 600;
-    transition: all 0.2s ease-in-out 0s;
+    transition: all .4s linear;
     height: 34px;
     font-size: 14px;
     padding-inline: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
-
 }
 
 input::placeholder {
     color: #71809690;
+    background-color: #8D00AB10;
 }
 
 .inputs div h4 {
@@ -638,6 +624,8 @@ input:active {
     border-color: #8D00AB80;
     color: #718096;
 }
+
+
 
 input:hover {
     background-color: #8D00AB10;
@@ -743,4 +731,5 @@ h4:nth-child(1) {
     background-color: #fff;
     border: solid 1px #8D00AB10;
     color: #8D00AB;
-}</style>
+}
+</style>
