@@ -61,8 +61,14 @@
 import { ref } from 'vue';
 
 const exe = ref([
-    {exercicio: 'extensora', link: 'extensora'},
-    {exercicio: 'mesa flexora', link: 'extensora'},
+    {exercicio: 'extensora'},
+    {exercicio: 'Puxada p/ frente'},
+    {exercicio: 'Remada na polia baixa'},
+    {exercicio: 'Desenvolvimento de ombros (AP)'},
+    {exercicio: 'Supino maquina'},
+    {exercicio: 'Tríceps mergulho no graviton'},
+    {exercicio: 'Remada no aparelho'},
+    {exercicio: 'Remada alta na polia baixa'},
 ])
 
 
