@@ -1,77 +1,38 @@
 <template>
-    <div>
         <h1>Formulário</h1>
-        <!-- <input type="text"
-            :value.v-model="item.num = 'Exercício ' + (index < 9 ? '' + (index + 1) : (index + 1))"
-            readonly> -->
-      
-        <br>
-        <br>
-        
         <form @submit.prevent="submitForm">
-            <table>
-                <thead>
-                <th></th>
-                <th>Exercício</th>
-                <th>Sets</th>
-                <th>Reps</th>
-                <th>Intervalo</th>
-                <th>Observações</th>
-                <th>Deletar?</th>
-            </thead>
-            <tbody>
-
-
-                <tr v-for="(item, index) in items" :key="index">
-                    
-                    <input type="hidden" :value.v-model="item.id = index + 1" readonly>{{ item.id }}
-                    <input type="hidden" :value.v-model="item.num = 'Exercício ' + (index < 9 ? '' + (index + 1) : (index + 1))">
-                    <td>
-                        <select v-model="item.nome">
-                            <option v-for="option in exe" :key="option.value" :value="option.exercicio">{{ option.exercicio }}</option>
-                        </select>
-                    </td>
-                    <td><input type="number" v-model="item.sets"></td>
-                    <td> <input type="text" v-model="item.reps"></td>
-                    <td> <input type="text" v-model="item.reps"></td>
-                    <td> <input type="number" id="quantity" name="quantity" v-model="item.rest" min="0" max="120" step="5"></td>
-                <td><textarea id="story" name="story" rows="2" cols="30" v-model="item.obs"></textarea></td>
-                <input type="hidden" :value="item.img = `https://m.leandrocesar.com/exe/${item.nome.toLowerCase().replace(/\s+/g, '')}.gif`"
-                    readonly>
-                    
-                    
-                    <button class="add-client" type="button" @click="deleteItem(index)">X</button>
-                </tr>
-            </tbody>
-            </table>
-            <div class="buttons">
-
-                <button class="add-client" type="button" @keyup.enter="addItem" @click="addItem">Add Item</button>
-                <br>
-                <br>
-                <button class="input" @click="submitForm()">Submit</button>
-                
-            </div>
             
+        
+            <h2>Exercício 1</h2>
+            <label for="exercise1Num">Número:</label>
+            <input type="text" id="exercise1Num" name="exercise1Num"><br><br>
+        
+            <label for="exercise1Nome">Nome:</label>
+            <input type="text" id="exercise1Nome" name="exercise1Nome"><br><br>
+        
+            <label for="exercise1Sets">Sets:</label>
+            <input type="text" id="exercise1Sets" name="exercise1Sets"><br><br>
+        
+            <label for="exercise1Reps">Repetições:</label>
+            <input type="text" id="exercise1Reps" name="exercise1Reps"><br><br>
+        
+
+            <input type="submit" value="Enviar">
         </form>
-        <br>
-    </div>
-    
-    <button class="input" type="button" @keyup.delete="clear" @click="clear">Resetar</button>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 
 const exe = ref([
-    {exercicio: 'extensora'},
-    {exercicio: 'Puxada p/ frente'},
-    {exercicio: 'Remada na polia baixa'},
-    {exercicio: 'Desenvolvimento de ombros (AP)'},
-    {exercicio: 'Supino maquina'},
-    {exercicio: 'Tríceps mergulho no graviton'},
-    {exercicio: 'Remada no aparelho'},
-    {exercicio: 'Remada alta na polia baixa'},
+    { exercicio: 'extensora' },
+    { exercicio: 'Puxada p/ frente' },
+    { exercicio: 'Remada na polia baixa' },
+    { exercicio: 'Desenvolvimento de ombros (AP)' },
+    { exercicio: 'Supino maquina' },
+    { exercicio: 'Tríceps mergulho no graviton' },
+    { exercicio: 'Remada no aparelho' },
+    { exercicio: 'Remada alta na polia baixa' },
 ])
 
 
@@ -101,7 +62,7 @@ function clear() {
 
 async function submitForm() {
     try {
-        const response = await fetch('http://191.101.70.209:4000/fs', {
+        const response = await fetch('http://191.101.70.209:4000/user', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -562,8 +523,9 @@ main {
     padding-inline: 16px;
     padding-top: 4px;
     padding-bottom: 4px;
-    
+
 }
+
 .input {
     margin: .5rem auto;
     transition: all .4s linear;
@@ -581,7 +543,7 @@ main {
     padding-inline: 16px;
     padding-top: 4px;
     padding-bottom: 4px;
-    
+
 }
 
 .input:hover {
@@ -740,5 +702,4 @@ h4:nth-child(1) {
     background-color: #fff;
     border: solid 1px #8D00AB10;
     color: #8D00AB;
-}
-</style>
+}</style>
