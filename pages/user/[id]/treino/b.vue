@@ -19,10 +19,10 @@ const currentExercise = computed(() => {
 const itemExercise = () => {
   return dataTreino.data?.value?.length
 }
-
 const listExercise = () => {
   return dataTreino.data?.value
 }
+console.log(listExercise())
 const i = treino.value
 const listExercisee = () => {
   return dataTreino?.data?.value[i]?.img
