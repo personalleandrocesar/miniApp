@@ -6,18 +6,33 @@ useHead({
 });
 
 const route = useRoute();
-const Users = await useFetch('http://191.101.70.209:4000/users/leandrocesar');
+const Users = await useFetch(`http://191.101.70.209:4000/users/${route.params.id}`);
 const item = Users.data.value;
 
-console.log(Users.data.value[0].firstName);
+console.log(item);
 
-const submit = () => {
-return navigateTo('http://191.101.70.209:4000/user')
-};
 
 const add = ref(true)
 function addClient () {
     add.value = !add.value
+}
+
+async function submit() {
+    try {
+        const response = await fetch(`http://191.101.70.209:4000/users/${route.params.id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        if (response.ok) {
+            console.log('Data sent successfully');
+        } else {
+            console.error('Failed to send data');
+        }
+    } catch (error) {
+        console.error('Error sending data:', error);
+    }
 }
 
 </script>
@@ -57,20 +72,8 @@ function addClient () {
             
         </div>
         <h1>{{ Users.data.value.user }}</h1>
-        <div class="table-clients">
-            <table>
-                
-                <thead>
-                    <tr>
-                        <th>Nº</th>
-                        <th>Cliente</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              
-            </table>
-    </div>
+        <button class="input" type="button"  @click="submit">Resetar</button>
+        
 
     </div>
     <div  v-else class="main-client">
@@ -141,10 +144,10 @@ body {
 .users-full {
     width: 58%;
     z-index: 1;
-    background-color: #8D00AB90;
+    background-color: #34d39990;
     padding: 10px;
     border-radius: 8px;
-    border: solid 3px #8D00AB;
+    border: solid 3px #34d399;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -165,7 +168,7 @@ body {
 }
 
 .users-details-box {
-    border: solid 3px #8D00AB90;
+    border: solid 3px #34d39990;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -175,21 +178,21 @@ body {
     flex-wrap: wrap;
     z-index: 1;
     width: 49%;
-    background-color: #8D00AB50;
+    background-color: #34d39950;
     height: 185px;
 }
 
 
 .form-cliente {
     border-radius: 50%;
-    border: solid 3px #8D00AB;
+    border: solid 3px #34d399;
 }
 .cliente {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: solid 3px #8D00AB;
-    color: #8D00AB  ;
+    border: solid 3px #34d399;
+    color: #34d399  ;
 }
 
 
@@ -206,7 +209,7 @@ body {
     }
 
 .add-client {
-    border: solid 1px #8D00AB;
+    border: solid 1px #34d399;
     padding: 2px 7px;
     border-radius: 8px;
     transition: all .5s linear;
@@ -216,7 +219,7 @@ body {
     border: solid 1px #fff;
     padding: 2px 7px;
     border-radius: 8px;
-    color: #8D00AB;
+    color: #34d399;
     background-color: #fff;
 }
 
@@ -235,7 +238,7 @@ body {
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
-    color: #8D00AB;
+    color: #34d399;
 }
 
 .button {
@@ -245,7 +248,7 @@ body {
     padding-top: 4px;
     border: solid 2px #fff;
     border-radius: 8px;
-    background-color: #8D00AB50;
+    background-color: #34d39950;
     cursor: pointer;
 }
 
@@ -307,14 +310,14 @@ body {
 
 .others-full {
     z-index: 1;
-    background-color: #8D00AB50;
+    background-color: #34d39950;
 }
 
 .others-details {
     margin: 0 .5%;
     z-index: 1;
-    background-color: #8D00AB30;
-    border: solid 3px #8D00AB40;
+    background-color: #34d39930;
+    border: solid 3px #34d39940;
     border-radius: 8px;
 }
 
@@ -352,14 +355,14 @@ td {
 }
 
 tr:nth-child(2n -1) {
-    background-color: #8D00AB30;
+    background-color: #34d39930;
     border-radius: 6px;
 }
 
 th {
     position: sticky;
     top: 0px;
-    background-color: #8D00AB;
+    background-color: #34d399;
     color: #fff;
     font-weight: 800;
     
@@ -384,7 +387,7 @@ th {
     height: 46px;
     width: 46px;
     color: #718096;
-    box-shadow: 0px 7px 20px #8D00AB;
+    box-shadow: 0px 7px 20px #34d399;
     border-radius: 8px;
     margin: 1rem;
     z-index: 10;
@@ -394,7 +397,7 @@ th {
     height: 46px;
     width: 46px;
     border-radius: 8px;
-    border: #8D00AB 2px solid;
+    border: #34d399 2px solid;
     z-index: 100;
     opacity: 1;
 }
@@ -411,7 +414,7 @@ th {
 .name {
     font-size: 1.6rem;
     margin-left: .1rem;
-    color: #8D00AB;
+    color: #34d399;
     font-family: 'gagalin';
     font-size: 2rem;
     letter-spacing: 0px;
@@ -432,14 +435,14 @@ th {
     transition: all .4s linear;
     font-size: 1.2rem;
     margin-left: .1rem;
-    color: #8D00AB99;
+    color: #34d39999;
     font-family: 'gagalin';
     letter-spacing: 0px;
     margin: 0rem 0rem 0rem 0rem;
     width: 100%;
     padding: 12px;
-    color: #8D00AB70;
-    background-color: #8D00AB60;
+    color: #34d39970;
+    background-color: #34d39960;
     border-bottom: solid 2px #fff;
     cursor: pointer;
 }
@@ -450,22 +453,22 @@ th {
 }
 
 .sections a:hover {
-    color: #8D00AB;
-    border-bottom: solid 2px #8D00AB;
+    color: #34d399;
+    border-bottom: solid 2px #34d399;
 }
 
 .sections .activerr {
     padding: 12px;
     color: #fff;
-    background-color: #8D00AB;
-    border-bottom: solid 2px #8D00AB;
+    background-color: #34d399;
+    border-bottom: solid 2px #34d399;
 }
 
 .sections .activerr:hover {
     padding: 12px;
     color: #fff;
-    background-color: #8D00AB;
-    border-bottom: solid 2px #8D00AB;
+    background-color: #34d399;
+    border-bottom: solid 2px #34d399;
 }
 
 main {
@@ -484,7 +487,7 @@ main {
     height: 40px;
     width: 40px;
     color: #718096;
-    box-shadow: 1px 1px 15px #8D00AB50;
+    box-shadow: 1px 1px 15px #34d39950;
     transition: all 0.2s ease-in-out 0s;
     bottom: 3.5rem;
     right: 1.5rem;
@@ -494,9 +497,9 @@ main {
 }
 
 .whats:hover {
-    background-color: #8D00AB10;
-    color: #8D00AB80;
-    box-shadow: 1px 1px 15px #8D00AB80;
+    background-color: #34d39910;
+    color: #34d39980;
+    box-shadow: 1px 1px 15px #34d39980;
     z-index: 100;
 }
 
@@ -520,8 +523,8 @@ main {
 input {
     margin: .5rem auto;
     transition: all .4s linear;
-    border: solid 1px #8D00AB10;
-    box-shadow: 0 0px 5px #8D00AB10;
+    border: solid 1px #34d39910;
+    box-shadow: 0 0px 5px #34d39910;
     border-radius: 8px;
     text-align: left;
     color: #718096;
@@ -539,8 +542,8 @@ input {
 span {
     margin: .5rem auto;
     transition: all .4s linear;
-    border: solid 1px #8D00AB10;
-    box-shadow: 0 0px 5px #8D00AB10;
+    border: solid 1px #34d39910;
+    box-shadow: 0 0px 5px #34d39910;
     border-radius: 8px;
     text-align: left;
     color: #718096;
@@ -564,25 +567,25 @@ input::placeholder {
 }
 
 input:focus {
-    background-color: #8D00AB10;
-    border-color: #8D00AB80;
+    background-color: #34d39910;
+    border-color: #34d39980;
     color: #718096;
 }
 
 input:focus-visible {
-    background-color: #8D00AB10;
-    border: solid 1px #8D00AB;
+    background-color: #34d39910;
+    border: solid 1px #34d399;
     color: #718096;
 }
 
 input:active {
-    background-color: #8D00AB10;
-    border-color: #8D00AB80;
+    background-color: #34d39910;
+    border-color: #34d39980;
     color: #718096;
 }
 
 input:hover {
-    background-color: #8D00AB10;
+    background-color: #34d39910;
 }
 
 h4 {
@@ -601,8 +604,8 @@ h4:nth-child(1) {
 
 .login {
     transition: all .4s linear;
-    border: solid 1px #8D00AB10;
-    box-shadow: 0 0px 5px #8D00AB10;
+    border: solid 1px #34d39910;
+    box-shadow: 0 0px 5px #34d39910;
     border-radius: 8px;
     cursor: pointer;
     width: 160px;
@@ -627,8 +630,8 @@ h4:nth-child(1) {
 
 .login:hover {
     cursor: pointer;
-    background-color: #8D00AB10;
-    color: #8D00AB80;
+    background-color: #34d39910;
+    color: #34d39980;
 
     padding-inline: 16px;
     padding-top: 7px;
@@ -647,7 +650,7 @@ h4:nth-child(1) {
     justify-content: center;
     align-items: center;
     margin: 10px 20px 20px 20px;
-    background-color: #8D00AB;
+    background-color: #34d399;
     color: #fff;
     padding: 15px;
     border-radius: 8px;
@@ -657,7 +660,7 @@ h4:nth-child(1) {
     left: 50%;
     margin-left: -40%;
     font-weight: 900;
-    border: solid 1px #8D00AB10;
+    border: solid 1px #34d39910;
     z-index: 10000;
 }
 
@@ -670,20 +673,20 @@ h4:nth-child(1) {
 .button-pop {
     margin: 7px auto 0 auto;
     transition: all .4s linear;
-    border: solid 1px #8D00AB;
-    box-shadow: 0 0px 5px #8D00AB10;
+    border: solid 1px #34d399;
+    box-shadow: 0 0px 5px #34d39910;
     border-radius: 8px;
     cursor: pointer;
     width: 50%;
     text-align: center;
-    background-color: #8D00AB;
+    background-color: #34d399;
     color: #fff;
     border: solid 1px #fff;
 }
 
 .button-pop:hover {
     background-color: #fff;
-    border: solid 1px #8D00AB10;
-    color: #8D00AB;
+    border: solid 1px #34d39910;
+    color: #34d399;
 }
 </style>
