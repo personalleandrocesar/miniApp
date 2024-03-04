@@ -12,7 +12,7 @@ const dataTreino = await useFetch(`/api/${route.params.id}/treino/atual/a`)
 
 const treino = ref(0)
 const currentExercise = computed(() => {
-  return dataTreino.data?.value[treino.value]
+  return dataTreino?.data.value[treino.value]
   
 })
 
