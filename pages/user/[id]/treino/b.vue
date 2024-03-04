@@ -329,16 +329,14 @@ ul {
 }
 
 .alternateGrid {
-  background-color: #34d39930;
+  background-color: #34d39915;
   font-weight: bold;
-  color: #34d399;
+  color: #34d399;  
 }
-
 .alternateList {
-  background-color: #34d39930;
+  background-color: #34d39910;
   font-weight: bold;
-  border: solid .1px #34d39980;
-  color: #34d399;
+  color: #34d399;  
 }
 
 .roww {
