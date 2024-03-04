@@ -18,9 +18,9 @@ export default defineEventHandler((event) => {
     // 0 = bloqueado; 1 = pendente; 2 = Verificado
     "status": 2,
     // Treino atual
-    "treinoActual": "02/03/24 - 01/04/24",
+    "treinoActual": "04/03/24 - 03/04/24",
     // Próxima Treino 
-    "treinoNext": "02/04/24",
+    "treinoNext": "04/04/24",
     // Avaliação atual
     "valuationActual": "",
     // Próxima avaliação 
