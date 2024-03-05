@@ -10,12 +10,12 @@ export default defineEventHandler((event) => {
     "objetivo": "Hipertrofia",
     "tempo": "60 min.",
     "dias": "5 dias",
-    "treinoA": "Perna",
-    "treinoB": "Braço",
-    "treinoC": "",
+    "treinoA": "Perna (Quadríceps)",
+    "treinoB": "Perna (Posterior)",
+    "treinoC": "Braço",
   
     // Dados Menu Global
-    "periodo": "15/02/24 - 15/03/24",
+    "periodo": "15/02/24 - 15/05/24",
     "status": 2,
     // Treino atual
     "treinoActual": "04/03/24 - 03/04/24",
