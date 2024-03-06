@@ -1,14 +1,136 @@
 export default defineEventHandler((event) => {
   return [
-    { "id": 1, "num": "Exercício 1", "nome": "Extensora", "sets": 3, "reps": "12 +12", "rest": "60\"", "grupo": "", "obs": "Fazer Rest-pause: faz 12 repetições, descansa 10\" +12 repetições.", "img": "https://m.leandrocesar.com/exe/extensora.gif", "photo": "extensora" },
-    { "id": 2, "num": "Exercício 2", "nome": "Mesa flexora", "sets": 4, "reps": "10 / 8 / 6 / 4", "rest": "60\"", "grupo": "", "obs": "Fazer pirâmide crescente, 1 série de 12 repetições, descansa 60 segundos, aumenta 1 placa: faz até 10 repetições, descansa... ", "img": "https://m.leandrocesar.com/exe/mesaFlexora.gif", "photo": "mesaFlexora" },
-    { "id": 3, "num": "Exercício 3", "nome": "Levantamento Terra (pés abduzidos)", "sets": 3, "reps": "12", "rest": "50\"", "grupo": "", "obs": "Fazer com os pés bem abduzidos", "img": "https://m.leandrocesar.com/exe/levantamentoTerra.gif", "photo": "levantamentoTerra" },
-    { "id": 4, "num": "Exercício 4", "nome": "Stiff", "sets": 3, "reps": "10 c/ 1\" ", "rest": "50\"", "grupo": "", "obs": "Fazer segurando 1segundo a cada repetição com o peso embaixo;", "img": "https://m.leandrocesar.com/exe/stiffHBL.gif", "photo": "stiffHBL" },
-    { "id": 5, "num": "Exercício 5", "nome": "Abdutora", "sets": 3, "reps": "10 / +12 2T / + falha", "rest": "60\"", "grupo": "", "obs": "Fazer 10 pesado direto, diminui 2 placas: fazer 12 com 2 tempo, aumenta 5 placas: fazer inclinado até a falha!", "img": "https://m.leandrocesar.com/exe/abdutora.gif", "photo": "abdutora" },
-    { "id": 6, "num": "Exercício 6", "nome": "Elevação Pélvica (AP)", "sets": 3, "reps": "15", "rest": "60\"", "grupo": "", "obs": "Fazer falhando.", "img": "https://m.leandrocesar.com/exe/elevacaoPelvicaHBM.gif", "photo": "elevacaoPelvicaHBM" },
-    { "id": 7, "num": "Exercício 7", "nome": "Leg press 45º", "sets": 3, "reps": "10", "rest": "50\"", "grupo": "", "obs": "Falhando.", "img": "https://m.leandrocesar.com/exe/leg45.gif", "photo": "leg45" },
-    { "id": 8, "num": "Exercício 8", "nome": "Panturrilha em pé no aparelho", "sets": 3, "reps": "20 curtas + falha c/ 2T", "rest": "60\"", "grupo": "", "obs": "Fazer 20 curtas em cima, depois 2 tempos, até a falha.", "img": "https://m.leandrocesar.com/exe/panturrilhaAparelho.gif", "photo": "panturrilhaAparelho" },
-    { "id": 9, "num": "Exercício 9", "nome": "Alternate lunge", "sets": 3, "reps": "10 (cada lado)", "rest": "60\"", "grupo": "", "obs": "Fazer alternando bem afastado pra frente, que nem a imagem.", "img": "https://m.leandrocesar.com/exe/alternateLunge.gif", "photo": "alternateLunge" },
-    { "id": 10, "num": "Exercício 10", "nome": "Extensão de tronco (banco romano)", "sets": 3, "reps": "25", "rest": "60\"", "grupo": "", "obs": "", "img": "https://m.leandrocesar.com/exe/abdominalRemadorCompleto.png.gif", "photo": "ExtensaoLombar.png" }
+    {
+      "id": 1,
+      "num": "Exercício 1",
+      "nome": "Remada articulada",
+      "sets": 3,
+      "reps": "10 c/1\" ",
+      "rest": "50\"",
+      "grupo": "",
+      "obs": "Pegada supinada; Segurar 1 segundo a cada repetição.",
+      "photo": "lowRow",
+      "img": "https://m.leandrocesar.com/exe/lowRow.gif"
+    },
+    {
+      "id": 2,
+      "num": "Exercício 2",
+      "nome": "Puxada Pronada aberta",
+      "sets": 3,
+      "reps": "10 +10",
+      "rest": "60\"",
+      "grupo": "",
+      "obs": "Rest-pause: Fazer 10 repetições, descansa 10\" : + 10",
+      "photo": "PuxadaFrente",
+      "img": "https://m.leandrocesar.com/exe/PuxadaFrente.gif"
+    },
+    {
+      "id": 3,
+      "num": "Exercício 3",
+      "nome": "Crucifixo dorsal (AP)",
+      "sets": 3,
+      "reps": "15",
+      "rest": "50\"",
+      "grupo": "",
+      "obs": "Pegada Pronada",
+      "photo": "crucifixoDorsal",
+      "img": "https://m.leandrocesar.com/exe/crucifixoDorsal.gif"
+    },
+    {
+      "id": 4,
+      "num": "Exercício 4",
+      "nome": "Remada na polia baixa",
+      "sets": 3,
+      "reps": "falha",
+      "rest": "60\"",
+      "grupo": "",
+      "obs": "Colocar 3 placas: fazer até a falha (pode usar o corpo), depois diminuir 1 placa: fazer até a falha.",
+      "photo": "remadaPoliaBaixa",
+      "img": "https://m.leandrocesar.com/exe/remadaPoliaBaixa.gif"
+    },
+    {
+      "id": 5,
+      "num": "Exercício 5",
+      "nome": "Supino no cross-over",
+      "sets": 3,
+      "reps": "12",
+      "rest": "50\"",
+      "grupo": "",
+      "obs": "Pegada neutra",
+      "photo": "supinoPolias",
+      "img": "https://m.leandrocesar.com/exe/supinoPolias.gif"
+    },
+    {
+      "id": 6,
+      "num": "Exercício 6",
+      "nome": "Elevação lateral",
+      "sets": 3,
+      "reps": "12 +12",
+      "rest": "40\"",
+      "grupo": "",
+      "obs": "Rest-pause: Fazer 12 repetições, descansa 10\" : + 12",
+      "photo": "elevacaoLateralHBC",
+      "img": "https://m.leandrocesar.com/exe/elevacaoLateralHBC.gif"
+    },
+    {
+      "id": 7,
+      "num": "Exercício 7",
+      "nome": "Desenvolvimento de ombros (HBM)",
+      "sets": 3,
+      "reps": "15 (2t)",
+      "rest": "60\"",
+      "grupo": "",
+      "obs": "Fazer 2 tempos embaixo com a braa média (HBM)",
+      "photo": "desenvolvimentoHalteres",
+      "img": "https://m.leandrocesar.com/exe/desenvolvimentoHalteres.gif"
+    },
+    {
+      "id": 8,
+      "num": "Exercício 8",
+      "nome": "Tríceps corda na polia alta",
+      "sets": 3,
+      "reps": "20 c/1\"",
+      "rest": "50\"",
+      "grupo": "",
+      "obs": "segurar 1 segundo a cada repetição embaixo.",
+      "photo": "tricepsCorda",
+      "img": "https://m.leandrocesar.com/exe/tricepsCorda.gif"
+    },
+    {
+      "id": 9,
+      "num": "Exercício 9",
+      "nome": "Bíceps em pé na polia baixa",
+      "sets": 3,
+      "reps": "8 + 10\" +8",
+      "rest": "60\"",
+      "grupo": "",
+      "obs": "Fazer com a barra reta.",
+      "photo": "bícepsPolia",
+      "img": "https://m.leandrocesar.com/exe/bicepsPolia.gif"
+    },
+    {
+      "id": 10,
+      "num": "Exercício 10",
+      "nome": "Supino inclinado (HBC)",
+      "sets": 4,
+      "reps": "10",
+      "rest": "50\"",
+      "grupo": "",
+      "obs": "Fazer com a pegada neutra.",
+      "photo": "supinoInclinado",
+      "img": "https://m.leandrocesar.com/exe/supinoInclinado.gif"
+    },
+    {
+      "id": 11,
+      "num": "Exercício 11",
+      "nome": "Abdominal supra completo",
+      "sets": 3,
+      "reps": "20",
+      "rest": "40\"",
+      "grupo": "",
+      "obs": "Fazer no solo, quase encostando os ombros nos joelhos.",
+      "photo": "abdominalSupra",
+      "img": "https://m.leandrocesar.com/exe/abdominalSupra.gif"
+    }
   ]
 })
