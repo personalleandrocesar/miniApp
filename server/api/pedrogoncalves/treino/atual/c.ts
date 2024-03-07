@@ -94,7 +94,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "abdominalInfraParalela.png",
-      "img": "https://m.leandrocesar.com/exe/abdominalInfraParalela.png.gif"
+      "img": "https://m.leandrocesar.com/exe/abdominalInfraParalela.png"
     },
     {
       "id": 9,
