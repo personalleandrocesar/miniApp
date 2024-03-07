@@ -52,10 +52,6 @@ async function submit() {
                         <h2>Clientes Registrados</h2>
                     </div>
                     <div class="users-full-status">
-                        <div>
-                            <h2>{{ Users.data.value?.length }} Clientes de Personal</h2>
-                            <h2>{{ Users.data.value?.length }} Clientes de Consultoria on-line</h2>
-                        </div>
                     </div>
                 </div>
 

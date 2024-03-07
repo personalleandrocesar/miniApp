@@ -1,5 +1,63 @@
 <template>
+    <div>
+        <h1>Formulário</h1>
+        <!-- <input type="text"
+            :value.v-model="item.num = 'Exercício ' + (index < 9 ? '' + (index + 1) : (index + 1))"
+            readonly> -->
+      
+        <br>
+        <br>
+        
+        <form @submit.prevent="submitForm">
+            <table>
+                <thead>
+                <th></th>
+                <th>Exercício</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Intervalo</th>
+                <th>Observações</th>
+                <th>Deletar?</th>
+            </thead>
+            <tbody>
+
+
+                <tr v-for="(item, index) in items" :key="index">
+                    
+                    <input type="hidden" :value.v-model="item.id = index + 1" readonly>{{ item.id }}
+                    <input type="hidden" :value.v-model="item.num = 'Exercício ' + (index < 9 ? '' + (index + 1) : (index + 1))">
+                    <td>
+                        <select v-model="item.nome">
+                            <option v-for="option in exe" :key="option.value" :value="option.exercicio">{{ option.exercicio }}</option>
+                        </select>
+                    </td>
+                    <td><input type="number" v-model="item.sets"></td>
+                    <td> <input type="text" v-model="item.reps"></td>
+                    <td> <input type="text" v-model="item.reps"></td>
+                    <td> <input type="number" id="quantity" name="quantity" v-model="item.rest" min="0" max="120" step="5"></td>
+                <td><textarea id="story" name="story" rows="2" cols="30" v-model="item.obs"></textarea></td>
+                <input type="hidden" :value="item.img = `https://m.leandrocesar.com/exe/${item.nome.toLowerCase().replace(/\s+/g, '')}.gif`"
+                    readonly>
+                    
+                    
+                    <button class="add-client" type="button" @click="deleteItem(index)">X</button>
+                </tr>
+            </tbody>
+            </table>
+            <div class="buttons">
+
+                <button class="add-client" type="button" @keyup.enter="addItem" @click="addItem">Add Item</button>
+                <br>
+                <br>
+                <button class="input" @click="submitForm()">Submit</button>
+                
+            </div>
+            
+        </form>
+        <br>
+    </div>
     
+    <button class="input" type="button" @keyup.delete="clear" @click="clear">Resetar</button>
 </template>
 
 <script setup>
