@@ -34,7 +34,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Pegada Neutra",
       "photo": " puxadaFrente",
-      "img": "https://m.leandrocesar.com/exe/ puxadaFrente.gif"
+      "img": "https://m.leandrocesar.com/exe/puxadaFrente.gif"
     },
     {
       "id": 4,
