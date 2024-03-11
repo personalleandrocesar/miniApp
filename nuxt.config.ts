@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   routeRules: {
     '/api/**': { cors: true, headers: { 'access-control-allow-methods': 'GET, POST' } },
-    'http://191.101.70.209:4000/users': { cors: true, headers: { 'access-control-allow-methods': 'GET, POST' } },
+    'http://191.101.70.209:4000/**': { cors: true, headers: { 'access-control-allow-methods': 'GET, POST' } },
   },
   app: {
     head: {
