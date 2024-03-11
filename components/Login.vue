@@ -426,9 +426,9 @@ a:hover {
   bottom: 10px;
   width: 80%;
   left: 50%;
+  margin-left: -40%;
   background-color: #00DC82 ;
   color: #fff;
-  margin-left: -40%;
   font-weight: 900;
   border: solid 1px #00DC8210;
   z-index: 10000;
