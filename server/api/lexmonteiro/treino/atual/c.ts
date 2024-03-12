@@ -5,10 +5,10 @@ export default defineEventHandler((event) => {
       "num": "Exercício 1",
       "nome": "Remada articulada",
       "sets": 3,
-      "reps": "10 c/1\" ",
+      "reps": "10 c/2\" ",
       "rest": "50\"",
       "grupo": "",
-      "obs": "Pegada supinada; Segurar 1 segundo a cada repetição.",
+      "obs": "Pegada supinada; Segurar 2 segundo a cada repetição.",
       "photo": "lowRow",
       "img": "https://m.leandrocesar.com/exe/lowRow.gif"
     },
@@ -17,7 +17,7 @@ export default defineEventHandler((event) => {
       "num": "Exercício 2",
       "nome": "Puxada Pronada aberta",
       "sets": 3,
-      "reps": "10 +10",
+      "reps": "10 |+10",
       "rest": "60\"",
       "grupo": "",
       "obs": "Rest-pause: Fazer 10 repetições, descansa 10\" : + 10",
@@ -29,7 +29,7 @@ export default defineEventHandler((event) => {
       "num": "Exercício 3",
       "nome": "Crucifixo dorsal (AP)",
       "sets": 3,
-      "reps": "15",
+      "reps": "12",
       "rest": "50\"",
       "grupo": "",
       "obs": "Pegada Pronada",
@@ -65,7 +65,7 @@ export default defineEventHandler((event) => {
       "num": "Exercício 6",
       "nome": "Elevação lateral",
       "sets": 3,
-      "reps": "12 +12",
+      "reps": "12 |+12",
       "rest": "40\"",
       "grupo": "",
       "obs": "Rest-pause: Fazer 12 repetições, descansa 10\" : + 12",
@@ -77,12 +77,12 @@ export default defineEventHandler((event) => {
       "num": "Exercício 7",
       "nome": "Desenvolvimento de ombros (HBM)",
       "sets": 3,
-      "reps": "15 (2t)",
+      "reps": "15",
       "rest": "60\"",
       "grupo": "",
-      "obs": "Fazer 2 tempos embaixo com a braa média (HBM)",
+      "obs": "Fazer com a pegada pronada aberta.",
       "photo": "desenvolvimentoHalteres",
-      "img": "https://m.leandrocesar.com/exe/desenvolvimentoHalteres.gif"
+      "img": "https://m.leandrocesar.com/exe/desenvolvimentoHBM.gif"
     },
     {
       "id": 8,
@@ -123,14 +123,14 @@ export default defineEventHandler((event) => {
     {
       "id": 11,
       "num": "Exercício 11",
-      "nome": "Abdominal supra completo",
+      "nome": "Tríceps testa c/ halteres",
       "sets": 3,
-      "reps": "20",
+      "reps": "12",
       "rest": "40\"",
       "grupo": "",
-      "obs": "Fazer no solo, quase encostando os ombros nos joelhos.",
+      "obs": "Fazer no solo. Pegada neutra.",
       "photo": "abdominalSupra",
-      "img": "https://m.leandrocesar.com/exe/abdominalSupra.gif"
+      "img": "https://m.leandrocesar.com/exe/tricepsTestaHBC.gif"
     }
   ]
 })

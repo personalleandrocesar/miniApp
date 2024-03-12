@@ -5,10 +5,10 @@ export default defineEventHandler((event) => {
       "num": "Exercício 1",
       "nome": "Leg Press Horizontal",
       "sets": 3,
-      "reps": "10 | + 10",
+      "reps": "12 | + 12",
       "rest": "50\"",
       "grupo": "",
-      "obs": "Fazer 10 repetições com os pés abduzidos  + 10 com os pés paralelos!",
+      "obs": "Fazer 12 repetições com os pés abduzidos  + 12 com os pés paralelos!",
       "photo": "legpress",
       "img": "https://m.leandrocesar.com/exe/legpress.gif"
     },
@@ -17,10 +17,10 @@ export default defineEventHandler((event) => {
       "num": "Exercício 2",
       "nome": "Agachamento Búlgaro",
       "sets": 3,
-      "reps": "10",
+      "reps": "7",
       "rest": "50\"",
       "grupo": "",
-      "obs": "Preferência segurar halteres pesados.",
+      "obs": "Fazer de maneira controlada.",
       "photo": "agachamentoBulgaro",
       "img": "https://m.leandrocesar.com/exe/bulgaro.gif"
     },
@@ -29,10 +29,10 @@ export default defineEventHandler((event) => {
       "num": "Exercício 3",
       "nome": "Extensora",
       "sets": 3,
-      "reps": "10 / +falha",
+      "reps": "8 / +falha",
       "rest": "60\"",
       "grupo": "",
-      "obs": "Drop set: fazer 10 repetições pesado, diminuir umas duas placas: fazer até a falha",
+      "obs": "Drop set: fazer 8 repetições pesado, diminuir umas duas placas: fazer até a falha",
       "photo": "extensora",
       "img": "https://m.leandrocesar.com/exe/extensora.gif"
     },
@@ -44,7 +44,7 @@ export default defineEventHandler((event) => {
       "reps": "15 + 20 curtas",
       "rest": "50\"",
       "grupo": "",
-      "obs": "",
+      "obs": "Fazer 15 repetições normais, depois + 20 curtas(fechadas).",
       "photo": "adutora",
       "img": "https://m.leandrocesar.com/exe/adutora.gif"
     },
@@ -68,45 +68,33 @@ export default defineEventHandler((event) => {
       "reps": "12",
       "rest": "40\"",
       "grupo": "",
-      "obs": "",
+      "obs": "Fazer com caneleiras.",
       "photo": "flexaoDeQuadril",
       "img": "https://m.leandrocesar.com/exe/flexaoQuadril.gif"
     },
     {
       "id": 7,
       "num": "Exercício 7",
-      "nome": "Agachamento no smith",
+      "nome": "Hack Machine",
       "sets": 4,
       "reps": "10",
       "rest": "50\"",
       "grupo": "",
       "obs": "Pés paralelos. Fazer a té 80° de emplitude.",
       "photo": "AgachamentoSmith",
-      "img": "https://m.leandrocesar.com/exe/smithSquat.png"
+      "img": "https://m.leandrocesar.com/exe/hacksquat.gif"
     },
     {
       "id": 8,
       "num": "Exercício 8",
       "nome": "Abdominal infra na paralela",
       "sets": 3,
-      "reps": "20",
+      "reps": "12",
       "rest": "50\"",
       "grupo": "",
-      "obs": "Fazer com os joelhos em 90/.",
+      "obs": "Fazer com os joelhos em 90°.",
       "photo": "abdominalInfraParalela.png",
       "img": "https://m.leandrocesar.com/exe/abdominalInfraParalela.png"
-    },
-    {
-      "id": 9,
-      "num": "Exercício 9",
-      "nome": "Hack Machine",
-      "sets": 3,
-      "reps": "15",
-      "rest": "40\"",
-      "grupo": "",
-      "obs": "Fazer até a amplitude de 70°.",
-      "photo": "hacksquat",
-      "img": "https://m.leandrocesar.com/exe/hacksquat.gif"
     }
   ]
 })
