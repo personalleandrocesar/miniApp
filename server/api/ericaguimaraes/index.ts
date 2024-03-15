@@ -5,7 +5,7 @@ export default defineEventHandler((event) => {
     "nomeCompleto": "Erica dos Santos Guimarâes",
     "email": "",
     "senha": "",
-    "foto": "https://m.leandrocesar.com/img/lexmonteiro.png",
+    "foto": "https://m.leandrocesar.com/img/ericaguimaraes.png",
     "servico": "Personal Trainer",
     "objetivo": "Hipertrofia",
     "tempo": "60 min.",
@@ -18,9 +18,9 @@ export default defineEventHandler((event) => {
     "periodo": "12/03/24 - 12/04/24",
     "status": 2,
     // Treino atual
-    "treinoActual": "13/03/24 - 12/04/24",
+    "treinoActual": "14/03/24 - 13/04/24",
     // Próxima Treino 
-    "treinoNext": "13/04/24",
+    "treinoNext": "14/04/24",
     // Avaliação atual
     "valuationActual": "",
     // Próxima avaliação 

@@ -5,34 +5,34 @@ export default defineEventHandler((event) => {
       "num": "Exercício 1",
       "nome": "Leg Press Horizontal",
       "sets": 3,
-      "reps": "12 | + 12",
+      "reps": "10 | + 10",
       "rest": "50\"",
       "grupo": "",
-      "obs": "Fazer 12 repetições com os pés abduzidos  + 12 com os pés paralelos!",
+      "obs": "Fazer 10 repetições com os pés abduzidos  + 10 com os pés paralelos!",
       "photo": "legpress",
       "img": "https://m.leandrocesar.com/exe/legpress.gif"
     },
     {
       "id": 2,
       "num": "Exercício 2",
-      "nome": "Agachamento Búlgaro",
+      "nome": "Abdutora",
       "sets": 3,
-      "reps": "7",
+      "reps": "15 2T",
       "rest": "50\"",
       "grupo": "",
-      "obs": "Fazer de maneira controlada.",
+      "obs": "Fazer 2 tempos a cada repetição.",
       "photo": "agachamentoBulgaro",
-      "img": "https://m.leandrocesar.com/exe/bulgaro.gif"
+      "img": "https://m.leandrocesar.com/exe/abdutora.gif"
     },
     {
       "id": 3,
       "num": "Exercício 3",
       "nome": "Extensora",
       "sets": 3,
-      "reps": "8 / +falha",
+      "reps": "15",
       "rest": "60\"",
       "grupo": "",
-      "obs": "Drop set: fazer 8 repetições pesado, diminuir umas duas placas: fazer até a falha",
+      "obs": "",
       "photo": "extensora",
       "img": "https://m.leandrocesar.com/exe/extensora.gif"
     },
@@ -41,10 +41,10 @@ export default defineEventHandler((event) => {
       "num": "Exercício 4",
       "nome": "Adutora",
       "sets": 3,
-      "reps": "15 + 20 curtas",
+      "reps": "15 + 15 curtas",
       "rest": "50\"",
       "grupo": "",
-      "obs": "Fazer 15 repetições normais, depois + 20 curtas(fechadas).",
+      "obs": "Fazer 15 repetições normais, depois + 15 curtas(fechadas).",
       "photo": "adutora",
       "img": "https://m.leandrocesar.com/exe/adutora.gif"
     },
@@ -95,6 +95,18 @@ export default defineEventHandler((event) => {
       "obs": "Fazer com os joelhos em 90°.",
       "photo": "abdominalInfraParalela.png",
       "img": "https://m.leandrocesar.com/exe/abdominalInfraParalela.png"
+    },
+    {
+      "id": 9,
+      "num": "Exercício 9",
+      "nome": "Leg press 45º",
+      "sets": 3,
+      "reps": "12",
+      "rest": "50\"",
+      "grupo": "",
+      "obs": "Fazer com os joelhos em 90°.",
+      "photo": "abdominalInfraParalela.png",
+      "img": "https://m.leandrocesar.com/exe/leg45.gif"
     }
   ]
 })
