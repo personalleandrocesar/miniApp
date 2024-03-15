@@ -399,7 +399,6 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  cursor: pointer;
 }
 .main-div-tree ul li {
   overflow-x: auto;
@@ -407,6 +406,7 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  cursor: pointer;
   margin-right: 102px;
 }
 .main-div-tree {
