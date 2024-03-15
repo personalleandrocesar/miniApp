@@ -410,10 +410,10 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  cursor: pointer;
 }
 
 .main-div-tree ul li {
+  cursor: pointer;
   overflow-x: auto;
   display: flex;
   flex-direction: row;
