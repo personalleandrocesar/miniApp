@@ -299,7 +299,6 @@ ul {
   border-radius: 8px;
   /* border: solid .2px #34d39930; */
   
-  color: #34d399;
 }
 .alternate span:hover{
   display: flex;
@@ -309,10 +308,10 @@ ul {
   width: 100%;  font-size: .8rem;
   border-radius: 8px;
   background-color: #34d39950;
+  color: #34d399;
 }
 
 .alternate span .icon {
-  color: #34d399;
   zoom: 1.1;
   margin: -4px 3px 0 0;
 }
@@ -351,10 +350,6 @@ b {
 h2 {
   color: #34d399;
   font-weight: 900;
-}
-
-.alternate .icon {
-  color: #34d399;
 }
 
 .main-div-one {
