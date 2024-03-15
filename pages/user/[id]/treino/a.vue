@@ -109,7 +109,7 @@ const selectG = () => {
           
           
           <ul>
-              <li v-for="(nome, index) in listExercise()" >
+              <li v-for="(nome, index) in listExercise()" :key="index" >
                 <h3>
                   {{ index + 1 }} - {{ nome.nome }}
                 </h3>
@@ -136,8 +136,19 @@ const selectG = () => {
 
              </li>
             </ul>
+            <div v-if="exerciseImg" class="nav-bar-photo" @click="openExercise">
+          <div class="nav-top">
+
+            <!-- Início do Nav-flow -->
+            <div class="nav-flow-photo">
+              <div  class="div-img-full">
+                <img :src="currentExercise.img" />
+              </div>
+            </div>
+
+          </div>
           
-        
+        </div>
 
           </div>
 
