@@ -13,7 +13,7 @@ export default defineEventHandler((event) => {
     "tempo": "60 min.",
     "dias": "5 dias",
     "treinoA": "Perna (quadríceps)",
-    // "treinoB": "Perna (glúteo/posterior)",
+    "treinoB": "Perna (glúteo/posterior)",
     // "treinoC": "Braço/abdomen",
   
     // Dados Menu Global
