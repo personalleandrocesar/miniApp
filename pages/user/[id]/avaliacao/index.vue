@@ -4,6 +4,7 @@ import { computed } from 'vue'
 const route = useRoute()
 const layout = "duo"
 const data = await useFetch(`/api/${route.params.id}/avaliacao/atual`)
+const dataOne = await useFetch(`/api/${route.params.id}/avaliacao/one`)
 const dataConf = await useFetch(`/api/${route.params.id}`)
 const notify = await useFetch(`/api/notifications`)
 
@@ -24,7 +25,7 @@ const dcMulheres = 1.0994921 - (0.0009929 * (mulheres)) + (0.0000023 * (mulheres
 const percGHomens = (((4.95 / dcHomens) - 4.50) * 100).toFixed(1)
 const percGMulheres = (((4.95 / dcMulheres) - 4.50) * 100).toFixed(1)
 
-const percentualFat = computed(() => {
+const percentualFatAtual = computed(() => {
   if (sexo === "feminino") {
     return percGMulheres
   } return percGHomens
@@ -135,7 +136,50 @@ function menu() {
                           </h4>
                         -->
                                 <h4>
-                                    {{ percentualFat }} %
+                                    {{ percentualFatAtual }} %
+                                  </h4>
+
+                            </div>
+                        </nuxt-link>
+          <nuxt-link v-if="dataOne.data.value?.data" class="main-square" :to="`/user/${route.params.id}/avaliacao/one`">
+            
+            
+            
+            <div>
+              <h4>
+                <Icon name='material-symbols:event' />
+              </h4>
+              <h4>
+                {{ dataOne.data.value?.data }}
+              </h4>
+            </div>
+            
+            <div>
+              <h3>
+              </h3>
+              <h4>
+                                    <Icon name="fa6-solid:weight-scale" />
+                                  </h4>
+                                  <h4>
+                                    {{ dataOne.data.value?.massa }} kg
+                                  </h4>
+                                  
+                                </div>
+                                <div>
+                                  <h3>
+                                </h3>
+                                
+                                <h4 style="font-weight: 900;color: #34d399; zoom: 1.6; margin-bottom: -5px;">
+                                  %G
+                                </h4>
+                                <!--
+                                  // antigo ícone!
+                                  <h4>
+                            <Icon name="material-symbols:body-fat-rounded" />
+                          </h4>
+                        -->
+                                <h4>
+                                    {{ percentualFatOne }} %
                                   </h4>
 
                             </div>
