@@ -9,8 +9,8 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Fazer com halteres",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "supinoReto",
+      "img": "https://m.leandrocesar.com/exe/supinoReto.gif"
     },
     {
       "id": 2,
@@ -21,8 +21,8 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Fazer com a barra longa.",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "supino45HBL",
+      "img": "https://m.leandrocesar.com/exe/supino45HBL.gif"
     },
     {
       "id": 3,
@@ -33,8 +33,8 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Fazer com halteres.",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "desenvolvimentoHalteres",
+      "img": "https://m.leandrocesar.com/exe/desenvolvimentoHalteres.gif"
     },
     {
       "id": 4,
@@ -45,8 +45,8 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer Rest-pause: Fazer 12 repetições, descansa 12 segundos, + 12 repetições.",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "elevacaoLateralHBC",
+      "img": "https://m.leandrocesar.com/exe/elevacaoLateralHBC.gif"
     },
     {
       "id": 5,
@@ -57,8 +57,8 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Peg. neutra.",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "remadaPoliaBaixa",
+      "img": "https://m.leandrocesar.com/exe/remadaPoliaBaixa.gif"
     },
     {
       "id": 6,
@@ -69,8 +69,8 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer 15 na pegada pronada + 5 na pegada supinada.",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "puxadaFrente",
+      "img": "https://m.leandrocesar.com/exe/puxadaFrente.gif"
     },
     {
       "id": 7,
@@ -81,8 +81,8 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Peg. pronada aberta",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "remadaCurvadaHBM",
+      "img": "https://m.leandrocesar.com/exe/remadaCurvadaHBM.gif"
     },
     {
       "id": 8,
@@ -93,8 +93,8 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "PEg. supinada.",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "lowRow",
+      "img": "https://m.leandrocesar.com/exe/lowRow.gif"
     },
     {
       "id": 9,
@@ -105,8 +105,8 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Fazer com a corda.",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "tricepsFrancesPolia",
+      "img": "https://m.leandrocesar.com/exe/tricepsFrancesPolia.gif"
     },
     {
       "id": 10,
@@ -117,8 +117,8 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer 8 repetições segurando 3 segundos a cada repetição, diminui 2 placas: +15 repetições.",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "tricepsCorda",
+      "img": "https://m.leandrocesar.com/exe/tricepsCorda.gif"
     },
     {
       "id": 11,
@@ -129,8 +129,8 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "abdominalRemadorCompleto.png",
+      "img": "https://m.leandrocesar.com/exe/abdominalRemadorCompleto.png"
     },
     {
       "id": 12,
@@ -141,8 +141,8 @@ export default defineEventHandler((event) => {
       "rest": "",
       "grupo": "",
       "obs": "Fazer completo: quase encostando os ombros nos joelhos.",
-      "photo": "",
-      "img": "https://m.leandrocesar.com/exe/.gif"
+      "photo": "abdominalSupra",
+      "img": "https://m.leandrocesar.com/exe/abdominalSupra.gif"
     }
   ]
 })

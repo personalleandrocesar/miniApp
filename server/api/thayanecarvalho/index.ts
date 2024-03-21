@@ -14,7 +14,7 @@ export default defineEventHandler((event) => {
     "dias": "5 dias",
     "treinoA": "Perna (quadríceps)",
     "treinoB": "Perna (glúteo/posterior)",
-    // "treinoC": "Braço/abdomen",
+    "treinoC": "Braço/abdomen",
   
     // Dados Menu Global
     "periodo": "18/03/24 - 18/04/24",
