@@ -22,7 +22,6 @@ export default defineEventHandler((event) => {
     "karollinearaujo": {"usuario": "karollinearaujo", "sennha": "araujo@Ka"},
     "cristianosouza": { "usuario": "cristianosouza", "sennha": "souza@Cr"},
     "biancabarcelos": { "usuario": "biancabarcelos", "sennha": "barcelos@Bi"},
-    "pedrogoncalves": { "usuario": "pedrogoncalves", "sennha": "goncalves@Pe"},
     "cristina": { "usuario": "cristina", "sennha": "cristina@Cr"},
     "annalupacheco": { "usuario": "annalupacheco", "sennha": "pacheco@An"},
     "lexmonteiro": { "usuario": "lexmonteiro", "sennha": "monteiro@Le"},
