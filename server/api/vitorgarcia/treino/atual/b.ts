@@ -10,7 +10,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "pegada supinada.",
       "photo": "lowRow",
-      "img": "https://m.leandrocesar.com/exe/lowRow.gif"
+      "img": "https://deepacupuntura.com/exe/lowRow.gif"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Pegada pronada",
       "photo": "puxadaFrente",
-      "img": "https://m.leandrocesar.com/exe/puxadaFrente.gif"
+      "img": "https://deepacupuntura.com/exe/puxadaFrente.gif"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Pegada Neutra",
       "photo": " puxadaFrente",
-      "img": "https://m.leandrocesar.com/exe/puxadaFrente.gif"
+      "img": "https://deepacupuntura.com/exe/puxadaFrente.gif"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Pegada pronada",
       "photo": "crucifixoDorsal",
-      "img": "https://m.leandrocesar.com/exe/crucifixoDorsal.gif"
+      "img": "https://deepacupuntura.com/exe/crucifixoDorsal.gif"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "remadaPoliaBaixa",
-      "img": "https://m.leandrocesar.com/exe/remadaPoliaBaixa.gif"
+      "img": "https://deepacupuntura.com/exe/remadaPoliaBaixa.gif"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "alternando;",
       "photo": "bicepsAparelho",
-      "img": "https://m.leandrocesar.com/exe/bicepsAparelho.gif"
+      "img": "https://deepacupuntura.com/exe/bicepsAparelho.gif"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "bicepsMartelo",
-      "img": "https://m.leandrocesar.com/exe/bicepsMartelo.gif"
+      "img": "https://deepacupuntura.com/exe/bicepsMartelo.gif"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer 15 repetições, 15 curtas em cima!",
       "photo": "panturrilhaAparelho",
-      "img": "https://m.leandrocesar.com/exe/panturrilhaAparelho.gif"
+      "img": "https://deepacupuntura.com/exe/panturrilhaAparelho.gif"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "mesaFlexora",
-      "img": "https://m.leandrocesar.com/exe/mesaFlexora.gif"
+      "img": "https://deepacupuntura.com/exe/mesaFlexora.gif"
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer 10 repetições, segurar 10 segundos aberto + 4 repetições.",
       "photo": "abdutora",
-      "img": "https://m.leandrocesar.com/exe/abdutora.gif"
+      "img": "https://deepacupuntura.com/exe/abdutora.gif"
     },
     {
       "id": 11,
@@ -130,7 +130,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Segurar 30 segundos no mínimo!",
       "photo": "pranchaFrontal.png",
-      "img": "https://m.leandrocesar.com/exe/pranchaFrontal.png"
+      "img": "https://deepacupuntura.com/exe/pranchaFrontal.png"
     }
   ]
 })

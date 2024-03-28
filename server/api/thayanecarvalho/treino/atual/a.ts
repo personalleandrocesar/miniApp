@@ -10,7 +10,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Falhando; Fazer até 70° de amplitude do joelho;",
       "photo": "squatSmith",
-      "img": "https://m.leandrocesar.com/exe/squatSmith.gif"
+      "img": "https://deepacupuntura.com/exe/squatSmith.gif"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer com os joelhos sempre em 90°;",
       "photo": "flexaoQuadril",
-      "img": "https://m.leandrocesar.com/exe/flexaoQuadril.gif"
+      "img": "https://deepacupuntura.com/exe/flexaoQuadril.gif"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer drop-set: Faz 8 repetições, diminui 1 ou 2 placas: + 15 repetições.",
       "photo": "extensora",
-      "img": "https://m.leandrocesar.com/exe/extensora.gif"
+      "img": "https://deepacupuntura.com/exe/extensora.gif"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer 8 repetições, ficar 10 segundos parada na amplitude de 90°, + 4 reprtições.",
       "photo": "sumo",
-      "img": "https://m.leandrocesar.com/exe/sumo.gif"
+      "img": "https://deepacupuntura.com/exe/sumo.gif"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer com os joelhos em 90°.",
       "photo": "abdominalInfra",
-      "img": "https://m.leandrocesar.com/exe/abdominalInfra.gif"
+      "img": "https://deepacupuntura.com/exe/abdominalInfra.gif"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer 12 repetições, + 20 curtas fechada(Bombeando) + isometria no final(segurar no final) até a falha.",
       "photo": "adutora",
-      "img": "https://m.leandrocesar.com/exe/adutora.gif"
+      "img": "https://deepacupuntura.com/exe/adutora.gif"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Pesado - falhando.",
       "photo": "legpress",
-      "img": "https://m.leandrocesar.com/exe/legpress.gif"
+      "img": "https://deepacupuntura.com/exe/legpress.gif"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer com os pés paralelos",
       "photo": "backSquat",
-      "img": "https://m.leandrocesar.com/exe/backSquat.gif"
+      "img": "https://deepacupuntura.com/exe/backSquat.gif"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer 20 curtas em cima, e 15 repetições segurando em cima 1 segundo a cada repetição.",
       "photo": "panturrilhaAparelho",
-      "img": "https://m.leandrocesar.com/exe/panturrilhaAparelho.gif"
+      "img": "https://deepacupuntura.com/exe/panturrilhaAparelho.gif"
     }
   ]
 })

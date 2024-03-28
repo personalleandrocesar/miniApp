@@ -9,7 +9,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer Rest-pause: Fazer 8 repetições, descansa 10\", + 8 repetições. Pegada neutra.",
-      "img": "https://m.leandrocesar.com/exe/remadaPoliaBaixa.gif",
+      "img": "https://deepacupuntura.com/exe/remadaPoliaBaixa.gif",
       "photo": "remadaPoliaBaixa"
     },
     {
@@ -21,7 +21,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer uma série de cada, no caso: 1 de 15 repetições, descansa 60\", aumenta 1 placa, faz 12, descansa...",
-      "img": "https://m.leandrocesar.com/exe/puxadaFrente.gif",
+      "img": "https://deepacupuntura.com/exe/puxadaFrente.gif",
       "photo": "puxadaFrente"
     },
     {
@@ -33,7 +33,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer com a pegada pronada, segurando 1 segundo atrás a cada repetição.",
-      "img": "https://m.leandrocesar.com/exe/crucifixoDorsal.gif",
+      "img": "https://deepacupuntura.com/exe/crucifixoDorsal.gif",
       "photo": "crucifixoDorsal"
     },
     {
@@ -45,7 +45,7 @@ export default defineEventHandler((event) => {
       "rest": "60",
       "grupo": "",
       "obs": "Fazer com a pegada Supinada, cotovelo na direção do ombro.",
-      "img": "https://m.leandrocesar.com/exe/remadaCurvadaHBM.gif",
+      "img": "https://deepacupuntura.com/exe/remadaCurvadaHBM.gif",
       "photo": "remadaCurvadaHBM"
     },
     {
@@ -57,7 +57,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Fazer tipo parecido com a imagem que é o Pull Down, só que flexionando o cotovelo como se estivesse fazendo puxada neutra, mas só que na polia alta e com a corda.",
-      "img": "https://m.leandrocesar.com/exe/pullDown.gif",
+      "img": "https://deepacupuntura.com/exe/pullDown.gif",
       "photo": "pullDown"
     },
     {
@@ -69,7 +69,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer remada alta na polia baixa, mãos um pouco mais fechada que a linha dos ombros. Fazer 10 repetições +10\" de isometria em cima, no final.",
-      "img": "https://m.leandrocesar.com/exe/remadaAlta.gif",
+      "img": "https://deepacupuntura.com/exe/remadaAlta.gif",
       "photo": "remadaAlta"
     },
     {
@@ -81,7 +81,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Fazer com halteres",
-      "img": "https://m.leandrocesar.com/exe/bicepsEmPe.gif",
+      "img": "https://deepacupuntura.com/exe/bicepsEmPe.gif",
       "photo": "bicepsEmPe"
     },
     {
@@ -93,7 +93,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer 10 repetições, de forma invertida, + pegada supinada (normal) até a falha",
-      "img": "https://m.leandrocesar.com/exe/bicepsInvertidoBarraW.gif",
+      "img": "https://deepacupuntura.com/exe/bicepsInvertidoBarraW.gif",
       "photo": "bicepsInvertidoBarraW"
     },
     {
@@ -105,7 +105,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer isometria em cima e alternar!",
-      "img": "https://m.leandrocesar.com/exe/beicepsAparelho.gif",
+      "img": "https://deepacupuntura.com/exe/beicepsAparelho.gif",
       "photo": "beicepsAparelho"
     },
     {
@@ -117,7 +117,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Segurar uma anilha de 10 kg e fazer o máximo que aguentar(falha);",
-      "img": "https://m.leandrocesar.com/exe/extensaoLombar.png",
+      "img": "https://deepacupuntura.com/exe/extensaoLombar.png",
       "photo": "extensaoLombar.png"
     }
   ]

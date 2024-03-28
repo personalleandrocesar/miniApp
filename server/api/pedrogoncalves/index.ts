@@ -4,7 +4,7 @@ export default defineEventHandler((event) => {
     "nomeCompleto": "Pedro Gonçalves",
     "email": "",
     "senha": "",
-    "foto": "https://m.leandrocesar.com/img/pedrogoncalves.png",
+    "foto": "https://deepacupuntura.com/img/pedrogoncalves.png",
     "objetivo": "Hipertrofia",
     "tempo": "60 min.",
     "dias": "6 dias",

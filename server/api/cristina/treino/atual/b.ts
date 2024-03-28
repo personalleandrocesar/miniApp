@@ -9,7 +9,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Pés um pouco mais em cima e paralelos.",
-      "img": "https://m.leandrocesar.com/exe/leg45.gif",
+      "img": "https://deepacupuntura.com/exe/leg45.gif",
       "photo": "leg45"
     },
     {
@@ -21,7 +21,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "\n",
-      "img": "https://m.leandrocesar.com/exe/puxadaFrente.gif",
+      "img": "https://deepacupuntura.com/exe/puxadaFrente.gif",
       "photo": "puxadaFrente"
     },
     {
@@ -33,7 +33,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "",
-      "img": "https://m.leandrocesar.com/exe/mesaFlexora.gif",
+      "img": "https://deepacupuntura.com/exe/mesaFlexora.gif",
       "photo": "mesaFlexora"
     },
     {
@@ -45,7 +45,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Pegada neutra.",
-      "img": "https://m.leandrocesar.com/exe/remadaAparelhoNeutra.png",
+      "img": "https://deepacupuntura.com/exe/remadaAparelhoNeutra.png",
       "photo": "remadaAparelhoNeutra.png"
     },
     {
@@ -57,7 +57,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "",
-      "img": "https://m.leandrocesar.com/exe/elevacaopelvica.png",
+      "img": "https://deepacupuntura.com/exe/elevacaopelvica.png",
       "photo": "elevacaopelvica.png"
     },
     {
@@ -69,7 +69,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "",
-      "img": "https://m.leandrocesar.com/exe/abdominalInfra.gif",
+      "img": "https://deepacupuntura.com/exe/abdominalInfra.gif",
       "photo": "abdominalInfra"
     },
     {
@@ -81,7 +81,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Pegada pronada.",
-      "img": "https://m.leandrocesar.com/exe/crucifixoDorsal.gif",
+      "img": "https://deepacupuntura.com/exe/crucifixoDorsal.gif",
       "photo": "crucifixoDorsal"
     },
     {
@@ -93,7 +93,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "",
-      "img": "https://m.leandrocesar.com/exe/panturrilhaAparelho.gif",
+      "img": "https://deepacupuntura.com/exe/panturrilhaAparelho.gif",
       "photo": "panturrilhaAparelho"
     },
     {
@@ -105,7 +105,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "",
-      "img": "https://m.leandrocesar.com/exe/abdutora.gif",
+      "img": "https://deepacupuntura.com/exe/abdutora.gif",
       "photo": "abdutora"
     },
     {
@@ -117,7 +117,7 @@ export default defineEventHandler((event) => {
       "rest": "40\"",
       "grupo": "",
       "obs": "",
-      "img": "https://m.leandrocesar.com/exe/bicepsEmPe.gif",
+      "img": "https://deepacupuntura.com/exe/bicepsEmPe.gif",
       "photo": "bicepsEmPe"
     }
   ]

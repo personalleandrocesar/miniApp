@@ -10,7 +10,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer 10 repetições, segurar 10 segundos em cima +6 no final.",
       "photo": "extensora",
-      "img": "https://m.leandrocesar.com/exe/extensora.gif"
+      "img": "https://deepacupuntura.com/exe/extensora.gif"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Segurar 1 segundo a cada repetição em cima.",
       "photo": "mesaFlexora",
-      "img": "https://m.leandrocesar.com/exe/mesaFlexora.gif"
+      "img": "https://deepacupuntura.com/exe/mesaFlexora.gif"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "stiffHBL",
-      "img": "https://m.leandrocesar.com/exe/stiffHBL.gif"
+      "img": "https://deepacupuntura.com/exe/stiffHBL.gif"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "abdutora",
-      "img": "https://m.leandrocesar.com/exe/abdutora.gif"
+      "img": "https://deepacupuntura.com/exe/abdutora.gif"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "leg45",
-      "img": "https://m.leandrocesar.com/exe/leg45.gif"
+      "img": "https://deepacupuntura.com/exe/leg45.gif"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "hacksquat",
-      "img": "https://m.leandrocesar.com/exe/hacksquat.gif"
+      "img": "https://deepacupuntura.com/exe/hacksquat.gif"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer 20 repetições + 20 curtas",
       "photo": "panturrilhaAparelho",
-      "img": "https://m.leandrocesar.com/exe/panturrilhaAparelho.gif"
+      "img": "https://deepacupuntura.com/exe/panturrilhaAparelho.gif"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "abdominalInfraParalela.png",
-      "img": "https://m.leandrocesar.com/exe/abdominalInfraParalela.png"
+      "img": "https://deepacupuntura.com/exe/abdominalInfraParalela.png"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "abdominalSupra",
-      "img": "https://m.leandrocesar.com/exe/abdominalSupra.gif"
+      "img": "https://deepacupuntura.com/exe/abdominalSupra.gif"
     }
   ]
 })

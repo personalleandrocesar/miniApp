@@ -5,7 +5,7 @@ export default defineEventHandler((event) => {
     "nomeCompleto": "Lex Monteiro",
     "email": "",
     "senha": "",
-    "foto": "https://m.leandrocesar.com/img/lexmonteiro.jpeg",
+    "foto": "https://deepacupuntura.com/img/lexmonteiro.jpeg",
     "servico": "Consultoria On-line",
     "objetivo": "Hipertrofia",
     "tempo": "60 min.",

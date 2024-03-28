@@ -7,7 +7,7 @@ export default defineEventHandler((event) => {
     "nomeCompleto": "Rosa Maria Gomes Rodrigues",
     "email": "",
     "senha": "",
-    "foto": "https://m.leandrocesar.com/img/rosarodrigues.png",
+    "foto": "https://deepacupuntura.com/img/rosarodrigues.png",
     "servico": "Personal Trainer",
     "objetivo": "Hipertrofia",
     "tempo": "60 min.",

@@ -10,7 +10,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "supinoInclinado",
-      "img": "https://m.leandrocesar.com/exe/supinoInclinado.gif"
+      "img": "https://deepacupuntura.com/exe/supinoInclinado.gif"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "supinoHammer",
-      "img": "https://m.leandrocesar.com/exe/supinoHammer.gif"
+      "img": "https://deepacupuntura.com/exe/supinoHammer.gif"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "supinoReto",
-      "img": "https://m.leandrocesar.com/exe/supinoReto.gif"
+      "img": "https://deepacupuntura.com/exe/supinoReto.gif"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "supinoRetoHammer.png",
-      "img": "https://m.leandrocesar.com/exe/supinoRetoHammer.png"
+      "img": "https://deepacupuntura.com/exe/supinoRetoHammer.png"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Pegada pronada.",
       "photo": "desenvolvimentoHalteres",
-      "img": "https://m.leandrocesar.com/exe/desenvolvimentoHalteres.gif"
+      "img": "https://deepacupuntura.com/exe/desenvolvimentoHalteres.gif"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer com a barra V ou W, na pegada pronada fechada. Fazer 8 repetições, diminui uma ou duas placas: faz até a falha!",
       "photo": "tricepsBarraV",
-      "img": "https://m.leandrocesar.com/exe/tricepsBarraV.gif"
+      "img": "https://deepacupuntura.com/exe/tricepsBarraV.gif"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "tricepsMaquina",
-      "img": "https://m.leandrocesar.com/exe/tricepsMaquina.gif"
+      "img": "https://deepacupuntura.com/exe/tricepsMaquina.gif"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Pés paralelos",
       "photo": "hacksquat",
-      "img": "https://m.leandrocesar.com/exe/hacksquat.gif"
+      "img": "https://deepacupuntura.com/exe/hacksquat.gif"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Segurar 2 segundos a cada repetição!",
       "photo": "extensora",
-      "img": "https://m.leandrocesar.com/exe/extensora.gif"
+      "img": "https://deepacupuntura.com/exe/extensora.gif"
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "abdominalInfraParalela.png",
-      "img": "https://m.leandrocesar.com/exe/abdominalInfraParalela.png"
+      "img": "https://deepacupuntura.com/exe/abdominalInfraParalela.png"
     }
   ]
 })

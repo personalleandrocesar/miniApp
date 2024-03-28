@@ -4,7 +4,7 @@ export default defineEventHandler((event) => {
     "nomeCompleto": "Cristina",
     "email": "",
     "senha": "",
-    "foto": "https://m.leandrocesar.com/img/cristina.jpeg",
+    "foto": "https://deepacupuntura.com/img/cristina.jpeg",
     "servico": "Personal Trainer",
     "objetivo": "Hipertrofia",
     "tempo": "60 min.",

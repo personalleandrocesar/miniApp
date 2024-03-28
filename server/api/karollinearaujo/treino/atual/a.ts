@@ -10,7 +10,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer 10 repetições com os pés abduzidos  + 10 com os pés paralelos!",
       "photo": "legpress",
-      "img": "https://m.leandrocesar.com/exe/legpress.gif"
+      "img": "https://deepacupuntura.com/exe/legpress.gif"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Preferência segurar halteres pesados.",
       "photo": "agachamentoBulgaro",
-      "img": "https://m.leandrocesar.com/exe/bulgaro.gif"
+      "img": "https://deepacupuntura.com/exe/bulgaro.gif"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Drop set: fazer 10 repetições pesado, diminuir umas duas placas: fazer até a falha",
       "photo": "extensora",
-      "img": "https://m.leandrocesar.com/exe/extensora.gif"
+      "img": "https://deepacupuntura.com/exe/extensora.gif"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "adutora",
-      "img": "https://m.leandrocesar.com/exe/adutora.gif"
+      "img": "https://deepacupuntura.com/exe/adutora.gif"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Falhando.",
       "photo": "agachamentoSumo",
-      "img": "https://m.leandrocesar.com/exe/sumo.gif"
+      "img": "https://deepacupuntura.com/exe/sumo.gif"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "",
       "photo": "flexaoDeQuadril",
-      "img": "https://m.leandrocesar.com/exe/flexaoQuadril.gif"
+      "img": "https://deepacupuntura.com/exe/flexaoQuadril.gif"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Pés paralelos. Fazer a té 80° de emplitude.",
       "photo": "AgachamentoSmith",
-      "img": "https://m.leandrocesar.com/exe/smithSquat.png"
+      "img": "https://deepacupuntura.com/exe/smithSquat.png"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer com os joelhos em 90/.",
       "photo": "abdominalInfraParalela.png",
-      "img": "https://m.leandrocesar.com/exe/abdominalInfraParalela.png"
+      "img": "https://deepacupuntura.com/exe/abdominalInfraParalela.png"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer até a amplitude de 70°.",
       "photo": "hacksquat",
-      "img": "https://m.leandrocesar.com/exe/hacksquat.gif"
+      "img": "https://deepacupuntura.com/exe/hacksquat.gif"
     }
   ]
 })

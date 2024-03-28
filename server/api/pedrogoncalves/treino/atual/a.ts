@@ -9,7 +9,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Não esticar o cotovelo todo na subida.",
-      "img": "https://m.leandrocesar.com/exe/supinoInclinado.gif",
+      "img": "https://deepacupuntura.com/exe/supinoInclinado.gif",
       "photo": "supinoInclinado"
     },
     {
@@ -21,7 +21,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Pegada Neutra.",
-      "img": "https://m.leandrocesar.com/exe/supino45HBL.gif",
+      "img": "https://deepacupuntura.com/exe/supino45HBL.gif",
       "photo": "supino45HBL"
     },
     {
@@ -33,7 +33,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Peg. pronada fechada.",
-      "img": "https://m.leandrocesar.com/exe/supinoReto.gif",
+      "img": "https://deepacupuntura.com/exe/supinoReto.gif",
       "photo": "supinoReto"
     },
     {
@@ -45,7 +45,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Pegada + afastadas.",
-      "img": "https://m.leandrocesar.com/exe/desenvolvimentoHBM.gif",
+      "img": "https://deepacupuntura.com/exe/desenvolvimentoHBM.gif",
       "photo": "desenvolvimentoHBM"
     },
     {
@@ -57,7 +57,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer 10 repetições + 10 curtas + 4 repetições.",
-      "img": "https://m.leandrocesar.com/exe/peckDeck.gif",
+      "img": "https://deepacupuntura.com/exe/peckDeck.gif",
       "photo": "peckDeck"
     },
     {
@@ -69,7 +69,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer Rest-pause: fazer 12 repetições, descansa 10\" + 12 repetições.",
-      "img": "https://m.leandrocesar.com/exe/elevacaoLateralHBC.gif",
+      "img": "https://deepacupuntura.com/exe/elevacaoLateralHBC.gif",
       "photo": "elevacaoLateralHBC"
     },
     {
@@ -81,7 +81,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Fazer repetições + 10 segundos de isometria embaixo(cotovelo em 90°).",
-      "img": "https://m.leandrocesar.com/exe/desenvolvimentoHalteres.gif",
+      "img": "https://deepacupuntura.com/exe/desenvolvimentoHalteres.gif",
       "photo": "desenvolvimentoHalteres"
     },
     {
@@ -93,7 +93,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer drop-set: 8 repetições pesado, diminui umas 2 placas: Fazer até a falha!",
-      "img": "https://m.leandrocesar.com/exe/tricepscorda.gif",
+      "img": "https://deepacupuntura.com/exe/tricepscorda.gif",
       "photo": "tricepscorda"
     },
     {
@@ -105,7 +105,7 @@ export default defineEventHandler((event) => {
       "rest": "50\"",
       "grupo": "",
       "obs": "Segurar 1 segundo a cada contração em cima!",
-      "img": "https://m.leandrocesar.com/exe/tricepsFrancesPolia.gif",
+      "img": "https://deepacupuntura.com/exe/tricepsFrancesPolia.gif",
       "photo": "tricepsFrancesPolia"
     },
     {
@@ -117,7 +117,7 @@ export default defineEventHandler((event) => {
       "rest": "60\"",
       "grupo": "",
       "obs": "Fazer no Graviton.",
-      "img": "https://m.leandrocesar.com/exe/tricepsMergulho.gif",
+      "img": "https://deepacupuntura.com/exe/tricepsMergulho.gif",
       "photo": "tricepsMergulho"
     }
   ]

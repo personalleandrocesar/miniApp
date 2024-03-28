@@ -3,7 +3,7 @@ export default defineEventHandler((event) => {
     "nome": "Viviane",
     "nomeCompleto": "Viviane Marques",
     "email": "",
-    "foto": "https://m.leandrocesar.com/img/vivianemarques.jpeg",
+    "foto": "https://deepacupuntura.com/img/vivianemarques.jpeg",
     "servico": "Personal Trainer",
     "objetivo": "Hipertrofia",
     "tempo": "60 min.",

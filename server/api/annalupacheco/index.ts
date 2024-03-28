@@ -5,7 +5,7 @@ export default defineEventHandler((event) => {
     "nomeCompleto": "Annalú Pacheco",
     "email": "",
     "senha": "",
-    "foto": "https://m.leandrocesar.com/img/annalupacheco.png",
+    "foto": "https://deepacupuntura.com/img/annalupacheco.png",
     "servico": "Personal Trainer",
     "objetivo": "Hipertrofia",
     "tempo": "60 min.",

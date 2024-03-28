@@ -5,7 +5,7 @@ export default defineEventHandler((event) => {
     "nomeCompleto": "Amanda de Oliveira Gonçalves",
     "email": "",
     "senha": "",
-    "foto": "https://m.leandrocesar.com/img/amandagoncalves.jpeg",
+    "foto": "https://deepacupuntura.com/img/amandagoncalves.jpeg",
     "servico": "Personal Trainer",
     "objetivo": "Hipertrofia",
     "tempo": "60 min.",

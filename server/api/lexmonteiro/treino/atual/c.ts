@@ -10,7 +10,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Pegada supinada; Segurar 2 segundo a cada repetição.",
       "photo": "lowRow",
-      "img": "https://m.leandrocesar.com/exe/lowRow.gif"
+      "img": "https://deepacupuntura.com/exe/lowRow.gif"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Rest-pause: Fazer 10 repetições, descansa 10\" : + 10",
       "photo": "PuxadaFrente",
-      "img": "https://m.leandrocesar.com/exe/PuxadaFrente.gif"
+      "img": "https://deepacupuntura.com/exe/PuxadaFrente.gif"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Pegada Pronada",
       "photo": "crucifixoDorsal",
-      "img": "https://m.leandrocesar.com/exe/crucifixoDorsal.gif"
+      "img": "https://deepacupuntura.com/exe/crucifixoDorsal.gif"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Colocar 3 placas: fazer até a falha (pode usar o corpo), depois diminuir 1 placa: fazer até a falha.",
       "photo": "remadaPoliaBaixa",
-      "img": "https://m.leandrocesar.com/exe/remadaPoliaBaixa.gif"
+      "img": "https://deepacupuntura.com/exe/remadaPoliaBaixa.gif"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Pegada neutra",
       "photo": "supinoPolias",
-      "img": "https://m.leandrocesar.com/exe/supinoPolias.gif"
+      "img": "https://deepacupuntura.com/exe/supinoPolias.gif"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Rest-pause: Fazer 12 repetições, descansa 10\" : + 12",
       "photo": "elevacaoLateralHBC",
-      "img": "https://m.leandrocesar.com/exe/elevacaoLateralHBC.gif"
+      "img": "https://deepacupuntura.com/exe/elevacaoLateralHBC.gif"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer com a pegada pronada aberta.",
       "photo": "desenvolvimentoHalteres",
-      "img": "https://m.leandrocesar.com/exe/desenvolvimentoHBM.gif"
+      "img": "https://deepacupuntura.com/exe/desenvolvimentoHBM.gif"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "segurar 1 segundo a cada repetição embaixo.",
       "photo": "tricepsCorda",
-      "img": "https://m.leandrocesar.com/exe/tricepsCorda.gif"
+      "img": "https://deepacupuntura.com/exe/tricepsCorda.gif"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer com a barra reta.",
       "photo": "bícepsPolia",
-      "img": "https://m.leandrocesar.com/exe/bicepsPolia.gif"
+      "img": "https://deepacupuntura.com/exe/bicepsPolia.gif"
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer com a pegada neutra.",
       "photo": "supinoInclinado",
-      "img": "https://m.leandrocesar.com/exe/supinoInclinado.gif"
+      "img": "https://deepacupuntura.com/exe/supinoInclinado.gif"
     },
     {
       "id": 11,
@@ -130,7 +130,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer no solo. Pegada neutra.",
       "photo": "abdominalSupra",
-      "img": "https://m.leandrocesar.com/exe/tricepsTestaHBC.gif"
+      "img": "https://deepacupuntura.com/exe/tricepsTestaHBC.gif"
     }
   ]
 })

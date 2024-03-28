@@ -10,7 +10,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer 10 repetições + 10 segundos de isometria(segurar em cima)",
       "photo": "mesaFlexora",
-      "img": "https://m.leandrocesar.com/exe/mesaFlexora.gif"
+      "img": "https://deepacupuntura.com/exe/mesaFlexora.gif"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer com os pés paralelos.",
       "photo": "leg45",
-      "img": "https://m.leandrocesar.com/exe/leg45.gif"
+      "img": "https://deepacupuntura.com/exe/leg45.gif"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer com a barra reta (HBM)",
       "photo": "stiffHBL",
-      "img": "https://m.leandrocesar.com/exe/stiffHBL.gif"
+      "img": "https://deepacupuntura.com/exe/stiffHBL.gif"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer 12 com 12 tempos encostada atrás no banco + 20 Inclinado.",
       "photo": "abdutora",
-      "img": "https://m.leandrocesar.com/exe/abdutora.gif"
+      "img": "https://deepacupuntura.com/exe/abdutora.gif"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Segurar 1 segundo a cada repetição.",
       "photo": "flexoraVertical.png",
-      "img": "https://m.leandrocesar.com/exe/flexoraVertical.png"
+      "img": "https://deepacupuntura.com/exe/flexoraVertical.png"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer na máquina ou na barra livre.",
       "photo": "elevacaoPelvicaHBM",
-      "img": "https://m.leandrocesar.com/exe/elevacaoPelvicaHBM.gif"
+      "img": "https://deepacupuntura.com/exe/elevacaoPelvicaHBM.gif"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer coice.",
       "photo": "extensaoQuadril.png",
-      "img": "https://m.leandrocesar.com/exe/extensaoQuadril.png"
+      "img": "https://deepacupuntura.com/exe/extensaoQuadril.png"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Fazer com os pés paralelos.",
       "photo": "levantamentoTerra",
-      "img": "https://m.leandrocesar.com/exe/levantamentoTerra.gif"
+      "img": "https://deepacupuntura.com/exe/levantamentoTerra.gif"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@ export default defineEventHandler((event) => {
       "grupo": "",
       "obs": "Não precisa pular tão alto.",
       "photo": "jumpSquat",
-      "img": "https://m.leandrocesar.com/exe/jumpSquat.gif"
+      "img": "https://deepacupuntura.com/exe/jumpSquat.gif"
     }
   ]
 })
